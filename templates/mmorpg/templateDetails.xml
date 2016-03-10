@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.1" type="template" client="site">
+	<name>mmorpg</name>
+	<version>1.0</version>
+	<creationDate>5/23/2015</creationDate>
+	<author>tomh</author>
+	<authorEmail>542594600@qq.com</authorEmail>
+	<copyright>Copyright (C) 2015 - 2020 Open Source Matters, Inc. All rights reserved.</copyright>
+	<description>TPL_PROTOSTAR_XML_DESCRIPTION</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>images</folder>
+		<folder>css</folder>
+		<folder>scripts</folder>
+	</files>
+	<positions>
+		<position>top1</position>
+		<position>top_nav</position>
+		<position>top_nav_trending</position>
+		<position>top_ad_1</position>
+		<position>top_ad_2</position>
+		<position>body_right</position>
+		<position>body_news_right</position>
+		<position>body_left</position>
+		<position>footer_nav</position>
+		<position>home_left_top</position>
+		<position>home_left_second</position>
+		<position>home_left_second_left</position>
+		<position>home_left_second_right</position>
+		<position>home_left_top_left</position>
+		<position>home_left_top_right</position>
+		<position>home_right</position>
+		<position>home_left_left</position>
+		<position>home_left_right</position>
+	</positions>
+</extension>

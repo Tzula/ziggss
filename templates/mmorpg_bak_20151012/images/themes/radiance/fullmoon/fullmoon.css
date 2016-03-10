@@ -1,0 +1,1331 @@
+/*
+//////////
+// File: radiance_default.css
+// Description: design css for radiance theme on mmorpg.com
+//////////
+*/
+
+/* Reset - Get all browsers to the same point for a uniform look    */
+body { background:#0b0f14; font-family:Verdana,Arial,Helvetica,sans-serif; color:#e9e9e9; } /*  000311 -blue or 131313 -grey*/
+table { color:#e9e9e9; }
+a:link, a:visited { color:#F1C36B; text-decoration:none; } /* FFAB56 */
+a.sublink:link, a.sublink:visited { color:#C1DDDD; }
+a.saplink:link, a.saplink:visited { color:#BABAAD; }
+a.suhlink:link, a.suhlink:visited { color:#F1C36B; } /* 70B9ED */
+a:hover,a.sublink:hover,a.saplink:hover,a.suhlink:hover,a:active { color:#70B9ED; text-decoration:underline; }
+a:active { text-decoration:none; }
+
+HR { border-top:1px solid #6C6C6C; }
+
+/* Global Classes and styes - Classes used by features,news posts */
+.yellow { color:#FFEAA1; }
+.black { color:#000000; }
+.green { color:#96F000; }
+.white { color:#FFFFFF; }
+.blue,.ParagraphHeaderClassThingy { color:#70b9ed; }
+.darkblue { color:#040A76; }
+.grey { color:#767676; }
+.darkgrey { color:#484848; }
+.lightgrey { color:#C1C1C1; }
+.bg_yellow { background:#FFEAA1; }
+.bg_black { background:#000; }
+.bg_green { background:#96F000; }
+.bg_white { background:#FFF; }
+.bg_blue { background:#00ABFF; }
+.bg_darkblue { background:#040A76; }
+.bg_grey { background:#767676; }
+.bg_darkgrey { background:#484848; }
+.bg_lightgrey { background:#C1C1C1; }
+.border_yellow { border:1px solid #FFEAA1; }
+.border_black { border:1px solid #000; }
+.border_green { border:1px solid #96F000; }
+.border_white { border:1px solid #FFF; }
+.border_blue { border:1px solid #00ABFF; }
+.border_darkblue { border:1px solid #040A76; }
+.border_grey { border:1px solid #767676; }
+.border_darkgrey { border:1px solid #484848; }
+.border_lightgrey { border:1px solid #C1C1C1; }
+.screenshot { border:1px solid #636363; }
+.edit { color:#70B9ED !important; }
+.delete { color:#F00 !important; }
+.active { color:#6FEC9E !important; }
+.inactive { color:#f00 !important; }
+
+/* Tag Cloud - Used anywhere a tag cloud exists (common) */
+.cloud { text-align:center; }
+.cloud a { padding:3px 4px 5px 4px; }
+.cloud .tag0 { font-size: 11px; color:#ffeaa1; }
+.cloud .tag1 { font-size: 12px; color:#ffe39d; }
+.cloud .tag2 { font-size: 13px; color:#ffd993; }
+.cloud .tag3 { font-size: 14px; color:#ffce83; }
+.cloud .tag4 { font-size: 15px; color:#ffc270; }
+.cloud .tag5 { font-size: 16px; color:#ffb75d; }
+.cloud .tag6 { font-size: 17px; color:#ffa944; }
+.cloud .tag7 { font-size: 18px; color:#ff9e2f; }
+.cloud .tag8 { font-size: 19px; color:#ff931b; }
+.cloud .tag9 { font-size: 20px; color:#ff8a0b; }
+
+#secondbase { background-image:url(frame_base_background_r3.jpg); background-repeat:no-repeat; background-position:50% 0px; }
+#secondbase .sbtopborder { background:transparent url(frame_header_ads_border.jpg) no-repeat 50% 0px; }
+
+#axTopLeaves { background:#000; }
+#axTopLeaves #userarea .loginbarinput { border:1px solid #666; background-color:#000; color:#fff; }
+#axTopLeaves #userarea .loginbarinput:hover,#origin #secondaryBar #userdata input.text:hover { border:1px solid #6191E2; }
+#axTopLeaves #showQGLpanela { background:transparent url(frame_qgj_button_v2.gif) no-repeat bottom left; }
+#axTopLeaves #showQGLpanela:hover { background-position:top left; }
+
+#axTopLeaves #showQGLRandonPanela { background:transparent url('frame_qgj_random_button_v1.gif') no-repeat bottom left; }
+#axTopLeaves #showQGLRandonPanela:hover { background-position:top left; }
+
+
+#axTopLeaves .uidels a { padding-left:16px; background:transparent url(item_icon_blank.gif) no-repeat center left; padding-right:7px; }
+#axTopLeaves .uidels .profile,#axTopLeaves .uidels .urmclink { background-image:url(item_icon_profile.gif); }
+#axTopLeaves .uidels .favgames { background-image:url(item_icon_favgames.gif); }
+#axTopLeaves .uidels .admintools,#axTopLeaves .uidels .reportst{ background-image:url(item_icon_mail_new.gif); }
+#axTopLeaves .uidels .logout { background-image:url(item_icon_logout.gif); }
+
+/* Header - Newsticker,login,logo,ad,stats,navigation, opened by header.cfm */
+#origin #label #stats .label, #origin #label #stats .label a:link,#origin #label #stats .label a:visited  { color:#628AAF !important; }
+#origin #label #stats .label a:hover { color:#7db1e0 !important; text-decoration:none; }
+#origin #label #stats .value { color:#85ACD0; font-weight:bold; }
+#origin #label #datetime { display:none; font-size:10px; color:#7077C6; }
+#origin #label #hepro .insidediv { border:1px solid #444444; background-color:#000; }
+#origin #nav { background:transparent; }
+#origin #nav a { background:transparent url(frame_r3_nav_tabs.gif) no-repeat bottom right; }
+#origin #nav a:link,#origin #nav a:visited { color:#fff; }
+#origin #nav a.current { background:transparent url(frame_r3_nav_tabs_c.gif) no-repeat top right !important; }
+#origin #nav a:hover { background:transparent url(frame_r3_nav_tabs.gif) no-repeat top right !important; text-decoration:none !important; color:#fff; }
+#origin #nav a.home span { background:transparent url(frame_r3_nav_home.gif) no-repeat top left; }
+#origin #nav .navspacer { background:transparent url(frame_r3_nav_bg.gif) repeat-x top left; }
+#origin #nav .navtopcorner { background:transparent url(frame_r3_nav_end.gif) no-repeat top right; }
+
+
+/* Game Quick Jump */
+#gqj { background:transparent; }
+#gqj .tabs { background-image:url(item_gqj_header.gif); }
+#gqj .tabs a:hover { background:transparent url(item_gqj_header.gif) no-repeat 0px -25px; }
+#gqj .tabs a.dv:hover { background-position:-70px -25px; }
+#gqj .tabs a.re:hover { background-position:-140px -25px; }
+#gqj .tabs a.x:hover { background-position:-210px -25px; }
+#gqj .output { background-color:#6C6C6C; border-left:1px solid #565656; }
+#gqj .output div { background:#22272e url() no-repeat top left; }
+#gqj .output p.dv { color:#E29A4D; }
+#gqj .output p.re { color:#5AADF0; }
+#gqj .gqjfoot { color:#FFF; background-image:url(item_gqj_footer.gif); }
+
+/* Footer - Bottom of page, opened by footer.cfm */
+#footer { color:#4C4C4C; background: transparent url(frame_r3_footer.gif) no-repeat top left; }
+#footer a:link,#footer a:visited { color:#628AAF; font-weight:bold; }
+#footer a:hover { color:#2EB0FF; text-decoration:none; font-weight:bold; }
+#footer .generationtime { color:#353535; }
+#footer .datetime { color:#4C4C4C; }
+#footer .search { font-weight:bold; color:#FFF; }
+#footer .notmember { color:#FFF; }
+
+/* Body - The actual page area, opened by page_open.cfm */
+#body { background:#000; } /* 202020 */
+
+#body .prebody { background:#151515 url(frame_bodyTop.gif) repeat-x top left; }
+#body .subbody { background:transparent url(frame_bodyTopLeft.gif) no-repeat top left; }
+#body .outerbody { background:transparent url(frame_bodyTopRight.gif) no-repeat top right; }
+#body .innerbody { background:transparent url(frame_bodyBottomLeft.gif) no-repeat bottom left; }
+#body .actualbody { background:transparent url(frame_bodyBottomRight.gif) no-repeat bottom right; }
+
+/* Section Headers - Introduction and common top to page sections, containing sub-section links (common) */
+#sectionHeader { background:#4d4b49 url(page_sectionOpen.jpg) no-repeat top left; border-bottom:1px solid #306893; }
+#sectionHeader span { background:transparent url(page_sectionClose.jpg) no-repeat top right; }
+#sectionHeader H1 { color:#fff !important; }
+#sectionHeader H1 a:link,#sectionHeader H1 a:visited { color:#fff !important; }
+#sectionHeader H1 .current,#sectionHeader H1 a.current { color:#70B9ED !important; }
+#sectionHeader H1 .highlight { color:#90FF8B !important; }
+#sectionHeader ul li.current { background:#333433 url(panel_innertab_left_sel.gif) no-repeat top left; }
+#sectionHeader ul li.current a { background:transparent url(panel_innertab_right_sel.gif) no-repeat top right; color:#fff; }
+#sectionHeader .panes a { background:transparent url(item_icon_all.gif) no-repeat top left; }
+#sectionHeader .panes a.current { color:#70B9ED; }
+#sectionHeader .panes hr { border-top:1px solid #625f5d; }
+#sectionHeader a.delete { color:#FF3F3F !important; }
+#sectionHeader h2 { color:#bebebe; }
+#sectionHeader h2 a:link,#sectionHeader h2 a:visited { color:#9dcced; text-decoration:underline; }
+
+/* Panel - A trusty workhorse, opened by section_open.cfm */
+.panel,.panel.panelPrimary .panel { background:#252525 url(panel_bottomLeft.gif) no-repeat bottom left; color:#fff; }
+.panel .panel_inner,.panel.panelPrimary .panel .panel_inner { background:transparent url(panel_bottomRight.gif) no-repeat bottom right; }
+.panel .panelTitleBar,.panel.panelPrimary .panel .panelTitleBar { background:transparent url(panel_topLeft.gif) no-repeat top left; }
+.panel .panelTitleBar h3,.panel.panelPrimary .panel .panelTitleBar h3 { color:#D9DEF2; }
+.panel .panelTitleBar h3 a,.panel.panelPrimary .panel .panelTitleBar h3 a { color:#D9DEF2; }
+.panel .panelOuterBody,.panel.panelPrimary .panel .panelOuterBody { background:transparent url(panel_topRight.gif) no-repeat top right; background-position:top right; color:#fff; }
+.panel.panelAlt { background:#000 /*url(panel_alt_bottomLeft.gif) no-repeat bottom left*/; }
+
+.panel.panelAlt .panel_inner { background-image:none; /* background-image:url(panel_alt_bottomRight.gif); */ }
+.panel.panelAlt .panelTitleBar { background-image:none; /* background-image:url(panel_alt_topLeft.gif); */ }
+.panel.panelAlt .panelOuterBody { background-image:none; /* background-image:url(panel_alt_topRight.gif); */ }
+
+.panel.panelPrimary { background:transparent; color:#fff; }
+.panel.panelPrimary .panel_inner { background-image:none; color:#fff; }
+.panel.panelPrimary .panelTitleBar { background-image:none; }
+.panel.panelPrimary .panelOuterBody { background-image:none; }
+.panel.panelPrimary .panelBody { color:#fff; }
+.panel.panelTight .panelBody { background:transparent url(panel_topLeft.gif) no-repeat top left; }
+.panel.panelAlt.panelTight .panelBody { background-image:none; /* background-image:url(panel_alt_topLeft.gif) !important;  */  }
+.panel.panelPrimary.panelOuterTab .panelBody { background-image:none; }
+.panel.panelClear,.panel.panelPrimary .panel.panelClear, .panel.moonclear { background:transparent !important; }
+.panel.panelClear .panel_inner,.panel.panelPrimary .panel.panelClear .panel_inner, .panel.moonclear .panel_inner { background-image:none !important; }
+.panel.panelClear .panelTitleBar,.panel.panelPrimary .panel.panelClear .panelTitleBar, .panel.moonclear .panelTitleBar { background-image:none !important; }
+.panel.panelClear .panelOuterBody,.panel.panelPrimary .panel.panelClear .panelOuterBody, .panel.moonclear .panelOuterBody { background-image:none !important; }
+/*
+.panel.panelAlt.panelFirst .panelTitleBar { background-image:url(panel_alt_topLeft_first.gif); }
+.panel.panelAlt.panelFirst  .panelOuterBody { background-image:url(panel_alt_topRight_first.gif); }
+*/
+
+.panel.pollpanel { background:#151515 url(item_pollbox_bottomLeft.gif) no-repeat bottom left; }
+.panel.pollpanel .panel_inner { background:transparent url(item_pollbox_bottomRight.gif) no-repeat bottom right; }
+.panel.pollpanel .panelTitleBar { background:transparent url(item_pollbox_topLeft.gif) no-repeat top left; }
+.panel.pollpanel .panelOuterBody { background:transparent url(item_pollbox_topRight.gif) no-repeat top right; }
+
+/* Page Jumper - Common pagination links, tabled for browser compatibility (common) */
+.pageJumpList { background:#252525 url(item_pgl_bottomRight.gif) no-repeat bottom right; font-size:1.1em; font-weight:bold; }
+.pageJumpList td.label { color:#a8a8a8; background:transparent url(item_pgl_topLeft.gif) no-repeat top left; }
+.pageJumpList td.pfirst { background:transparent url(item_pgl_topLeft.gif) no-repeat top left !important; }
+.pageJumpList td.labelnone { color:#a8a8a8; }
+.pageJumpList a:link { color:#70B9ED; }
+.pageJumpList a:visited { color:#62A3D0; }
+.pageJumpList a:hover { color:#FFF; }
+.pageJumpList a.current { font-weight:bold; color:#a8a8a8; }
+
+.newsroom .pageJumpList { background:#252525 url(frame_bodyBottomRight.gif) no-repeat bottom right; }
+.newsroom .pageJumpList td.label { background:transparent url(frame_bodyTopLeft.gif) no-repeat top left; }
+.newsroom .pageJumpList td.pfirst { background:transparent url(frame_bodyTopLeft.gif) no-repeat top left !important; }
+
+/*
+.videolist .pageJumpList,.userphotos .pageJumpList,.guilds .pageJumpList { background-image: url(item_pgl_bottomRight.gif); font-size:1.1em; font-weight:bold; }
+.videolist .pageJumpList td.label,.videolist .pageJumpList td.pfirst,
+.userphotos .pageJumpList td.label,.userphotos .pageJumpList td.pfirst,
+.guilds .pageJumpList td.label,.guilds .pageJumpList td.pfirst { background-image: url(item_pgl_topLeft.gif); }
+*/
+
+/* Rank Stars - (common) */
+.rankstars8 { background:transparent url(item_rank_base_8.gif) no-repeat top left; }
+.rankstars8 .got { background:transparent url(item_rank_stars_8.gif) no-repeat top left; }
+.rankstars32 { background:transparent url(item_rank_base_32.png) no-repeat top left; }
+.rankstars32 .got { background:transparent url(item_rank_stars_32.png) no-repeat top left; }
+
+/* Social Links */
+.soci a { background-image:url(item_news_sicons.gif); text-indent:999px; font-size:40px; text-decoration:none; color:#000; }
+
+
+/* Simple Section - Common subpage section (common) */
+a.buddyAdd:link,a.buddyAdd:visited,a.isBuddy { background:transparent url(item_buddy_add.gif) no-repeat bottom left; }
+
+/* Simple Section - Common subpage section (common) */
+.simpleSec { background:#0a0a0a url(panel_bottomRight_ss.gif) no-repeat bottom right; }
+.simpleSec .ssOne { background:transparent url(panel_topLeft_ss.gif) no-repeat top left; }
+.simpleSec .ssTwo { background:transparent url(panel_topRight_ss.gif) no-repeat top right; }
+.simpleSec .ssThr { background:transparent url(panel_bottomLeft_ss.gif) no-repeat bottom left; }
+
+/* Button - Static button (common) */
+.bttn.outside { background:#414141 url(panel_alt_topLeft_ob.gif) no-repeat top left !important; }
+.bttn.outside span { background:transparent url(panel_alt_bottomRight_ob.gif) no-repeat bottom right !important; }
+.bttn.inside { background:transparent url(panel_tab.gif) no-repeat top left !important; }
+.bttn.inside span { background-image:url(panel_tab_bottom.gif); background-position:bottom right; }
+
+/* Comments - Common comment input (common) */
+.commenters .com_avatar { background:transparent url(item_commentCarrot.gif) no-repeat 38px 9px; }
+.commenters div.back { background:#323232; }
+.commenters div.top { background:transparent url(frame_commenterTop.gif) no-repeat top left; }
+.commenters div.bottom { background:transparent url(frame_commenterBottom.gif) no-repeat bottom left; }
+.commenters.dark div.back { background:#323232 !important; }
+.commenters.dark div.top { background-image:url(frame_commenterTop_dark.gif) !important; }
+.commenters.dark div.bottom { background-image:url(frame_commenterBottom_dark.gif) !important; }
+.commenters.dark .com_avatar { background-image: url(item_commentCarrot_dark.gif) !important; }
+.commenters textarea { border:1px solid #858279; background-color:#000; color:#fff; }
+.commenters .com_when { color:#B2AB9F; }
+.commenters .com_admin .com_edit { color:#78C6FF !important; }
+.commenters .com_admin .com_delete,.commenters .com_delete { color:#f00 !important; }
+.commenters .com_admin .com_actions { color:#FFC34C !important; }
+.commenters.add iframe { border:1px solid #858279 !important; }
+.commenters.add .bbml textarea { background-color:#000 !important; color:#fff !important; }
+
+.cmnt2 { background:transparent url(ccar.gif) no-repeat 0px 0px; }
+.cmnt2 .cin { background-color:#242424; border:1px solid #5a5a5a; -moz-border-radius:4px; -webkit-border-radius:4px; }
+.cmnt2 .unmae { color:#70B9ED; border-bottom:1px solid #5a5a5a; background-color:#3a3a3a; }
+.cmnt2.staff .cin { background-color:#1a1a24; border:1px solid #36435a; }
+.cmnt2.staff .unmae { border-bottom:1px solid #36435a; background-color:#2a2a36; }
+.cmnt2.staff .unmae a:link,.cmnt2.staff .unmae a:visited { color:#70B9ED !important; }
+.cmnt2 .unmae span { color:#c6c6c6; }
+.cmnt2 .constrain .quote { color:#CECCCA !important; }
+.cmnt2 .constrain blockquote { border:1px solid #6C6C6C; background-color:#262626; }
+.cmnt2 .constrain blockquote blockquote { background-color:#363636; }
+.cmnt2 .constrain blockquote blockquote blockquote { background-color:#464646;  }
+.cmnt2 .constrain blockquote blockquote blockquote blockquote { background-color:#565656;  }
+.cmnt2 .constrain blockquote blockquote blockquote blockquote blockquote { background-color:#666666; }
+.cmnt2 .constrain blockquote blockquote blockquote blockquote blockquote blockquote { background-color:#767676; }
+.cmnt2 .constrain blockquote blockquote blockquote blockquote blockquote blockquote blockquote { background-color:#868686; }
+.cmnt2 .uwhen { color:#838383; }
+.cmnt2 .comuin,.cmnt2 .compin { color:#cbcbcb; }
+.cmnt2 .cfreply,.cmnt2 .cfquote,.cmnt2 .cfedit,.cmnt2 .cfdelete { background-position:bottom left; background-repeat:no-repeat; }
+.cmnt2 .cfreply { background-image:url(item_cmnt2_reply.gif); }
+.cmnt2 .cfquote { background-image:url(item_cmnt2_quote.gif); }
+.cmnt2 .cfedit { background-image:url(item_cmnt2_edit.gif); }
+.cmnt2 .cfdelete { background-image:url(item_cmnt2_delete.gif); }
+.cmnt2 a.cfreply:hover, .cmnt2 a.cfquote:hover, .cmnt2 a.cfedit:hover, .cmnt2 a.cfdelete:hover { background-position:top left; }
+
+.ccfbox { background:#282828 url(item_ccbox_tb.gif) repeat-x top left; }
+.ccfbox .ccfboxo { background:transparent url(item_ccbox_tl.gif) no-repeat top left; }
+.ccfbox .ccfboxi { background:transparent url(item_ccbox_tr.gif) no-repeat top right; color:#70B9ED; }
+.ccfbox .ccfboxi a:link,.ccfbox .ccfboxi a:visited { color:#70B9ED; }
+.ccfboxcon { border:1px solid #282828; border-top:0px; background-color:#121212; }
+
+/* Tables - Common table look (common) */
+.tabicular th { color:#FFF; }
+.tabicular th a:link,.tabicular th a:visited { color:00B8FF; }
+.tabicular th a:hover { color:#fff; }
+.tabicular .head th { color:#fff; background:#585858 url(page_sectionOpen.jpg) no-repeat top left; }
+.tabicular .head th span { background:transparent url(page_sectionOpen.jpg) no-repeat top right; }
+.tabicular .label th { border-bottom:1px solid #252525; background:#585858 url(page_sectionOpen.jpg) no-repeat -7px -30px; }
+.tabicular .simple th { border-bottom:1px solid #252525; }
+.tabicular td { border-bottom:1px solid #252525; color:#fff; }
+.tabicular tr.alter td { background-color:#4A4843; }
+.tabicular tr.norm td { background-color:#414141; }
+.tabicular tr.hover td { background-color:#55524C; }
+.tabicular .feet { background:#000 url(frame_bodyBottomLeft.gif) no-repeat bottom left; }
+.tabicular .feet span { background:transparent url(frame_bodyBottomRight.gif) no-repeat bottom right; }
+
+/* Home - Homepage, opened by inc_home.cfm */
+.home .small { color:#959595; }
+.home .small a,.home a.less { color:#D0D0D0; text-decoration:none; }
+.home .small a:hover,.home a.less:hover { color:#FFF; text-decoration:underline; }
+.home .hmemm { background:transparent url(item_home_featback.gif) no-repeat top left; }
+.featjump a { opacity:0.6; filter:alpha(opacity:60); }
+.featjump a.current,.featjump a:hover { opacity:1.0; filter:alpha(opacity:100); }
+.home .hmemm .artiarea div span { color:#9A9A9A; }
+.home .hmemm .artiarea div span i { color:#BABAAD; }
+.home .hmemm .artiarea div a { background-position: left center; }
+.home .hmemm .artiarea .lates a { background-image: url(item_icon_all.gif); }
+.home .hmemm .artiarea .annoucemen a { background-image: url(item_icon_announcement.gif); }
+.home .hmemm .artiarea .interv a { background-image: url(item_icon_interview.gif); }
+.home .hmemm .artiarea .previe a { background-image: url(item_icon_all.gif); }
+.home .hmemm .artiarea .revie a { background-image: url(item_icon_search.gif); }
+.home .hmemm .artiarea .podcas a { background-image: url(item_icon_audio.gif); }
+.home .hmemm .artiarea .editoria a { background-image: url(item_icon_all.gif); }
+.home .hmemm .artiarea .medi a { background-image: url(item_icon_media.gif); }
+.home .hmemm .artiarea .newslette a { background-image: url(item_icon_newsletter.gif); }
+.home .hmemm .artiarea .colum a { background-image: url(item_icon_column.gif); }
+.home .hmemm .artiarea .contes a { background-image: url(item_icon_all.gif); }
+.home .hmemm .artiarea .offe a { background-image: url(item_icon_announcement.gif); }
+.home .hmemm .artiarea .hardwar a { background-image: url(item_icon_all.gif); }
+.home .hmemm .artiarea .pol a { background-image: url(item_icon_polls.gif); }
+.home .hmemm .artiarea .fictio a { background-image: url(item_icon_all.gif); }
+.home .hmemm .artiarea .devjou a { background-image: url(item_icon_all.gif); }
+.home .hmemm .artiarea .progres a { background-image: url(item_icon_progress.gif); }
+.home .hmemm .artiarea .awar a { background-image: url(item_icon_award.gif); }
+.home .hmemm .artiarea .playe a { background-image: url(item_icon_interview.gif); }
+.home .hmemm .artiarea .even a { background-image: url(item_icon_all.gif); }
+.home .hmemm .artiarea .glanc a { background-image: url(item_icon_all.gif); }
+
+.home h2.hmeSub { color:#70B9ED; }
+.home h2.hmeSub a:link,.home h2.hmeSub a:visited { color:#70B9ED; }
+.home h2.hmeSub a:hover { color:#F00; }
+
+.home .recentposts td,.home .recentposts table { border-top:1px solid #151515; }
+.home .recentposts .what { color:#9F9F9F; }
+
+.home .contest.major .count { background:transparent url(panel_tab.gif) no-repeat top right; color:#70B9ED; }
+.home .contest img { border-top:1px solid #282828; }
+
+.home .latestnews .ccfboxcon a u { color:#D0D0D0; text-decoration:none; }
+.home .latestnews .ccfboxcon a:hover { text-decoration:none; }
+.home .latestnews .ccfboxcon a:hover u { color:#FFF; }
+.home .latestnews .ccfboxcon a.flink { background:transparent; font-weight:bold; }
+.home .latestnews .con { padding-bottom:4px; background-image:url(item_home_subpanel_b.gif) !important; background-position:bottom left; }
+.home .latestnews .fitem { border-top:1px solid #282828; border-bottom:1px solid #282828; }
+
+.home .ranhumor .ccfboxcon { border-top:1px solid #282828; }
+
+.home .ratings .bar { background-image:url(item_bar_base.gif); }
+.home .ratings .bar span.rating { background-image:url(item_bar_rate.gif); }
+.home .ratings .bar span.beta { background-image:url(item_bar_beta.gif); }
+.home .ratings .bar span.hype { background-image:url(item_bar_hype.gif); }
+.home .ratings .discl { color:#BFBFBF; }
+.home .ratings .buttons span { background-image:url(panel_tab_bottom.gif); background-position:top right; }
+
+.home .bloggers .hbsecint {  background:#282828; }
+.home .bloggers .hbsecint .title { color:#70B9ED; }
+.home .bloggers h2 { color:#fff; }
+.home .bloggers .author { color:#9A9A9A; }
+.home .bloggers .bentry { border-top:1px solid #282828; }
+
+.home .TabbedPanelsTabGroup { background-image:none; background-color:transparent; }
+.home .TabbedPanelsTab { font-family:Verdana,Arial,Helvetica,sans-serif; }
+.home .TabbedPanelsTab,.home .TabbedPanelsTabSelected { color:#D0D0E6; }
+.home .TabbedPanelsTabSelected { color:#FFF; }
+.home .ratings .TabbedPanelsTabGroup li { background:#141414 url(item_home_ratetab_rf.gif) no-repeat top right; }
+.home .ratings li.TabbedPanelsTabSelected { background:#282828 url(item_home_ratetab_r.gif) no-repeat top right; color:#70B9ED !important; }
+.home .ratings .rgbox { background:#101010 /*url(item_hoem_ratesbg.jpg) no-repeat top left*/; border:1px solid #282828; border-top:0px; }
+.home .ratings .buttons { background:#282828 url(item_home_rateintab_r.gif) no-repeat top right; }
+.home .ratings .buttons a { background-color:#282828; color:#5a5a5a !important; }
+.home .ratings .buttons .current { background:#101010 url(item_hoem_ratesmtab.gif) no-repeat top right; color:#70B9ED !important; }
+.home .ratings .buttons .current span { background:transparent url(item_hoem_ratesmtabl.gif) no-repeat top left; }
+.home .ratings .bar span.beta { color:#dae93f; }
+.home .ratings .bar span.hype { color:#ffbf7b; }
+.home .ratings .bar span.rating { color:#77e3f9; }
+.home .ratings .gvscore { color:#fff; }
+.home .ratings .gvi { border-bottom:1px solid #282828; }
+.home .ratings .gvi .gviplace {color:#bcbcbc;  }
+.home .ratings .gvi i { color:#fff; }
+.home .ratings .gvhitfirst { color:#fff; }
+.home .ratings .first .gvbadge { background-image: url(item_first_game.gif); }
+.home .ratings .first.hy .gvbadge { background-image: url(item_first_gameh.gif); }
+
+.home .userphotos .browser { border-top:1px solid #282828; }
+.home .userphotos .browser a { border:1px solid #272727; }
+.home .userphotos .browser a img { border:1px solid #6C6C6C; }
+.home .userphotos .browser a:hover { border:1px solid #70B9ED; }
+
+.home .upcomgame a:hover { color:#FFFFFF; }
+.home .upcomgame .date { color:#94B9E2; }
+
+.home .hmcolumns .entry { width:290px; border-top:1px solid #282828; }
+.home .hmcolumns .entry .readmore { color:#70B9ED; }
+.home .hmcolumns .entry .desc { color:#bcbcbc; }
+
+.home .exclusiveVideos .introhmr { background:transparent url(item_home_subpanel_b.gif) no-repeat top left; }
+.home .exclusiveVideos .introhmr .title { color:#70B9ED; }
+.home .exclusiveVideos .viddata { background:transparent url(item_home_videobg.gif) no-repeat top left; border-top:1px solid #282828; }
+.home .exclusiveVideos .titl b { color:#D0D0D0; }
+.home .exclusiveVideos .over { color:#9F9F9F !important; }
+.home .exclusiveVideos .over .views { background:transparent url(item_home_eye.gif) no-repeat center left; display:block; min-height:10px; padding-left:12px; color:#9F9F9F !important; }
+.home .exclusiveVideos .over .comas { background:transparent url(item_home_coma.gif) no-repeat center left; display:block; min-height:10px; padding-left:12px; color:#9F9F9F !important; }
+.home .exclusiveVideos .vrow a:hover .titl { color:#fff; }
+.home .exclusiveVideos .vrow a:hover .play { background:transparent url(item_home_vidhover.gif) no-repeat 30px 14px; }
+
+.home a.morecomics:link,.home a.morecomics:visited { background:transparent url(item_home_morecomics.gif) no-repeat bottom left; }
+.home a.morepolls:link,.home a.morepolls:visited { background:transparent url(item_home_morepolls.gif) no-repeat bottom left; }
+.home a.moregames2:link,.home a.moregames2:visited { background:transparent url(item_home_moregames.gif) no-repeat bottom left; }
+.home .ratehmebx a.moregames:link,.home .ratehmebx a.moregames:visited { background:transparent url(item_home_moregames.gif) no-repeat bottom left; }
+.home a.moreblogs:link,.home a.moreblogs:visited { background:transparent url(item_home_moreblogs.gif) no-repeat bottom left; }
+.home a.moreimg:link,.home a.moreimg:visited { background:transparent url(item_home_moreimg.gif) no-repeat bottom left; }
+.home a.morecolumns:link,.home a.morecolumns:visited { background:transparent url(item_home_morecolumns.gif) no-repeat bottom left; }
+.home a.morevids:link,.home a.morevids:visited { background:transparent url(item_home_morevid.gif) no-repeat bottom left;  }
+.home .hmemm a.morefeat:link,.home .hmemm a.morefeat:visited { background:transparent url(item_home_morefeat.gif) no-repeat bottom left; }
+.home a.morenews:link,.home a.morenews:visited { background:transparent url(item_home_morenews.gif) no-repeat bottom left; }
+.home a.moreposts:link,.home a.moreposts:visited { background:transparent url(item_home_moreposts.gif) no-repeat bottom left; }
+.home a.moregomnews:link,.home a.moregomnews:visited { background:transparent url(item_home_moregom.gif) no-repeat bottom left; }
+.home a.morefpsnews:link,.home a.morefpsnews:visited { background:transparent url(item_home_morefps.gif) no-repeat bottom left; }
+.home a.moreoffers:link,.home a.moreoffers:visited { background:transparent url(item_home_moreoffers.gif) no-repeat bottom left; }
+
+.featarea .data { color:#cccccc; }
+.featarea .data .title { color:#fff; }
+.featarea .card:hover { color:#70B9ED; text-decoration:none !important; }
+.featarea .card:hover .data { color:#70B9ED; }
+
+.home .hmemm a.morefeat:hover,.home a.morenews:hover,.home a.moreposts:hover,
+.home a.morecomics:hover,.home a.morepolls:hover,.home a.moregames2:hover,
+.home a.moreblogs:hover,.home a.morevids:hover,
+.home a.moreimg:hover,.home a.morecolumns:hover,.home a.moreoffers:hover,
+.home .ratehmebx a.moregames:hover,.home a.moregomnews:hover,
+.home a.morefpsnews:hover { background-position:top left; }
+
+.ccfboxi .small a:link,.ccfboxi .small a:visited { color:#cbcbcb !important; }
+
+/* Newsroom - Opened by newsroom.cfm */
+.newsroom .primary .actualbody { background:#000 !important; }
+.newsroom .nrin { background-image:url(frame_bodyBottomRight.gif); background-position:bottom right; }
+.newsroom .nrou { background-image:url(frame_bodyBottomLeft.gif); background-position:bottom left; }
+.newsroom .nrup { background-image:url(frame_bodyTopRight_second.gif); background-position:top right; }
+.newsroom #sectionHeader .newsfilter { color:#fff; }
+.newsroom #sectionHeader .panes .enter { background-image: url(item_icon_announcement.gif); }
+.newsroom .newsitem .icon { background:#151515; }
+.newsroom .newsitem .icon .nrdn { background-image:url(frame_bodyBottomLeft.gif); background-position:bottom left; }
+.newsroom .newsitem .icon .nrot { background-image:url(frame_bodyTopLeft_second.gif); background-position:top left; }
+.newsroom .newsitem .icon .admin { background:transparent; }
+.newsroom .newsitem .icon .newsaddgame a { background:transparent url(item_global_addgame.gif) no-repeat bottom left; }
+.newsroom .newsitem .body { background:#151515; }
+.newsroom .newsitem .body .info H1 { color:#70B9ED; }
+.newsroom .newsitem .body .info H1 a:link,.newsroom .newsitem .body .info H1 a:visited { color:#70B9ED !important; text-decoration:underline; }
+.newsroom .newsitem .body .info H1 a:hover { color:#fff !important; }
+.newsroom .newsitem .body .info H1.newsdisabled { color:#FF0000; }
+.newsroom .newsitem .body .info H3 { color:#BDBDBD; }
+.newsroom .newsitem.first .body .nrup { background:transparent; }
+.newsroom .morenews h3,.newsroom .morenews .newdate { color:#BDBDBD; }
+.newsroom .moreitem h1 { color:#70B9ED; }
+.newsroom .moreitem h3 { color:#A4A4A4; }
+.newsroom .moreitem h3 a:link, .newsroom .moreitem h3 a:visited { color:#ADADAD; }
+.newsroom .moreitem a:hover { color:#F00; }
+.newsroom .subscribe .insub { background:transparent url(item_news_subscribe_r2.jpg) no-repeat center 0px; }
+.newsroom .subscribe .large { color:#70B9ED; }
+.newsroom .nonews { background:#000 url(frame_bodyTop.gif) repeat-x top left; }
+
+.newsroom .newsTips { border:1px solid #282828; }
+.newsroom .newsTips h2 { color:#70B9ED; }
+
+/* News Posts, (common) */
+	.news_newspost div table { background-color:#252525; border:1px solid #313131; }
+	.news_newspost div table tr { background-color:#252525; }
+	.news_newspost div table tr td { background-color:#252525; }
+.news_newspost .quote, .news_newspost blockquote { border:1px solid #313131; background-color:#252525; }
+
+/* Features - Listing of all on-site features, opened on features.cfm */
+.feetures .list .bar,.feetures .polldata .bar { background-image:url(item_bar_base.gif); background-repeat:no-repeat; }
+.feetures .list .bar span.rating,.feetures .polldata .bar span.rating { background-image:url(item_bar_rate.gif); background-repeat:no-repeat; }
+.feetures .list .edit { color:#70B9ED; }
+.feetures .list span.active { color:#6FEC9E; }
+.feetures .list span.inactive { color:#F00; }
+
+.feetures .collist .entry { border-top:1px solid #7b7b7b; }
+.feetures .collist .entry.first { border:0px !important; }
+.feetures .collist .listposts { background:transparent url(item_features_morearticles.gif) no-repeat bottom left; }
+.feetures .collist .listposts:hover,.feetures .collist .entry:hover .listposts { background-position:top left; }
+.feetures .collist .entry:hover a.title { color:#fff; }
+
+.feetures .vlist .details .title a { color:#70B9ED; }
+.feetures .vlist .details .info { color:#A4A4A4; }
+
+.feetures .entry .title,.feetures .activepoll .title { color:#70B9ED; }
+.feetures .entry a.title:hover,.feetures .activepoll a.title:hover { color:#fff; }
+.feetures .entry h2 { color:#9F9F9F; }
+.feetures .entry span { color:#9F9F9F; }
+.feetures .entry span a:link, .feetures .entry span a:visited { color:#B6B6B6; }
+.feetures .entry span a:hover { color:#F00; }
+.feetures .content .header { background:#010b15 url(item_feature_header.jpg) repeat-x top left; border-bottom:1px solid #265b90 !important; }
+.feetures .content .header h2 { color:#FFF !important; }
+.feetures .activepoll .status,.feetures .contestopen .last { color:#70B9ED; }
+.feetures .closedpoll .status { color:#9F9F9F; }
+.feetures .navie { background:#000; }
+.feetures .navie a { border-top:1px solid #282828; background:transparent url(item_icon_all.gif) no-repeat 4px center; text-align:left; padding-right:19px; }
+.feetures .navie a.current { color:#70B9ED; }
+.feetures .navie a.new,.feetures .navie a.fstlink { border-top:0px; }
+.feetures .navie a.new { color:#F00; }
+.feetures .navie .lates { background-image: url(item_icon_all.gif); }
+.feetures .navie .annoucemen { background-image: url(item_icon_announcement.gif); }
+.feetures .navie .interv { background-image: url(item_icon_interview.gif); }
+.feetures .navie .previe { background-image: url(item_icon_all.gif); }
+.feetures .navie .revie { background-image: url(item_icon_search.gif); }
+.feetures .navie .podcas { background-image: url(item_icon_audio.gif); }
+.feetures .navie .editoria { background-image: url(item_icon_all.gif); }
+.feetures .navie .medi { background-image: url(item_icon_media.gif); }
+.feetures .navie .newslette { background-image: url(item_icon_newsletter.gif); }
+.feetures .navie .colum { background-image: url(item_icon_column.gif); }
+.feetures .navie .contes { background-image: url(item_icon_all.gif); }
+.feetures .navie .offe { background-image: url(item_icon_announcement.gif); }
+.feetures .navie .hardwar { background-image: url(item_icon_all.gif); }
+.feetures .navie .pol { background-image: url(item_icon_polls.gif); }
+.feetures .navie .fictio { background-image: url(item_icon_all.gif); }
+.feetures .navie .devjou { background-image: url(item_icon_all.gif); }
+.feetures .navie .progres { background-image: url(item_icon_progress.gif); }
+.feetures .navie .awar { background-image: url(item_icon_award.gif); }
+.feetures .navie .playe { background-image: url(item_icon_interview.gif); }
+.feetures .navie .even { background-image: url(item_icon_all.gif); }
+.feetures .navie .glanc { background-image: url(item_icon_all.gif); }
+
+.showfeat .sfprifr { background:transparent url(item_gv_vsep.gif) repeat-y top left; }
+
+/* Gamelist - Listing of all on-site games, opened by inc_gamelist_overview.cfm */
+.gamelist .midad, .gamelist .lowad { /* background-color:#2A2A2A; */ }
+.gamelist .bar { background-image:url(item_bar_base.gif); }
+.gamelist .bar span.rating { background-image:url(item_bar_rate.gif); }
+.gamelist .bar span.hype { background-image:url(item_bar_hype.gif); }
+.gamelist .bar span.beta { background-image:url(item_bar_beta.gif); }
+.gamelist .value.rating { color:#5AADF0; }
+.gamelist .value.hype { color:#E29A4D; }
+.gamelist .value.beta { color:#E5F182; }
+.gamelist .uk { color:#4e5157; }
+.gamelist #gamelistFilters th, .gamelist .admin th,.gamelist #gamelistFilters table td.section { border-bottom:1px solid #6C6C6C; }
+.gamelist #gamelistFilters select { border:1px solid #6C6C6C; }
+.gamelist #gamelistFilters table.filters span.note { background-image:none; }
+.gamelist .customFeedback .notice { background:transparent url('item_notice_alert.gif') no-repeat left center; }
+.gamelist .customFeedback .action { background:transparent url('item_notice_save.gif') no-repeat left center; }
+.gamelist .gameSubs h2 { color:#70B9ED; }
+.gamelist .gameSubs i { color:#9A9A9A; }
+.gamelist .gameSubs .mesg,.gamelist .gameSubs .send { border:1px solid #6C6C6C; background-color:#000; color:#fff; }
+
+.gamelist .qsearchgl { background:transparent url('glqsearchibg.gif') no-repeat top left; }
+
+/* Gameview, detailed game pages, opened by inc_gametetails.cfm */
+.gvew2 .hdrtwo .iconarea { background:#000; }
+.gvew2 .hdrtwo .gvh_etrxtheme2 { position:absolute; top:0px; left:0px; width:798px; height:132px; background:transparent url('item_gvh_corners.gif') no-repeat top right; }
+.gvew2 .ninfo .buyIt { color:#FFF; background-color:#F00; }
+.gvew2 .ninfo a:hover.buyIt { text-decoration:none; background-color:#FF8A8A; }
+
+.gvew2 .navlist a.current:link,.gvew2 .navlist a.current:visited { color:#70B9ED; }
+.gvew2 .navlist { border-bottom:1px solid #424242; }
+
+.gvew2 .extrahr { z-index:98; }
+.gvew2 .gamegravitylink { background:transparent url('item_gamegravity_link.gif') no-repeat bottom left; }
+.ccforums a.signupandplayb:link,.ccforums a.signupandplayb:visited { background:transparent url('item_signupandplay_button_a.gif') no-repeat bottom left; }
+.gvew2 .gamegravitylink:hover,.ccforums a.signupandplayb:hover,.ccforums a.buyplaya:hover { background-position:top left; }
+.gvew2 .gvconblock { background:transparent url('item_gv_vsep.gif') repeat-y top left; }
+.gvew2 .signupandplayb,.ccforums .signupandplayb { background-image: url('item_signupandplay_button_a.gif'); }
+.preorderandplaya { background-image: url('item_preorderandplay_button_a.gif') !important; }
+.buyplaya { background-image: url('item_buynow_button_r0.gif') !important; }
+
+.gvew2 .extry { background:#1a1a1a; }
+.gvew2 .extry span.one { background-image:url('frame_bodySideTopRight.gif'); background-position:top right; }
+.gvew2 .extry .gameItems h1 { color:#FFF; }
+.gvew2 .extry .entry h2 { color:#8D8D83; }
+.gvew2 .extry a.link { color:#70B9ED; }
+.gvew2 .extry a.link:visited { color:#70B9ED; }
+.gvew2 .extry a.link:hover { color:#FFF; }
+
+.gvew2 .hymt .bar { background-image:url(item_bar_view_base.gif);}
+.gvew2 .hymt .bar span.ratingx { background-image:url(item_bar_view_rate.gif); }
+.gvew2 .hymt .bar span.hypex { background-image:url(item_bar_view_hype.gif); }
+.gvew2 .hymt .bar span.betax { background-image:url(item_bar_view_beta.gif); }
+.gvew2 .hymt .largebar { background-image:url(item_bar_view_l_base.gif);}
+.gvew2 .hymt .largebar span.ratingx { background-image:url(item_bar_view_l_rate.gif); }
+.gvew2 .hymt .largebar span.hypex { background-image:url(item_bar_view_l_hype.gif); }
+.gvew2 .hymt .largebar span.betax { background-image:url(item_bar_view_l_beta.gif); }
+
+.gvew2 #sectionHeader { background:#4d4b49 url(page_sectionOpen_gv.jpg) no-repeat top left; border-bottom:1px solid #306893; }
+.gvew2 #sectionHeader span { background:transparent url(page_sectionClose_gv.jpg) no-repeat top right; }
+.gvew2 .navgvtwo a { text-align:center; background:transparent url(frame_r3_nav_tabs_gv.gif) no-repeat -74px right; }
+.gvew2 .navgvtwo a.current { color:#00baff !important; background:transparent url(frame_r3_nav_tabs_c_gv.gif) no-repeat top right; }
+.gvew2 .navgvtwo a.overview span { background:transparent url(frame_r3_nav_home_gv.gif) no-repeat top left; }
+.gvew2 .navgvtwo a.last span { border-right:1px solid black; }
+
+/* Gameview - Common section styles + showFeatures */
+.gvew2 .news .listing .date,.gvew2 .resourcesf .listing .date,.gvew2 .reviews .listing .date,.gvew2 .features .list .date { color:#8D8D83; }
+.gvew2 .news .listing .date a:link, .gvew2 .news .listing .date a:visited,
+.gvew2 .features .list .date a:link, .gvew2 .features .list .date a:visited,
+.gvew2 .reviews .listing .date a:link, .gvew2 .reviews .listing .date a:visited { color:#AFAFA2; }
+.gvew2 .news .listing .date a:hover,.gvew2 .reviews .listing .date a:hover,.gvew2 .features .list .date a:hover { color:#FFF; }
+.gvew2 .overview .features .title h3,.gvew2 .features .list h2,
+.gvew2 .links h2,.gvew2 .news h2,.gvew2 .resourcesf h2,.gvew2 .reviews h2,
+.gvew2 .ratings h2,.gvew2 .screens h2,.gvew2 .videos .listing h2,.gvew2 .videos .player h3,
+.gvew2 .hype h2,.gvew2 .lore h2 { color:#70B9ED !important; }
+.gvew2 .screens .footer,.gvew2 .resourcesf .footer,.gvew2 .reviews .footer,.gvew2 .features .footer,.showfeat .footer { background:#0d2648; }
+
+.gvew2 .features .morepages,.showfeat .morepages { background:transparent url(frame_gameviewMorePages_bottomLeft.gif) no-repeat bottom left; }
+.gvew2 .features .morepages span,.showfeat .morepages span { background-image:url(frame_gameviewMorePages_bottomRight.gif); background-position:bottom right; }
+
+.gvew2 .screens .footer span span,.gvew2 .resourcesf .footer span span,.gvew2 .reviews .footer span span,.gvew2 .features .footer span span,.showfeat .footer span span { background:transparent; }
+.gvew2 .features .grapher,.gvew2 .features .actions,.gvew2 .features .more,.showfeat .grapher,.showfeat .actions,.showfeat .more { /*background-color:#000;*/ }
+.gvew2 .features .more h4,.showfeat .more h4 { color:#70B9ED; }
+.gvew2 .features .more .stuff,.showfeat .more .stuff { color:#8D8D83; }
+
+/* Gameview - Overview */
+.gvew2 .overview .features a:hover { color:#FFA200; }
+.gvew2 .overview .features .date { color:#8D8D83; padding-bottom:3px; display:block; }
+.gvew2 .overview .features a.link:hover { color:#FFF; }
+.gvew2 .overview .features h2 { color:#70B9ED; }
+.gvew2 .overview .screenshots .title h3 { color:#70B9ED; }
+.gvew2 .overview .screenshots img { border:1px solid #94b9e2; }
+.gvew2 .panel.moonclear .panelBody, .gvew2 .panel.moonclear .panelTitleBar .title { padding-left:0px; }
+.gvew2 .overview .posts img { left:0px; }
+.gvew2 .ninfo { color:#fff; }
+.gvew2 .ninfo .gvstats .statHigh { color:#4dd3ff; }
+
+/* Gameview - Features */
+.gvew2 .features .list .TabbedPanels { background-color:transparent; }
+.gvew2 .features .list .TabbedPanelsTabGroup li { color:#FFEAA1; background-image:url(panel_tab_gv.gif); background-position:top center; }
+.gvew2 .features .list .TabbedPanelsTabGroup li.first { background-position:top left; }
+.gvew2 .features .list .TabbedPanelsTabGroup li.last { background-image:url(panel_tab_bottom_gv.gif); background-position:bottom right; }
+.gvew2 .features .list .TabbedPanelsTabSelected a:link, .gvew2 .features .list .TabbedPanelsTabSelected { color:#70B9ED !important; }
+.gvew2 .features .list .TabbedPanelsContentGroup { background-color:transparent; }
+.gvew2 .features .updisclaimer { padding:6px 6px 5px 6px; color:#d2d2d2; font-style:italic; font-size:0.9em; }
+
+/* Gameview - Screenshots */
+.gvew2 .screens .tablist .imgl div { border:0px solid #272727; }
+.gvew2 .screens .tablist .imgl img { border:1px solid #6C6C6C; }
+.gvew2 .screens .list .imgl div { border:1px solid #272727; }
+.gvew2 .screens .list .imgl img { border:1px solid #6C6C6C; }
+.gvew2 .screens .rules li { background:transparent url(item_list_b.gif) no-repeat center left; }
+
+/* Gameview - Screenshot View */
+.gvew2 .screens .viewer #ssv_div { background-color:#000; }
+.gvew2 .screens .viewer .details { background:transparent; }
+.gvew2 .screens .viewer .details li { background:transparent; }
+.gvew2 .screens .viewer .details .date { color:#B8B39F; }
+.gvew2 .screens .viewer .details .place { color:#B8B39F; }
+.gvew2 .screens .viewer .rateit .bar { background-image:url(item_bar_base.gif); }
+.gvew2 .screens .viewer .rateit .bar span.rating { background-image:url(item_bar_rate.gif); }
+.gvew2 .screens .viewer .rateit .moreinfo { color:#B8B39F; }
+.gvew2 .screens .viewer .thumbnails ul li a:link img, .gvew2 .screens .viewer .thumbnails a:visited img { border:1px solid #B8B39F; }
+.gvew2 .screens .viewer .thumbnails ul li a:hover img { border:1px solid #FFFFFF; }
+.gvew2 .screens .viewer .thumbnails ul li a.next:link, .gvew2 .screens .viewer .thumbnails a.next:visited { text-indent:-3000px; border:0px !important; background:transparent url(item_gameview_next.gif) no-repeat 0px 32px; }
+.gvew2 .screens .viewer .thumbnails ul li a.previous:link, .gvew2 .screens .viewer .thumbnails a.previous:visited { text-indent:-3000px; border:0px !important; background:transparent url(item_gameview_prev.gif) no-repeat 0px 32px; }
+.gvew2 .screens .viewer .controls .first a { background:transparent url(item_gameview_firs.gif) no-repeat bottom left;  }
+.gvew2 .screens .viewer .controls .first a:hover { background-position:top left; }
+.gvew2 .screens .viewer .controls .last a { background:transparent url(item_gameview_last.gif) no-repeat bottom left; }
+.gvew2 .screens .viewer .controls .last a:hover { background-position:top left; }
+.gvew2 .screens .viewer .controls .email a { background:transparent url(item_gameview_emai.gif) no-repeat bottom left; }
+.gvew2 .screens .viewer .controls .email a:hover { background-position:top left; }
+
+/* Gameview - Links */
+
+/* Gameview - News */
+.gvew2 .news .subscribe .insub { background:transparent url(item_news_subscribe_large.gif) no-repeat center 0px; }
+.gvew2 .news .subscribe .large { color:#70B9ED; }
+
+/* Gameview - Ratings+Hype */
+.gvew2 .ratings .ssInside .ssFake,.gvew2 .hype .ssInside .ssFake { background:transparent url(panel_topFake_gv.gif) no-repeat top left; }
+.gvew2 .ratings .values .bar { background-image:url(item_bar_base.gif); }
+.gvew2 .ratings .values .bar span.rating { background-image:url(item_bar_rate.gif); }
+.gvew2 .ratings .values p,.gvew2 .hype .values p { color:#8D8D83; }
+.gvew2 .ratings .comments.detailed,.gvew2 .hype .comments.detailed { /*background-color:#000;*/ }
+.gvew2 .ratings .enterReview .bar { background-image:url(item_bar_cast_base.gif); }
+.gvew2 .ratings .enterReview .bar span.rating { background-image:url(item_bar_cast_rate.gif); }
+.gvew2 .hype .values .bar { position:relative; width:120px; height:63px; background-image:url(item_bar_view_l_base.gif); }
+.gvew2 .hype .values .bar span.hype,.gvew2 .hype .entry .bar span.hype { display:block; height:63px; background-image:url(item_bar_view_l_hype.gif); }
+.gvew2 .hype .entry .bar { background-image:url(item_bar_view_l_base.gif); }
+
+/* Gameview - Resouces */
+.gvew2 .resourcesf .rateit { border-bottom:1px solid #6C6C6C; background-color:#252525; }
+.gvew2 .resourcesf .rateit .bar { background-image:url(item_bar_base.gif); }
+.gvew2 .resourcesf .rateit .bar span.rating { background-image:url(item_bar_rate.gif); }
+.gvew2 .resourcesf .rateit #barValueLabel { color:#70B9ED; }
+.gvew2 .resourcesf .rateit .desc { color:#A8A899; }
+.gvew2 .resourcesf .footer .actions { background-color:transparent; }
+.gvew2 .resourcesf .comments { background-color:#000; }
+
+/* Gameview - Reviews */
+.gvew2 .reviews .data { /*background:transparent url(panel_fullAll.gif) no-repeat bottom right;*/ }
+.gvew2 .reviews .data .glrVirScor .zero { color:#960000; }
+.gvew2 .reviews .data .glrVirScor .three { color:#FF6E1D; }
+.gvew2 .reviews .data .glrVirScor .four { color:#FFAB2C; }
+.gvew2 .reviews .data .glrVirScor .five { color:#FFEE3C; }
+.gvew2 .reviews .data .glrVirScor .six { color:#E0FF52; }
+.gvew2 .reviews .data .glrVirScor .seven { color:#1CE00D; }
+.gvew2 .reviews .data .glrVirScor .eight { color:#01E07A; }
+.gvew2 .reviews .data .glrVirScor .nine { color:#01D8E0; }
+.gvew2 .reviews .data .glrVirScor .ten { color:#00ABFF; }
+.gvew2 .reviews .data .breakdown .bar { background:transparent url('item_bar_base.gif') no-repeat top left; }
+.gvew2 .reviews .data .breakdown .bar span.rating { background-image:url('item_bar_rate.gif'); }
+.gvew2 .reviews .data .glrExNo { color:#ACACAC; }
+.gvew2 .reviews .data .glrPro,.gvew2 .reviews .data .glrVir,.gvew2 .reviews .data .glrCon { color:#78C6FF; }
+.gvew2 .reviews .data .glrCon { color:#FF6640; }
+.gvew2 .reviews .data .glrVirScor { border-bottom:1px solid #6C6C6C; }
+.gvew2 .reviews .updisclaimer { padding:0px 0px 5px 0px; color:#d2d2d2; font-style:italic; font-size:0.9em; }
+
+/* Gameview - Videos */
+.gvew2 .videos .listing .thumbnail { border:1px solid #272727; }
+.gvew2 .videos .listing .thumbnail img { border:1px solid #6C6C6C; }
+.gvew2 .videos .listing .details .info { color:#A4A495; }
+.gvew2 .videos .player h3 .duration { color:#A4A495; }
+.gvew2 .videos .player .frame .info { color:#FFF; }
+.gvew2 .videos .player .frame .info .fullscreen { color:#00ABFF; }
+.gvew2 .videos .player .frame .info .qt { background-image:url(video_qt.gif); }
+.gvew2 .videos .player .frame .info .mp { background-image:url(video_mp.gif); }
+.gvew2 .videos .player .frame .info .details { color:#A4A495; }
+.gvew2 .videos .ssFake { /*background:transparent url(panel_topFake_videoPlayer.gif) no-repeat top left; */ }
+.gvew2 .videos .gvpixsy { background:transparent url(item_pixsy_icon.gif) no-repeat left center; }
+.gvew2 .videos .gvpixsy i { color:#9A9A9A; }
+.gvew2 .videos .pwrdbygt { background:transparent url(../gt_poweredby.gif) no-repeat top left; }
+
+/*
+.gvew2 .ccforums #sectionHeader,.gvew2 .reviews #sectionHeader,.gvew2 .resources #sectionHeader,
+.gvew2 .resourcesf #sectionHeader,.gvew2 .screens #sectionHeader { background:#010b15 url(item_feature_header.jpg) repeat-x top left; }
+.gvew2 .ccforums #sectionHeader span,.gvew2 .reviews #sectionHeader span,.gvew2 .resources #sectionHeader span,
+.gvew2 .resourcesf #sectionHeader span,.gvew2 .screens #sectionHeader span { background:transparent; }
+*/
+
+.gvew2 .ccforums { background:#151515 !important; }
+.gvew2 .ccforums .gvfomhead { background:#0b0f1f url(frame_subpanel_top.gif) no-repeat top left; }
+.gvew2 .ccforums .gvfomhead .cfgvffrm { background:transparent url(frame_subpanel_bottom.gif) no-repeat bottom left; border-bottom:1px solid #6C6C6C; }
+
+.gvew2 .ccforums .gvfomhead { width:798px !important; display:block !important; }
+.gvew2 .ccforums .gvfomhead .cfgvffrm { display:block !important; width:798px !important; }
+.gvew2 .ccforums .forumPosts .constrain { overflow-x:auto; width:610px !important; }
+
+/* Frequently Asked Questions, opened by faq.cfm */
+.faq h4 { color:#70B9ED; }
+.faq ul { list-style-image:url(item_list_a.gif); }
+
+/* Forums, opened by discussion2.cfm 2A2A2A*/
+.ccforums .fheading { background:#0b0f1f url(frame_subpanel_top.gif) no-repeat top left; }
+.ccforums .fheading .cfhin { background:transparent url(frame_subpanel_bottom.gif) no-repeat bottom left; border-bottom:1px solid #303443; }
+.ccforums .fheading H1 { color:#70B9ED; }
+.ccforums .fheading H1 a:link,.ccforums .fheading H1 a:visited { color:#70B9ED; text-decoration:none; }
+.ccforums .fheading H1 a:hover { color:#FFFFFF; text-decoration:none; }
+.ccforums .fheading H2 a:link,.ccforums .fheading H2 a:visited { color:#BABAAD; text-decoration:none; }
+.ccforums .fheading H2 a:hover { color:#FFFFFF; text-decoration:none; }
+.ccforums .fheading .forumaddgamer a { background:transparent url(item_global_addgame.gif) no-repeat bottom left; }
+
+.ccforums .cfpagequick td a:link,.ccforums .cfpagequick a:visited { color:#70B9ED; }
+.ccforums .cfpagequick td a:hover { color:#FFF; }
+.ccforums .cfpagequick table,.ccmail .cfmpgf table { background:#353535 url() no-repeat bottom right; font-weight:bold; }
+.ccforums .cfpagequick td,.ccmail .cfmpgf td { background:transparent url(item_forum_headButton_l.gif) no-repeat top left; }
+.ccforums .cfpagequick td a,.ccmail .cfmpgf td a { background:transparent url(item_forum_headButton_r.gif) no-repeat bottom right; }
+.ccforums .cfpagequick td.sep { background:#0b0f1f; }
+.ccforums .cfpagequick td.comp,.ccforums .cfpagequick td.comp a,.ccmail .cfmpg td.comp,.ccmail .cfmpgf td.comp,.ccmail .cfmpgf td.comp a { background:#353535; }
+.ccforums .cfpagequick td.comp.close a,.ccmail .cfmpgf td.comp.close a { background:#353535 url(item_forum_headButton_r.gif) no-repeat bottom right; }
+
+.ccforums .footjumps td { background:#252525 url(panel_topLeft.gif) no-repeat top left; font-size:1.1em; font-weight:bold; }
+.ccforums .footjumps td.sep { background:#151515; }
+.ccforums .footjumps td a { background:transparent url(panel_bottomRight.gif) no-repeat bottom right; }
+.ccforums .footjumps td.label { color:#a8a8a8; }
+.ccforums .footjumps td.comp,.ccforums .footjumps td.comp a { background:#252525; }
+.ccforums .footjumps td.comp.close a { background:#252525 url(panel_bottomRight.gif) no-repeat bottom right; }
+.ccforums .footjumps a:link { color:#70B9ED; }
+.ccforums .footjumps a:visited { color:#62A3D0; }
+.ccforums .footjumps a:hover { color:#FFF; }
+
+.ccforums .footjumps td { background-image: url(item_pgl_topLeft.gif); }
+.ccforums .footjumps td a,.ccforums .footjumps td.comp.close a { background-image: url(item_pgl_bottomRight.gif); }
+
+.ccforums .bottomquicksearch { border-top:1px solid #202020; }
+.ccforums .tabicular .cfheading,.ccforums .tabicular .cfheading th { border-bottom:1px solid #292a3c !important; }
+
+.ccforums .cfheading th { padding-bottom:3px; }
+
+.ccforums .threads,.ccforums .posts, .ccforums .views, .ccforums .postCount { color:#9A9A9A; }
+.ccforums .lastjump a { background:transparent url(item_forums_lastpost.gif) no-repeat 0px -10px; }
+.ccforums .lastjump a:hover { background:transparent url(item_forums_lastpost.gif) no-repeat 0px 0px; }
+.ccforums .extr,.ccforums .hopen { color:#9A9A9A; }
+.ccforums .today { color:#70B9ED; }
+.ccforums .realtime .catTitle, .ccforums .realtime .forTitle,.ccforums .userposts .catTitle, .ccforums .userposts .forTitle, .ccforums .friends .catTitle,.ccforums .friends .forTitle { color:#9A9A9A !important; }
+.ccforums .realtime a.catTitle:hover, .ccforums .realtime a.forTitle:hover,.ccforums .userposts a.catTitle:hover, .ccforums .userposts a.forTitle:hover, .ccforums .friends .catTitle:hover,.ccforums .friends .forTitle:hover { color:#fff !important; }
+.ccforums .cloud h2,.ccforums .allforums h2 { color:#70B9ED; }
+.ccforums .cloud a.t_1 { color:#ffeaa1; }
+.ccforums .cloud a.t_2 { color:#ffd993; }
+.ccforums .cloud a.t_3 { color:#ffc270; }
+.ccforums .cloud a.t_4 { color:#ffa944; }
+.ccforums .cloud a.t_5 { color:#ff931b; }
+.ccforums .cloud a:hover { color:#fff; }
+.ccforums .watchlistSubtitle { color:#9A9A9A; }
+.ccforums .watchlistSubtitle a:link, .ccforums .watchlistSubtitle a:visited { color:#9A9A9A; }
+.ccforums .watchlistSubtitle a:hover { color:#fff; }
+.ccforums #sectionHeader a.rsstopr:link, .ccforums #sectionHeader a.rsstopr:visited { background:transparent url(item_blogs_feedcorner.gif) no-repeat top left; }
+.ccforums #sectionHeader a.rsstopr:hover { background-image:url(item_blogs_feedcorner_h.gif); }
+.ccforums i.currentpage { color:#EFC345 !important; }
+
+.ccforums .cflist { background:#151515 url(item_pollbox_topLeft.gif) no-repeat top left; }
+.ccforums .cflist .cfl1 { background:transparent url(item_pollbox_topRight.gif) no-repeat top right; }
+.ccforums .cflist .cfl2 { background:transparent url(item_pollbox_bottomLeft.gif) no-repeat bottom left; }
+.ccforums .cflist .cfl3 { background:transparent url(item_pollbox_bottomRight.gif) no-repeat bottom right; padding-top:3px; padding-bottom:3px; }
+.ccforums .cflist .actions div { border-bottom:1px solid #2e2e2e; padding:4px 0px 4px 4px; }
+.ccforums .cflist .actions a { background-position:left center; background-image:url(item_icon_all.gif); }
+.ccforums .cflist .actions .mail a { background-image:url(item_icon_all.gif); }
+.ccforums .cflist .actions .mail.new a { background-image:url(item_icon_mail_new.gif); }
+.ccforums .cflist .actions .realtime a { background-image:url(item_icon_search.gif); }
+.ccforums .cflist .actions .actives a { background-image:url(item_icon_announcement.gif); }
+.ccforums .cflist .actions .watched a { background-image:url(item_icon_watch.gif); }
+.ccforums .cflist .actions .allcat a { background-image:url(item_forum_list.gif); }
+.ccforums .cflist .ad { border-bottom:1px solid #2e2e2e; }
+.ccforums .cflist .mail .new { color:#70B9ED; }
+.ccforums .cflist .section .title { color:#70B9ED; }
+.ccforums .cflist .section a { background:transparent url(item_icon_all.gif) no-repeat left center; }
+.ccforums .cflist .cfrss { background:transparent url(item_smallfeed.gif) no-repeat top left !important; }
+.ccforums .cflist .extra { color:#9A9A9A; }
+.ccforums .cflist .AccordionPanelTab { background:transparent url(item_icon_plus.gif) no-repeat left center; color:#70B9ED;  }
+.ccforums .cflist .AccordionPanelTab a:hover { color:#fff; }
+.ccforums .cflist .AccordionPanelOpen .AccordionPanelTab { background-image:url(item_icon_minus.gif); color:#FFF; }
+.ccforums .cflist .AccordionPanelTabHover { color: #fff; }
+.ccforums .tlinsk th { padding:3px 0px 5px 0px; }
+
+.ccforums .forumPosts .op { background:transparent url(item_mail_new.gif) no-repeat top left; }
+.ccforums .forumPosts .adminx { color:#94948A; }
+.ccforums .forumPosts .adminx a:link,.ccforums .forumPosts .adminx a:visited { color:#BABAAD; text-decoration:underline;  }
+.ccforums .forumPosts .adminx a:hover { color:#fff; }
+.ccforums .forumPosts .postTitle { background-color:#1c1c1c; }
+.ccforums .forumPosts .avata { background:#1c1c1c/* url(item_forum_postavatar.gif) repeat-x bottom left*/; border-right:1px solid #373737; border-bottom:1px solid #373737; }
+.ccforums .forumPosts .avata.opPost { background-color: #0d2100 !important; }
+.ccforums .forumPosts .avata.staff,.ccforums .forumPosts .avata.opPost.staff { background:#0a1e34 !important; }
+.ccforums .forumPosts .avata.deletedPost,.ccforums .forumPosts .avata.staff.deletedPost { background-color:#3C0300 !important; }
+ 
+.ccforums .forumPosts .details { color:#85ACD0; }
+.ccforums .forumPosts .quote { color:#CECCCA !important; }
+.ccforums .forumPosts .cfbody blockquote { border:1px solid #6C6C6C; background-color:#262626; }
+.ccforums .forumPosts .cfbody blockquote blockquote { background-color:#363636; }
+.ccforums .forumPosts .cfbody blockquote blockquote blockquote { background-color:#464646; }
+.ccforums .forumPosts .cfbody blockquote blockquote blockquote blockquote { background-color:#565656; }
+.ccforums .forumPosts .cfbody blockquote blockquote blockquote blockquote blockquote { background-color:#666666; }
+.ccforums .forumPosts .cfbody blockquote blockquote blockquote blockquote blockquote blockquote { background-color:#767676; }
+.ccforums .forumPosts .cfbody blockquote blockquote blockquote blockquote blockquote blockquote blockquote { background-color:#868686; }
+.ccforums .forumPosts .cfpostactions .emessage { color:#9A9A9A; }
+.ccforums .forumPosts .cfpostactions a { background:transparent url(item_forum_reply.gif) no-repeat bottom right; }
+.ccforums .forumPosts .cfpostactions a.cfreply:link,.ccforums .forumPosts .cfpostactions a.cfreply:visited { background-image:url(item_forum_reply.gif); }
+.ccforums .forumPosts .cfpostactions a.cfquote:link,.ccforums .forumPosts .cfpostactions a.cfquote:visited { background-image:url(item_forum_quote.gif); }
+.ccforums .forumPosts .cfpostactions a.cfedit:link,.ccforums .forumPosts .cfpostactions a.cfedit:visited { background-image:url(item_forum_edit.gif); }
+.ccforums .forumPosts .cfpostactions a.cfmquote:link,.ccforums .forumPosts .cfpostactions a.cfmquote:visited { background-image:url(item_forum_multiquote_r0.gif); }
+.ccforums .forumPosts .cfpostactions a.cfmquoter:link,.ccforums .forumPosts .cfpostactions a.cfmquoter:visited { background-image:url(item_forum_multiquote_rem_r0.gif); }
+.ccforums .forumPosts .cfpostactions a:hover { background-position:top right; }
+.ccforums #forumInsetTbl .pollTitle,.ccforums .forumPosts .reporterx h2 { color:#70B9ED; }
+.ccforums .forumPosts .reporterx { background-color:#302525; border-bottom:1px solid #232323; }
+.ccforums .forumPosts .sigbd { border:1px solid #232323 !important; background-color:#121212; }
+.ccforums .forumPosts .oplabel { color:#abd57c; font-weight:bold; }
+
+.ccforums .forumPosts .forumpollbox { border:1px solid #252525; background:#000; }
+.ccforums .forumPosts .forumpollbox .bar { background-image:url(item_bar_cast_base.gif); }
+.ccforums .forumPosts .forumpollbox .bar span.rating { background-image:url(item_bar_cast_rate.gif); }
+
+.ccforums .editor .row .more { color:#8F8F8F; }
+.ccforums .editor iframe,.ccforums .editor .bbml textarea  { border:1px solid #545454 !important; background-color:#000; color:#fff; background-image:none; }
+.ccforums .editor .showborder { border-top:1px solid #545454 !important; padding-top:5px; }
+.ccforums .editor #forumHeaderTbl { border:1px solid #545454 !important; }
+.ccforums .editor #forumHeaderTbl table { border:0px !important; }
+.ccforumemotewindow div.info { color:#8F8F8F; }
+.ccforums .editor .fmbutton { border:1px solid #fff; background-color:#e1e1e1; }
+.ccforums .editor .fmbutton:hover { border:1px solid #1ebdff; background-color:#1ebdff; color:#FFF; }
+#RTE_iframe blockquote, .RTE_iframe blockquote { border:1px solid #6C6C6C; background-color:#262626; }
+#RTE_iframe blockquote blockquote { background-color:#363636; }
+#RTE_iframe blockquote blockquote blockquote { background-color:#464646; }
+#RTE_iframe blockquote blockquote blockquote blockquote { background-color:#565656; }
+#RTE_iframe blockquote blockquote blockquote blockquote blockquote { background-color:#666666; }
+#RTE_iframe blockquote blockquote blockquote blockquote blockquote blockquote { background-color:#767676; }
+#RTE_iframe blockquote blockquote blockquote blockquote blockquote blockquote blockquote { background-color:#868686; }
+
+/* Mail - Private messages, opened by inc_mail.cfm */
+.ccmail h1 { color:#70B9ED; }
+.ccmail h2 { color:#BABAAD; }
+.ccmail .header { background:#0b0f1f url(frame_subpanel_top.gif) no-repeat top left; border-bottom:1px solid #6C6C6C; }
+.ccmail .header .imheader { background:transparent url(frame_subpanel_bottom.gif) no-repeat bottom left; }
+.ccmail .header .quotabar { background:transparent url(item_mail_quota.gif) no-repeat top left; }
+.ccmail .header .quotabar .value { background:transparent url(item_mail_quota_value.gif) no-repeat top left; }
+.ccmail .download { background:transparent url(ajax-loader.gif) no-repeat 7px 17px; }
+.ccmail .new { color:#70B9ED; }
+.ccmail .newicon { background:transparent url(item_mail_new.gif) no-repeat top left; }
+.ccmail .author { color:#9dd7ff; }
+.ccmail label { color:#FFF; }
+.ccmail .wblist label { color:#70B9ED; }
+.ccmail .wblist a.delete { color:#F00; }
+.ccmail .wblist a.delete:hover { color:#FFF; }
+.ccmail textarea.nohover:hover, .ccmail textarea.nohover { background-image:none; background-color:#FFFFFF; }
+.ccmail .actc { /*background-color:#6C6C6C;*/ }
+
+/* Search - Site search, opened by serach.cfm */
+#search .searchform { border-bottom:1px solid #656160; }
+#search .sreslt h2 { color:#70B9ED; }
+#search .sreslt .date, #search .sreslt .small { color:#9A9A9A; }
+#search .sreslt .small a { color:#9A9A9A; }
+
+/* Comics - Tabbed comics page, opened by humor.cfm */
+
+/* Chat - Chatroom, opened by chat2.cfm */
+.chatroom #sectionHeader .auth { background-image:url(item_icon_announcement.gif); }
+.chatroom .info h3 { color:#70B9ED; }
+.chatroom .info li { background:transparent url(item_list_b.gif) no-repeat 0px center; }
+.chatroom form .handle { color:#000; }
+
+/* About Us,Opportunites,Disclaimers */
+#about h1,#opportunities h1,#disclaimers h1 { color:#fff; }
+#about h2,#opportunities h2,#disclaimers h2 { color:#70B9ED; }
+#about h3,#opportunities h3,#disclaimers h3 { color:#f8c86c; }
+#about ul { color:#fff;}
+#about ul li ul li { color:#e9e9e9; }
+#about .e,#opportunities .e,#disclaimers .e { color:#FFEAA1; }
+#opportunities ul,#disclaimers ul { list-style-image:url(item_list_b.gif); }
+#opportunities h1 { color:#FFAB56; }
+
+/* Podcast - Gameon page, opened by gameon.cfm */
+.gameon .content { background:transparent url(item_gameon_header.jpg) no-repeat top left; }
+.gameon h2 { color:#70B9ED !important; }
+.gameon .epdesc { color:#fff; }
+.gameon .epdesc b { color:#70B9ED !important; }
+
+/* Login - Opened from login.cfm */
+#lostpass .lost h1 { color:#70B9ED; }
+
+/* Profile - User profile area, opened by profile.cfm */
+.profile h2 { color:#70B9ED;}
+.profile a.more { color:#70B9ED; }
+.profile a.more:visited { color:#70B9ED; }
+.profile a.more:hover { color:#FFF; }
+.profile .source { color:#9A9A9A !important; }
+.profile .source u { color:#AAA !important; }
+.profile a.source:hover { color:#FFF !important; }
+.profile .side { background:#252525 url(panel_bottomLeft.gif) no-repeat bottom left; }
+.profile .poverview .icon { background:transparent url(item_profile_icon.gif) no-repeat top left; }
+.profile .poverview .friends .title { color:#70B9ED; }
+.profile .pguilds .data a.gamelink { color:#babaad; }
+.profile .pguilds .data a.gamelink:hover { color:#fff !important; }
+.profile .pgames .havgames .tdtop { border-top:1px solid #666666; }
+.profile .pgames .stitle { color:#74DEA7; }
+
+/* Contests/Promos, (common) */
+.promotions h1.title { color:#70B9ED; }
+.promotions .disqualified { color:#FF0000; }
+.promotions .confirmed { color:#00FF00; }
+.promotions .closed { color:#FFFFFF; }
+.promotions .pending { color:#FFFFFF; }
+.promotions #errorPanel { background-color:#2b0000; color:#fff; }
+.promotions #errorPanel li { background:transparent url(item_error_bullet.gif) no-repeat left center; }
+
+#promo .header { background:#000; }
+#promo .important { color:#f00; }
+#promo .disqualified { color:#f00; }
+#promo .confirmed { color:#0f0; }
+#promo .closed { color:#fff; }
+#promo .pending { color:#fff; }
+#promo .enter { border-top:1px solid #393939; background:#010F5A; }
+
+/* Registration + Settings - Create new user + Manage user, opened by register.cfm + settings.cfm */
+#register .moreinfo h1 { color:#70B9ED; }
+.settings .updatePanel h1,.settings .activate h1 { color:#70B9ED; }
+.settings .stats { background:#252525 url(panel_bottomLeft.gif) no-repeat bottom left; }
+.settings .stats h1 ,.settings .gameplaydata h2,.settings .buddy h2 { color:#70B9ED; }
+
+.settings .disciple { background:black url(item_disciple_bg.jpg) no-repeat top center; }
+.settings .disciple .becomeplayer p,.settings .disciple .isplayer p { color:#858585; }
+.settings .disciple .sharebutton,.settings .disciple .playbutton,.settings .disciple .gobutton,.settings .disciple .loginbutton  { background:transparent url(item_disciple_sharebutton.gif) no-repeat bottom left; }
+.settings .disciple .playbutton { background-image:url(item_disciple_playnow.gif); }
+.settings .disciple .gobutton { background-image:url(item_disciple_goto.gif); }
+.settings .disciple .loginbutton { background-image:url(item_disciple_login.gif); }
+.settings .disciple .sharebutton:hover,.settings .disciple .playbutton:hover,.settings .disciple .gobutton:hover,.settings .disciple .loginbutton:hover { background-position:top left; }
+.settings .disciple .contest { background:transparent url(item_disciple_xbox.jpg) no-repeat top left; }
+
+
+.settings .buddy a.creategr:link,.settings .buddy a.creategr:visited { background:transparent url(frame_createReview_r1.gif) no-repeat bottom left; }
+.settings .buddy a.creategr:hover { background-position:top left; }
+.settings .buddy .amnara { border:1px dotted #c00000; background-color:#300000; }
+.settings .buddy .deletedrow a:link,.settings .buddy .deletedrow a:visted { color:#f00; }
+.settings .buddy .published { color:#00c6ff; }
+.settings .buddy .upcoming { color:#00ff72; }
+.settings .buddy .pending { color:#ffba00; }
+
+.settings .buddy a.creategr:link,.settings .buddy a.creategr:visited,
+.gvew2 .usrcratr a.creategr:link,.gvew2 .usrcratr a.creategr:visited { background:transparent url(frame_createReview_r1.gif) no-repeat bottom left; }
+.settings .buddy a.creategr:hover,.gvew2 .usrcratr a.creategr:hover { background-position:top left; }
+.settings .buddy a.creategf:link,.settings .buddy a.creategf:visited,
+.gvew2 .usrcratr a.creategf:link,.gvew2 .usrcratr a.creategf:visited { background:transparent url(frame_createArticle_r1.gif) no-repeat bottom left; }
+.settings .buddy a.creategf:hover,.gvew2 .usrcratr a.creategf:hover { background-position:top left; }
+.settings .buddy a.createyf:link,.settings .buddy a.createyf:visited { background:transparent url(frame_createFeature_r1.gif) no-repeat bottom left; }
+.settings .buddy a.createyf:hover { background-position:top left; }
+
+.settings .buddy a.createyfdis:link,.settings .buddy a.createyfdis:visited { background:transparent url(frame_createFeatureDisabled_r1.gif) no-repeat bottom left; }
+.settings .buddy a.createyfdis:hover { background-position:top left; }
+
+
+
+/* Registration + Settings - Create new user + Manage user, opened by register.cfm + settings.cfm */
+#register .agreement { border:1px solid grey; }
+#register .agreement b,#register .agreement strong { color:#70B9ED !important; }
+
+/* Videos - Three paned video page, video player, opened by videos.cfm */
+.standalone, .videolist .vlistover { background:transparent url(item_gv_vsep.gif) repeat-y top left; }
+.videoplayer h3 .duration { color:#A4A495; }
+.videoplayer .info { color:#fff; }
+.videoplayer .info .fullscreen { color:#00ABFF; }
+.videoplayer .info .qt { background-image:url(video_qt.gif); }
+.videoplayer .info .mp { background-image:url(video_mp.gif); }
+.videoplayer .info .details { color:#A4A495; }
+.videoplayer .pwrdbygt { background:transparent url(../gt_poweredby.gif) no-repeat top left; }
+.videolist { background:transparent; }
+.videolist a.rss:link, #videolist a.rss:visited { background:transparent url(item_blogs_feedcorner.gif) no-repeat top left; }
+.videolist a.rss:hover { background-image:url(item_blogs_feedcorner_h.gif); }
+.videolist .list li { color:#dfdfdf; }
+.videolist .list li .thumbnail { color:#fff; }
+.videolist .list li .thumbnail img { border:1px solid #535353; }
+.videolist .list li .details .title,.videolist .list li .details .title a { color:#70B9ED; }
+.videolist .list li .details .info { color:#A4A4A4; }
+.videolist .basopen .boin { background:#252525 url(panel_topLeft.gif) no-repeat top left; }
+.videolist .basopen .bout { background-image: url(panel_bottomLeft.gif); background-position: bottom left; }
+.videolist .basopen .thumb { background-image: url(panel_topRight.gif); background-position: top right; }
+.videolist .basopen .thumb img { border:1px solid #636363; }
+.videolist .basopen .info { background-image: url(panel_bottomRight.gif); background-position: bottom right; }
+.videolist .basopen .data { color:#9F9F9F; }
+.videolist .standalone h3 { color:#70B9ED; }
+
+/* Galleries - User photos, opened by galleries.cfm,photos.cfm */
+.userphotos #sectionHeader .search { background-image: url(item_icon_search.gif); }
+.userphotos #sectionHeader .random {  background-image: url(item_icon_random.gif); }
+.userphotos .gallery .section h1,.userphotos .view h2 { color:#70B9ED; }
+.userphotos .gallery .none { color:#9A9A9A;}
+.userphotos .group a.thumb,.userphotos .upside a.thumb { border:0px solid #272727; }
+.userphotos .group a.thumb img,.userphotos .upside a.thumb img { border:1px solid #6C6C6C; }
+.userphotos .group a.thumb.current img,.userphotos .upside a.thumb.current img { border:1px solid #70B9ED; }
+.userphotos .group a:hover.thumb img,.userphotos .upside a:hover.thumb img { border-color:#fff; }
+.userphotos .upside { background:#252525 url(panel_bottomRight.gif) no-repeat bottom right; }
+.userphotos .upside a.root { color:#70B9ED !important; }
+.userphotos .search .gallery { border-top:1px solid #6C6C6C; }
+.userphotos .returnactions a { color:#70B9ED !important; }
+.userphotos .view .image { background-color:#000; }
+/*
+.userphotos .view .barad { background:#252525 url(frame_subpanel_bottom.gif) no-repeat bottom left; border-bottom:1px solid #6C6C6C; border-top:1px solid #6C6C6C; }
+.userphotos .view .barad span.upin { background:transparent url(frame_subpanel_top.gif) no-repeat top left; }
+*/
+.userphotos .view .info { /*background:transparent url(frame_bodyTop.gif) repeat-x top left;*/ }
+.userphotos .view .bump { background:transparent url(item_bump_v1.gif) no-repeat top center; }
+.userphotos .view .bury { background:transparent url(item_bury_v1.gif) no-repeat top center; }
+.userphotos .view .share span { border:1px solid #969696; background-color:#555454; }
+.userphotos .view .none { color:#868686; }
+.userphotos .view .random { background:transparent !important; }
+.userphotos .view .random a { background:transparent url(item_galleries_random_button.gif) no-repeat bottom left; }
+.userphotos .view .random a:hover { background:transparent url(item_galleries_random_button.gif) no-repeat top left; }
+.userphotos .edit label small { color:#c8c8c8; }
+.userphotos .edit .item { background:transparent url(lg_ug_editbg_v1.jpg) no-repeat top left; }
+.userphotos .edit .image .caplabel { color:#C8C8C8; }
+.userphotos .edit .sub .save { background-color:#0B2305; border:1px solid #14560A; color:#51AB01; }
+.userphotos .edit .sub .delete { background-color:#230414; border:1px solid #560414; color:#AB0414; }
+.userphotos .edit .sub input:hover { color:#FFF; background-color:#7B7B7B; border:1px solid #ABABAB; }
+.userphotos .edit #newGallery div { background-color:#414140; border-bottom:1px solid #5C5C5C; border-top:1px solid #5C5C5C; }
+.userphotos .edit #newGallery h4 { color:#70B9ED; }
+.userphotos .upload .jumpToGallery { background-image:url(ug_jumpper_v1.gif); }
+.userphotos .upload a.jumpToGallery:hover { background-position:0px 22px; }
+.userphotos .upload .note { color:#D4D4D4; }
+
+#image .featureData { background-color:#313131; border:1px solid #6C6C6C; border-left:0px; border-right:0px; }
+#image .featureData h1 a:link, #image .featureData h1 a:visited { color:#CCD2DD; }
+#image .featureData h1 a:hover { color:#F00; }
+
+/* Blogs - User blogs and all associated pages, opened by blogs.cfm */
+.blogs .home .tabintro { background-color:#000; background-image:url(item_blog_home.jpg); border-bottom:1px solid #222222; }
+
+.blogs .home .highlights { background-color:#000; }
+.blogs .home .bentryde .author { color:#9A9A9A; }
+.blogs .home .bentryde .blate b { color:#70B9ED; }
+.blogs .home .bhomebgv h2 .tf a.current { color:#70B9ED !important; }
+.blogs .home .bhomebgv { background:transparent url(item_blogs_home_bgv.gif) repeat-y top left !important; }
+.blogs .home .bentry { border-top:1px solid #282828; }
+.blogs .home .bentryde { border-top:1px solid #282828; }
+.blogs .head #sectionHeader .admin { color:#f00; }
+.blogs .head .update { color:#70B9ED; }
+.blogs .display { background:transparent url(item_blogs_sbord.gif) repeat-y top left; }
+
+.blogs .newpostbutton { border-bottom:1px solid #282828; }
+.blogs .newpostbutton a { background:transparent url(item_blogs_newpost.gif) no-repeat bottom left; }
+.blogs .newpostbutton a:hover { background-position:top left; }
+
+.blogs .head a.rss { background-image:url(item_blogs_feedcorner.gif); background-position:top right; }
+.blogs .head a.rss:hover { background-image:url(item_blogs_feedcorner_h.gif); }
+.blogs .navigation { /*background:#1a1a1a url(panel_bottomLeft_blogs.gif) no-repeat bottom left;*/ }
+
+.blogs .navigation .actions .new { color:#FF7500; }
+.blogs .navigation .title,.blogs .navigation .rti { color:#70B9ED; }
+.blogs .navigation .recent .entry,.blogs .navigation .previous a,.blogs .navigation .archives a, .blogs .navigation .resources a { background:transparent url(item_list_a.gif) no-repeat 0px 1px; }
+.blogs .navigation .resources a { background-image:url(item_icon_offsite.gif); }
+.blogs .navigation .resources .manage { background:transparent; }
+.blogs .navigation .previous a { background-image:url(item_icon_column.gif); }
+.blogs .navigation .archives .count { color:#8F8F8F; }
+.blogs .navigation .archives a { background-image:url(item_icon_archives.gif); }
+.blogs .navigation .recent a { background:transparent; }
+.blogs .navigation .recent .date { color:#8F8F8F; }
+.blogs .navigation .recent .entry { background-image: url(item_icon_comments.gif); }
+.blogs .navigation .feed .icon { background:transparent url(item_smallfeed.gif) no-repeat top left; }
+.blogs .others { background:transparent url(item_blogs_other.jpg) no-repeat 0px 7px; }
+.blogs .detailed .entry .header h4 a { color:#70B9ED; }
+.blogs .detailed .entry .header h4 a:hover { color:#FFF; }
+.blogs .detailed .entry .header .admin .edit { color:#FF7500; }
+.blogs .detailed .entry .header .admin .delete { color:#f00; }
+.blogs .detailed .entry .header .author { color:#8F8F8F; }
+.blogs .detailed .entry .header .author a { color:#AFAFAF; }
+.blogs .detailed .entry .header .author a:hover { color:#FFF; }
+.blogs .detailed .entry .header.notabled h4 a { color:#F00; }
+
+.blogs .detailed .entry .quote, .blogs .detailed .entry blockquote { border:1px solid #313131; background-color:#252525; }
+
+.blogs .detailed .disabledpost { padding:2px 0px 7px 0px; color:#F00; font-weight:Bold; }
+.blogs .create form div .more { color:#8F8F8F; }
+.blogs .editor form iframe { border:1px solid #545454; }
+.blogs .editor form div .more { color:#8F8F8F; }
+.blogs .editor form div.entry .block { background-color:#393939; color:#FFF; }
+.blogs .editor form div.entry .bbml textarea { background-color:#000; color:#fff; background-image:none; }
+.blogs .links form div .more { color:#8F8F8F; }
+.blogs .links .existing .edit { color:#78C6FF; }
+.blogs .links .existing .delete { color:#F00; }
+.blogs .contrib table td,.blogs .contrib table th { border:1px solid #717373; }
+.blogs .contrib table th { background-color:#717373; }
+.blogs .search .results .item div .title a { color:#70B9ED; }
+.blogs .display #sectionHeader .edit,.blogs .display #sectionHeader .update,
+.blogs .display #sectionHeader .contrib,.blogs .display #sectionHeader .author { color:#70B9ED !important; }
+.blogs .display #sectionHeader .delete { color:#f00 !important; }
+
+#blogs .blogPostRatingArea .act a.bump { background:transparent url(item_blog_bumpbury.gif) no-repeat top left; }
+#blogs .blogPostRatingArea .act a.bury { background:transparent url(item_blog_bumpbury.gif) no-repeat top right; }
+#blogs .blogPostRatingArea .act a.bury:hover { background-position: bottom right; }
+#blogs .blogPostRatingArea .act a.bump:hover { background-position: bottom left; }
+#blogs .blogPostRatingArea .bbresult { background:transparent url(item_blog_bumpbury_res.gif) no-repeat top left; }
+#blogs .blogPostRatingArea .bbresult.ubump { background-position:bottom left; }
+
+/* Guilds - Guilds, opened by guilds.cfm */
+.guilds h2,.guilds h1 { color:#70B9ED; }
+.guilds .intro,.guilds .introadd { background:#000 url(item_guilds_home.jpg) no-repeat top left; }
+.guilds .introadd { background-image:url(item_guilds_add.jpg); }
+.guilds .gdofl { color:#9A9A9A; }
+.guilds .gdofl .gda { color:#84FF4B; }
+.guilds .gsearch { background:#0b0f1f url(frame_subpanel_bottom.gif) no-repeat bottom left !important; border-bottom:1px solid #303443; }
+.guilds .gsearch .gfill { background:transparent url(frame_subpanel_top.gif) no-repeat top left !important; }
+.guilds .gosep { border-top:1px solid #414141; }
+.guilds .ggent .gdata .title a.glink:link,.guilds .ggent .gdata .title a.glink:visited { color:#6FB9FF; }
+.guilds .ggent .gdays .gnag { color:#555555; }
+.guilds .ggent .gdays .edit { color:#6FB9FF; }
+.guilds .ggent .gdays .edit:hover { color:#FFF; }
+.guilds .gamess .inactive { color:red; }
+.guilds .ggovinr { background:#3d3d3d url(frame_subpanel_bottom.gif) no-repeat bottom left; border-bottom:1px solid #6C6C6C; }
+
+/* Subscribe - Non registered user subscription to daily digest and newsletter, opened by subscribe.cfm */
+.subscribe .dd { background:transparent url(item_subscribe_dd.png) no-repeat top left; }
+.subscribe .nl { background:transparent url(item_subscribe_wn.jpg) no-repeat top left; }
+.subscribe h2 { color:#70B9ED; }
+.subscribe .feedback_g { color:#66FF00; }
+.subscribe .feedback_e { color:#FF5E00; }
+.subscribe .dis { color:#727272; }
+.unsubscribe h1 { color:#70B9ED; }
+
+/* Admin - Admin, opened by admin.cfm */
+.ccadmin h2,.ccadmin h1 { color:#70B9ED; }
+.ccadmin .landing i { color:#9A9A9A; }
+.ccadmin .sidenav {background:#252525 url(panel_bottomRight.gif) no-repeat bottom right; }
+.ccadmin .sidenav .section { color:#70B9ED; }
+.ccadmin .sidenav .item { background:transparent url(item_icon_all.gif) no-repeat left center; }
+.ccadmin .sidenav .poll { background-image: url(item_icon_polls.gif); }
+.ccadmin .sidenav .ad { background-image: url(item_icon_all.gif); }
+.ccadmin .sidenav .faq { background-image: url(item_icon_all.gif); }
+.ccadmin .sidenav .content { background-image: url(item_icon_all.gif); }
+.ccadmin .sidenav .forum { background-image: url(item_icon_all.gif); }
+.ccadmin .sidenav .ucontent { background-image: url(item_icon_all.gif); }
+.ccadmin .sidenav .users { background-image: url(item_icon_search.gif); }
+.ccadmin .main .supli { color:#9A9A9A; }
+.ccadmin .main .enabled { color:#70B9ED; }
+.ccadmin .main .disabled { color:#9A9A9A; }
+.ccadmin .reviewphotos { border-top:1px solid #6C6C6C; }
+.ccadmin .faqlist .info,.ccadmin .cavid.list i { color:#9A9A9A; }
+.ccadmin .apols .bar { background-image:url(item_bar_base.gif); }
+.ccadmin .apols span.rating { background-image:url(item_bar_rate.gif); }
+.ccadmin .newin,.ccadmin .newcamp {border-top:1px solid #6C6C6C; }
+.ccadmin .open { color:#00FF49; }
+.ccadmin .closed { color:#9A9A9A; }
+.ccadmin .locked { color:#FEE14B; }
+.ccadmin .seperate { border-top:1px solid #6C6C6C; }
+.ccadmin .skinrunning { font-weight:bold; padding-left:22px; line-height:19px; background:url(item_guilds_admin.gif) no-repeat top left; }
+
+/* Pixsy - Pixsy video serach, opened by pixsy.cfm */
+.ppixsy h1 { color:#6FB9FF;}
+.ppixsy hr { color:#000; }
+.ppixsy .psearch { border-bottom:1px solid #6C6C6C; background:#000 url(item_pixsy_header.jpg) no-repeat top left; }
+.ppixsy .plisting .item img { border:1px solid #8B8B8B; }
+.ppixsy .plisting .prov { color:#6D6D6D; }
+.ppixsy .pbpler { color:#6FB9FF; }
+.ppixsy .pbpler span { color:#8B8B8B; }
+
+/* Dyyno - Video sharing engine, opened by dyyno.cfm */
+.ydyyno .yintro { background:#000 url(item_dyyno_intro.gif) no-repeat top left; }
+.ydyyno .ystreams { background:#000 url(item_dyyno_mid.gif) repeat-y top left; }
+.ydyyno .ystreams .ytitle { color:#CECECE; }
+.ydyyno .ystreams .flow { background:transparent url(item_dyyno_vid.gif) no-repeat top left; }
+.ydyyno .ystreams .image { background-position:7px 7px; background-repeat:no-repeat; }
+.ydyyno .yrefresh a:hover { color:red; }
+.ydyyno .yhelp,.ydyyno .yirc { background:#000 url(item_dyyno_mid.gif) repeat-y top left; }
+.ydyyno .yhelp h2,.ydyyno .yirc h2 { color:#6FB9FF; }
+.ydyyno .ybottom { background:#000 url(item_dyyno_bottom.gif) no-repeat top left; }
+.ydyyno .yfoot { background:#000 url(item_dyyno_foot.gif) no-repeat top left !important;}
+.ydyyno .ytop { background:#000 url(item_dyyno_top.gif) no-repeat top left; }
+.ydyyno .ybar { background:#000 url(item_dyyno_mid.gif) repeat-y top left; }
+.ydyyno .yplayer { color:white; background:#000 url(item_dyyno_mid.gif) repeat-y top left; }
+
+/* One Big Planet, opened by inc_settings_onebigplanet.cfm */
+.oneBigPlanet h1,.oneBigPlanet h2 { color:#6EB6FD; }
+.oneBigPlanet .offer .offimg { background:transparent url(item_obp_back.jpg) no-repeat top left; }
+.oneBigPlanet .offer .offimg img { border:1px solid #6EB6FD; }
+.oneBigPlanet .offer a.offimg:hover img { border:1px solid #FFF; }
+.oneBigPlanet .free { color:#A7FCC2; }
+
+/* Ads - (common) */
+.ad_disclaimer { color:#777; }
+.ad_body { border:1px solid red; }
+#contentinlineAd .head { color:#fff; }
+#contentinlineAd .body { border:1px solid #F00; background:transparent; }
+#topcustomad { background:transparent !important; }
+
+/* Misc, usually need to be at bottom */
+.newseditor iframe { border:1px solid #6C6C6C; }
+#JSMX_loading{ background-image:url(http://images.mmorpg.com/images/processing.gif); background-repeat: no-repeat; background-position:center center;	}
+.sidePollArea .spresultsa .value { font-weight:bold; }
+.sidePollArea .spresultsa .bar { background-image:url(item_bar_base.gif); background-repeat:no-repeat; }
+.sidePollArea .spresultsa .bar span.rating { background-image:url(item_bar_rate.gif); background-repeat:no-repeat; }
+.disabedfeature { background:transparent url(item_feature_disabled.gif) no-repeat top left; }
+
+.pushc .pctitle { color:#70B9ED; }
+.pushc .item .stuff { color:#9A9A9A; }
+.pushc a.pcmorefeatures { background-image:url(item_pc_morefeat.gif); }
+.pushc a.pcmorenews { background-image:url(item_pc_morenews.gif); }
+
+/* Favorite Games */
+#favgamepanel { border:1px solid #6d6d6d; border-top:0px; background:#000; }
+#favgamepanel .rem { background:transparent url(item_favgame_remove.gif); }
+#favgamepanel .tifavs .titl { font-weight:bold; color:#70B9ED; }
+#favgamepanel .tifavs div { border-bottom:1px solid #252525; }
+#favgamepanel .tifavs div.clear { border:0px; }
+#favgamepanel .nofavs span { color:#70B9ED; }
+#favgamepanel .favgameaddf span { color:#70B9ED; }
+#favgamepanel .favgameaddf .button { color:#79d300; }
+#favgamepanel .favgameaddf .button:hover { color:#fff; }
+
+/* Common Content - Features,Reviews,Articles (common) */
+.commonContent p { border:0px; }
+.commonContent .header { background:#585858 url(item_feature_header.jpg) no-repeat top left; }
+.commonContent.noheader .header h1,.commonContent.noheader .header h2 { color:#fff !important; }
+
+/* Common Form - (common) */
+.commonform .row label .ext{ color:#9A9A9A; }
+.commonform .row p span,.commonform .sup { color:#9A9A9A !important; }
+.commonform .row.break { border-top:1px solid #212121; }
+.commonform .row .req { color:#f00; }
+.commonform iframe { border:1px solid #6C6C6C; }
+
+.errorbar { background-color:#2b0000; color:#fff; }
+.errorbar li { background:transparent url(item_error_bullet.gif) no-repeat left center; }
+
+#ccbox .top,#ugbox .top { color:#D9DEF2; }
+#ccbox .ad { background:#000; }
+#ccbox .image { background:#000; }
+#ccbox .image #ccBoxWaiting { background:transparent url(waiting_fast.gif) no-repeat center center; }
+#ccbox .info { background-color:#000; }
+#ccbox .framer { border:1px solid #6C6C6C; }
+#ccbox .framer.alpha { border:0px; }
+
+.cctooltip { border:1px solid #6C6C6C; background-color:#000; color:#fff; }
+.cctooltip.panel { border:0px; background:transparent; color:#000; }
+.cctooltip.panel .hleft { background:#6C6C6C; }
+.cctooltip.panel .hright { background:#6C6C6C; }
+.cctooltip.panel .content { background:#000; color:#FFF; border-top:0px; }
+.cctooltip .title { color:#70B9ED; }
+
+.cchomecarrot { background:transparent url(item_popup_carrot.gif) no-repeat top left; }
+.cchomecarrot.trans { background-image: url(item_popup_carrot_32.png); }
+.cchomecarrotClose { display:block; overflow:hidden; background:transparent url(item_popup_carrot.gif) no-repeat bottom left; }
+.cchomecarrotClose.trans { background-image: url(item_popup_carrot_32.png); }
+.cchomecarrot .leftbody h1 { color:#70B9ED; }
+
+.cchomecarrotx { background:transparent; }
+.cchomecarrotx td { background:transparent url(item_popup_carrot.gif) no-repeat top left; }
+.cchomecarrotx.trans td { background-image: url(item_popup_carrot_32.png); }
+.cchomecarrotx td.t1c1 { background-position:top left !important; }
+.cchomecarrotx td.t1c2 { background-position:top center !important; }
+.cchomecarrotx td.t1c3 { background-position:top right !important; }
+.cchomecarrotx td.t2c1 { background-position:bottom left !important; }
+.cchomecarrotx td.t2c2 { background-position:bottom center !important; }
+.cchomecarrotx td.t2c3 { background-position:bottom right !important; }
+.cchomecarrotx h1 { color:#70B9ED; }
+.cchomecarrotx .viewed { color:#F4C266; }
+
+.bumpburybox2 #featureRatingArea { background:transparent url(bumpbury_v3.gif) no-repeat top left; }
+.bumpburybox2 .bump,.bumpburybox2 .bury { text-decoration:none; }
+.bumpburybox2 .bump { background:transparent url(bumpbury_v3.gif) no-repeat top left; }
+.bumpburybox2 .bump:link,.bumpburybox2 .bump:visited { background-position: top left; color:#fff; }
+.bumpburybox2 .bump:hover { background-position: -130px 0px; color:#fff; }
+.bumpburybox2 .bump.dne:hover { background-position: 0px 0px; }
+.bumpburybox2 .bump.current,.bumpburybox2 .bump.current:hover { background-position: -65px 0px; color:#fff; }
+.bumpburybox2 .bury { background:transparent url(bumpbury_v3.gif) no-repeat 0px -57px; }
+.bumpburybox2 .bury:link,.bumpburybox2 .bury:visited { background-position: 0px -57px; color:#fff; }
+.bumpburybox2 .bury:hover { background-position: -130px -57px; color:#fff; }
+.bumpburybox2 .bury.dne:hover { background-position: 0px -57px; }
+.bumpburybox2 .bury.current,.bumpburybox2 .bury.current:hover { background-position: -65px -57px; color:#fff; }
+
+
+#facebox .b { background:url(b.png); }
+#facebox .tl {background:url(tl.png);}
+#facebox .tr {background:url(tr.png);}
+#facebox .bl {background:url(bl.png);}
+#facebox .br {background:url(br.png);}
+#facebox td {border-bottom: 0;color:#fff !important; }
+#facebox .body { background:#202020; color:#fff !important; border:0px; }
+#facebox .body .subbody { border:0px; }
+#facebox .footer a.close:link,#facebox .footer a.close:visited { background:transparent url(item_facebox_close.gif) no-repeat bottom left; }
+#facebox .footer a.close:hover { background-position:top left; text-decoration:none; }
+.facebox_overlayBG {background-color: #000; }
+#galleryUploadPane { background:transparent url(item_gwidget_bg.gif) no-repeat top left; }
+#galleryUploadPane #gallUpPaneOne { border:1px solid #454545; background-color:#000; }
+#galleryUploadPane .galleryNotice { color:#797979; font-style:italic; }
+#galleryUploadPabe .galleryWidgetTable td,#galleryUploadPabe .galleryWidgetTable tr { border:0px !important; }
+#galleryUploadPane .galleryWidgetTable td a:link,.galleryWidgetTable td a:visited { color:#626262; }
+#galleryUploadPane .galleryWidgetTable td a:hover { color:#1ebdff; }
+#galleryUploadPane .galleryButtonWidget div { background:transparent url(item_gwidget_upload.jpg) no-repeat bottom left !important; color:#1ebdff; }
+#galleryUploadPane .refreshblock a { background:transparent url(item_gwidget_refresh.gif) no-repeat top left; padding:0px 0px 0px 17px; text-indent:0px; margin:0px; text-align:left; }
+#galleryUploadPane a.refreshicon:link,a.refreshicon:visited { color:#1ebdff; }
+#galleryUploadPane a.refreshicon:hover { color:#fff; }
+.gwpopupwidget { color:#fff; }
+.gwpopupwidget h1 { color:#fff !important; }
+
+.cfdump_query,.cfdump_struct { color:#000 !important; }
+
+/* EOF */

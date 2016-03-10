@@ -1,0 +1,33 @@
+#system-message{
+	
+	
+}
+#system-message>div>div{
+	padding-left:6px;
+}
+.alert-message{
+	background-color: #153b02;
+	color: #fff;
+	padding:5px;
+}
+.alert-warning, .alert-error, .alert-notice{
+	background-color: #2b0000;
+	color: #fff;
+	padding:5px;
+}
+.close{
+	display:none;
+}
+#system-messag .alert-heading{
+	font-size: 1.4em !important;
+	font-weight: bold !important;
+	padding: 0em 0px 0.3em 0px;
+	margin: 0px;
+	text-align: left !important;
+}
+#system-messag p{
+	padding: 0px;
+	margin: 0px;
+	text-align: left !important;
+	padding-left:10px;
+}

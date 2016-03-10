@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset addfieldpath="/modules/mod_cmlivedeal_search/fields">
+		<field name="keyword" type="text"
+			label="MOD_CMLIVEDEAL_SEARCH_FIELD_KEYWORD_LABEL"
+			hint="MOD_CMLIVEDEAL_SEARCH_FIELD_KEYWORD_HINT"/>
+
+		<field name="category" type="cmldsearchcategory"
+			label="MOD_CMLIVEDEAL_SEARCH_FIELD_CATEGORY_LABEL">
+				<option value="">MOD_CMLIVEDEAL_SEARCH_ALL_CATEGORIES</option>
+		</field>
+
+		<field name="city" type="cmldsearchcity"
+			label="MOD_CMLIVEDEAL_SEARCH_FIELD_CITY_LABEL"/>
+	</fieldset>
+</form>

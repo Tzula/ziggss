@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+  <name>content rotation slideshow</name>
+  <author>joombig.com</author>
+  <creationDate>Feb 2014</creationDate>
+  <copyright>Copyright (C) 2014 joombig.com. All rights reserved.</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <authorEmail>support@joombig.com</authorEmail>
+  <authorUrl>www.joombig.com</authorUrl>
+  <version>1.1</version>
+  <description>CONTENT_ROTATION_SLIDESHOW_DESC</description>
+  <languages>
+    <language tag="en-GB">language/en-GB.mod_content_rotation_slideshow.ini</language>
+  </languages>
+  <files>
+    <filename module="mod_content_rotation_slideshow">mod_content_rotation_slideshow.php</filename>
+    <filename>helper.php</filename>
+    <filename>index.html</filename>
+    <folder>tmpl/</folder>
+    <folder>fields/</folder>
+    <folder>helpers/</folder>
+    <folder>language/</folder>
+    <folder>assets/</folder>
+  </files>
+  <config>
+    <fields name="params">
+      <fieldset name="basic" addfieldpath="/modules/mod_content_rotation_slideshow/fields">
+        <field type="assets" url="/modules/mod_content_rotation_slideshow/assets" />
+        <field type="tmpl" name="sp_style" default="Contentrotationslideshow"  label="STYLE" description="STYLE_DESC" />
+		<field name="enable_jQuery" type="radio" default="1" label="Enable/Disable jQuery" description="select Enable/Disable">
+			<option value="1">Enable</option>
+			<option value="0">Disable</option>
+		</field>
+		<field name="width" type="text" default="100%" label="Width of module(%)" description="Width of module(%)" />
+		<field name="height" type="text" default="450" label="Height of module" description="Height without px" />
+		<field name="autoplay" type="list" default="1" label="Autoplay" description="Select Yes/No">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</field>
+		<field name="speed" type="text" default="3000" label="Speed" description="Speed" />
+		<field name="show_thumb" type="list" default="1" label="Show/Hide Thumbs" description="Select Show/Hide">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+		</field>
+		
+      </fieldset>
+      <fieldset name="sliders" description="Setting for all item,Click Add New(require fill title)" label="Setting Item">
+        <field type="sliders" name="sliders" />
+      </fieldset>
+	  <fieldset name="animation">
+        <field type="animation" name="animation" />
+      </fieldset>
+      <fieldset name="advanced">	  
+		<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+		<field name="module_cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+		<option value="1">JGLOBAL_USE_GLOBAL</option>
+		<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+		</field>
+		<field name="cache" type="hidden" default="1" />
+		<field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+		<field name="cachemode" type="hidden" default="itemid">
+			<option value="itemid"></option>
+		</field>
+      </fieldset>
+    </fields>
+  </config>
+</extension>

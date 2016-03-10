@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+  <name>joombig banner rotation images</name>
+  <author>joombig.com</author>
+  <creationDate>April 2014</creationDate>
+  <copyright>Copyright (C) 2014 joombig.com. All rights reserved.</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <authorEmail>support@joombig.com</authorEmail>
+  <authorUrl>www.joombig.com</authorUrl>
+  <version>1.1</version>
+  <description>MODULE_DESC</description>
+  <languages>
+    <language tag="en-GB">language/en-GB.mod_joombig_banner_rotation_images.ini</language>
+  </languages>
+  <files>
+    <filename module="mod_joombig_banner_rotation_images">mod_joombig_banner_rotation_images.php</filename>
+    <filename>helper.php</filename>
+    <filename>index.html</filename>
+    <folder>tmpl/</folder>
+    <folder>fields/</folder>
+    <folder>helpers/</folder>
+    <folder>language/</folder>
+    <folder>assets/</folder>
+  </files>
+  <config>
+    <fields name="params">
+      <fieldset name="basic" addfieldpath="/modules/mod_joombig_banner_rotation_images/fields">
+        <field type="assets" url="/modules/mod_joombig_banner_rotation_images/assets" />
+		<field type="loader" />
+        <field type="tmpl" name="sp_style" default="Banerrotationimges"  label="STYLE" description="STYLE_DESC" />
+		<field name="enable_jQuery" type="radio" default="1" label="Enable/Disable jQuery" description="Select Enable/Disable">
+			<option value="1">Enable</option>
+			<option value="0">Disable</option>
+		</field>
+		<field name="width_module" type="text" default="960" label="Width of Module" description="Width without px" />
+		<field name="height_module" type="text" default="380" label="Height of Module" description="Height without px" />
+		<field name="left_module" type="text" default="0" label="Left of Module" description="Left without px" />
+		<field name="show_nav" type="list" default="1" label="Show navigation" description="Select style to show navigation">
+			<option value="1">When hover</option>
+			<option value="2">Always</option>
+			<option value="0">Never</option>
+		</field>
+		<field name="show_bullet" type="list" default="1" label="Show Bullet" description="Select style to show bullet navigation">
+			<option value="1">When hover</option>
+			<option value="2">Always</option>
+			<option value="0">Never</option>
+		</field>
+		<field name="showdes" type="list" default="1" label="Show description box" description="Select Yes/No">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</field>
+		<field name="width_box_des" type="text" default="270" label="Width of Box description" description="Width without px" />
+		<field name="height_box_des" type="text" default="130" label="Height of Box description" description="Height without px" />
+		<field name="top_box_des" type="text" default="20" label="Top of Box description" description="Top without px" />
+		<field name="left_box_des" type="text" default="20" label="Left of Box description" description="Left without px" />
+		<field name="background_box" type="hotcolor" default="#F5F5F5" label="Background box description" description="Color of Background" />
+		<field name="opacity_box" type="text" default="0.7" label="Opacity of Box description(from 0 to 1)" description="Opacity of Box description" />
+		<field name="font_size_title" type="text" default="20" label="Font size title" description="Font size without px" />
+		<field name="color_text_title" type="hotcolor" default="#000000" label="Color title" description="Color of Title" />
+		<field name="font_size_des" type="text" default="14" label="Font size description" description="Font size without px" />
+		<field name="color_text_des" type="hotcolor" default="#000000" label="Color description" description="Color of description" />
+		<field name="show_readmore" type="list" default="1" label="Show/Hide read more in description box" description="Select Show/Hide">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+		</field>
+		<field name="autoplay" type="list" default="1" label="Autoplay" description="Select Yes/No">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</field>
+		<field name="animationspeed" type="text" default="4000" label="Animation speed" description="Animation speed" />
+		<field name="slider_effect" type="list" default="0" label="Slider effect" description="Select effect">
+			<option value="0">Random</option>
+			<option value="1">Rotate Overlap</option>
+			<option value="2">Switch</option>
+			<option value="3">Rotate Relay</option>
+			<option value="4">Doors</option>
+			<option value="5">Rotate in+ out-</option>
+			<option value="6">Fly Twins</option>
+			<option value="7">Rotate in- out+</option>
+			<option value="8">Rotate Axis up overlap</option>
+			<option value="9">Chess Replace TB</option>
+			<option value="10">Chess Replace LR</option>
+			<option value="11">Shift TB</option>
+			<option value="12">Shift LR</option>
+			<option value="13">Return TB</option>
+			<option value="14">Return LR</option>
+			<option value="15">Rotate Axis down</option>
+			<option value="16">Extrude Replace</option>
+		</field>
+		<field name="des_effect" type="list" default="0" label="Description box effect" description="Select effect">
+			<option value="0">Random</option>
+			<option value="1">CLIP Left Right</option>
+			<option value="2">CLIP Top Bottom</option>
+			<option value="3">DDGDANCE Left Bottom</option>
+			<option value="4">DDGDANCE Right Bottom</option>
+			<option value="5">TORTUOUS Horizental Left</option>
+			<option value="6">TORTUOUS Vertical Bottom</option>
+			<option value="7">ZMF 10</option>
+			<option value="8">ZML Right</option>
+			<option value="9">ZML Bottom</option>
+			<option value="10">ZMS Bottom</option>
+			<option value="11">ZM*JDN Left Bottom</option>
+			<option value="12">ZM*JUP Left Bottom</option>
+			<option value="13">ZM*JUP Right Bottom</option>
+			<option value="14">ZM*WVR Left Top</option>
+			<option value="15">ZM*WVR Right Top</option>
+			<option value="16">ZM*WVR Top Left</option>
+			<option value="17">ZM*WVR Bottom Left</option>
+			<option value="18">RTT 10</option>
+			<option value="19">RTTL Right</option>
+			<option value="20">RTTL Bottom</option>
+			<option value="21">RTTS Right</option>
+			<option value="22">RTTS Bottom</option>
+			<option value="23">RTT*JDN Right Top</option>
+			<option value="24">RTT*JDN Left Bottom</option>
+			<option value="25">RTT*JUP Right Bottom</option>
+			<option value="26">RTT*JUP Bottom Right</option>
+			<option value="27">Right In Back</option>
+			<option value="28">Bottom In Back</option>
+		</field>
+      </fieldset>
+      <fieldset name="sliders" description="Setting for all item,Click Add New(require fill title)" label="Setting Item">
+        <field type="sliders" name="sliders" />
+      </fieldset>
+	  <fieldset name="animation">
+        <field type="animation" name="animation" />
+      </fieldset>
+      <fieldset name="advanced">	  
+		<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+		<field name="module_cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+		<option value="1">JGLOBAL_USE_GLOBAL</option>
+		<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+		</field>
+		<field name="cache" type="hidden" default="1" />
+		<field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+		<field name="cachemode" type="hidden" default="itemid">
+			<option value="itemid"></option>
+		</field>
+      </fieldset>
+    </fields>
+  </config>
+</extension>

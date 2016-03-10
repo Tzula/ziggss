@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset addfieldpath="/administrator/components/com_cmlivedeal/models/fields">
+
+		<field name="code" type="hidden" disabled="true" readonly="true"/>
+
+		<field name="redeemed" type="radio" default="0"
+			label="COM_CMLIVEDEAL_COUPON_FIELD_REDEEMED_LABEL"
+			description="COM_CMLIVEDEAL_COUPON_FIELD_REDEEMED_DESC">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+		</field>
+
+		<field name="redeemed_time" type="cmldcalendar" format="%Y-%m-%d %H:%M:%S"
+			filter="server_utc"
+			label="COM_CMLIVEDEAL_COUPON_FIELD_REDEEMED_TIME_LABEL"
+			description="COM_CMLIVEDEAL_COUPON_FIELD_REDEEMED_TIME_DESC"/>
+
+		<field name="created" type="cmldcalendarinfo" format="%Y-%m-%d %H:%M:%S" filter="user_utc"
+			label="COM_CMLIVEDEAL_COUPON_FIELD_CREATED_LABEL" description="COM_CMLIVEDEAL_COUPON_FIELD_CREATED_DESC"/>
+
+	</fieldset>
+</form>

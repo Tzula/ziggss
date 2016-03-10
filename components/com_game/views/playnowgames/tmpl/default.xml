@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_GAME_GAME_VIEW_DEFAULT_TITLE">
+		<message>COM_GAME_GAME_VIEW_DEFAULT_DESC</message>
+	</layout>
+	<fields>
+	<field
+				name="genres"
+				type="category"
+				extension="com_game"
+				class="inputbox"
+				default=""
+				label="COM_GAME_FIELD_GENRES_LABEL"
+				description="COM_GAME_FIELD_GENRES_DESC"
+				required="true"
+		>
+			<option value="0">JOPTION_SELECT_CATEGORY</option>
+		</field>
+		
+	</fields>
+</metadata>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>mod_cmlivedeal_search</name>
+	<version>1.8.1</version>
+	<copyright>(C) 2014-2015 CMExtension team</copyright>
+	<author>CMExtension team</author>
+	<authorEmail>cmext.vn@gmail.com</authorEmail>
+	<authorUrl>www.cmext.vn</authorUrl>
+	<license>GNU General Public License version 2 or later</license>
+	<creationDate>September 4, 2015</creationDate>
+	<description>MOD_CMLIVEDEAL_SEARCH_XML_DESCRIPTION</description>
+
+	<files>
+		<folder>fields</folder>
+		<folder>forms</folder>
+		<folder>language</folder>
+		<folder>tmpl</folder>
+		<filename module="mod_cmlivedeal_search">mod_cmlivedeal_search.php</filename>
+		<filename>index.html</filename>
+	</files>
+
+	<config>
+		<fields name="params">
+			<fieldset name="options" label="COM_MODULES_BASIC_FIELDSET_LABEL">
+				<field name="form_display" type="radio" default="inline"
+					label="MOD_CMLIVEDEAL_SEARCH_FIELD_FORM_DISPLAY_LABEL"
+					description="MOD_CMLIVEDEAL_SEARCH_FIELD_FORM_DISPLAY_DESC">
+						<option value="inline">MOD_CMLIVEDEAL_SEARCH_INLINE</option>
+						<option value="horizontal">MOD_CMLIVEDEAL_SEARCH_HORIZONTAL</option>
+						<option value="vertical">MOD_CMLIVEDEAL_SEARCH_VERTICAL</option>
+				</field>
+
+				<field name="keyword_css" type="text"
+					label="MOD_CMLIVEDEAL_SEARCH_FIELD_KEYWORD_CSS_LABEL"
+					description="MOD_CMLIVEDEAL_SEARCH_FIELD_KEYWORD_CSS_DESC"/>
+
+				<field name="category_css" type="text"
+					label="MOD_CMLIVEDEAL_SEARCH_FIELD_CATEGORY_CSS_LABEL"
+					description="MOD_CMLIVEDEAL_SEARCH_FIELD_CATEGORY_CSS_DESC"/>
+
+				<field name="city_css" type="text"
+					label="MOD_CMLIVEDEAL_SEARCH_FIELD_CITY_CSS_LABEL"
+					description="MOD_CMLIVEDEAL_SEARCH_FIELD_CITY_CSS_DESC"/>
+
+				<field name="search_css" type="text"
+					label="MOD_CMLIVEDEAL_SEARCH_FIELD_SEARCH_CSS_LABEL"
+					description="MOD_CMLIVEDEAL_SEARCH_FIELD_SEARCH_CSS_DESC"/>
+
+				<field name="clear_css" type="text"
+					label="MOD_CMLIVEDEAL_SEARCH_FIELD_CLEAR_CSS_LABEL"
+					description="MOD_CMLIVEDEAL_SEARCH_FIELD_CLEAR_CSS_DESC"/>
+
+
+				<field name="clear_button" type="radio" default="1"
+					label="MOD_CMLIVEDEAL_SEARCH_FIELD_CLEAR_BUTTON_LABEL"
+					description="MOD_CMLIVEDEAL_SEARCH_FIELD_CLEAR_BUTTON_DESC">
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+				</field>
+
+				<field name="button" type="radio" default="icon"
+					label="MOD_CMLIVEDEAL_SEARCH_FIELD_BUTTON_LABEL"
+					description="MOD_CMLIVEDEAL_SEARCH_FIELD_BUTTON_DESC">
+						<option value="icon">MOD_CMLIVEDEAL_SEARCH_ICON</option>
+						<option value="text">MOD_CMLIVEDEAL_SEARCH_TEXT</option>
+						<option value="icon_text">MOD_CMLIVEDEAL_SEARCH_ICON_TEXT</option>
+				</field>
+			</fieldset>
+
+			<fieldset name="advanced">
+				<field name="layout" type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field name="moduleclass_sfx" type="textarea" rows="3"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field name="cache" type="list" default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+						<option value="1">JGLOBAL_USE_GLOBAL</option>
+						<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field name="cache_time" type="text" default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+
+				<field name="cachemode" type="hidden" default="static">
+					<option value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

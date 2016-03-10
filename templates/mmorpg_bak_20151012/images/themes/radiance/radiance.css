@@ -1,0 +1,2111 @@
+/*
+//////////
+// File: radiance.css
+// Description: Layout css for radiance theme on mmorpg.com
+//////////
+*/
+
+/* Reset - Get all browsers to the same point for a uniform look */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	background-color:transparent;
+	background-repeat:no-repeat;
+	background-position:top left;
+}
+/*html,body { height:100%; }*/
+strong { font-weight:bold; }
+body { height:100%; font-size:0.73em; }
+table { border-collapse:collapse; border-spacing: 0; vertical-align:top; }
+p { margin-bottom:1.2em; line-height:1.4em; padding:0; }
+HR { border:none 0; height:1px; padding:0px; margin:0.7em 0em 0.7em 0em; }
+.clear { height:0px; border:0px; background:transparent; width:100%; display:block; overflow:hidden; position:relative; clear:both !important; }
+em { font-style:italic; }
+
+/* Global Classes and styes - Classes used by features,news posts */
+.buff_5  { margin:5px;   }
+.buff_10 { margin:10px;  }
+.buff_15 { margin:15px;  }
+.buff_20 { margin:20px;  }
+.buff_25 { margin:25px;  }
+.buff_30 { margin:30px;  }
+.buff_35 { margin:35px;  }
+.buff_40 { margin:40px;  }
+.padd_5  { padding:5px;  }
+.padd_10 { padding:10px; }
+.padd_15 { padding:15px; }
+.padd_20 { padding:20px; }
+.padd_25 { padding:25px; }
+.padd_30 { padding:30px; }
+.padd_35 { padding:35px; }
+.padd_40 { padding:40px; }
+.left { float:left; }
+.right { float:right; }
+.middle { text-align:center; }
+.center { margin:0 auto; }
+.tablecenter { text-align:center; }
+.size1 { font-size:24px; }
+.size2 { font-size:20px; }
+.size3 { font-size:18px; }
+.size4 { font-size:15px; }
+.size5 { font-size:12px; }
+.size6 { font-size:9px; }
+.handy { cursor:pointer !important; cursor:hand !important; }
+
+/* Framework - Base positioning, opened by header.cfm */
+#base { height:100%; }
+#base.isTopAd { padding-top:4px; }
+#container { margin:0 auto; padding-bottom:30px; width:990px; position:relative; height:100%; }
+
+#axTopLeaves { display:block; line-height:36px; position:relative; }
+#axTopLeaves #topContainer { margin:0 auto; width:990px; position:relative; }
+#axTopLeaves #userarea { position:relative; padding-left:13px; }
+#axTopLeaves #formelements { position:relative; float:left; }
+#axTopLeaves #userarea .lab2 { position:relative; font-size:0.9em; }
+#axTopLeaves #userarea .logincheckbox { position:relative; top:2px; }
+#axTopLeaves #userarea .loginbarinput { position:relative; width:75px; margin:0px; padding:2px; }
+#axTopLeaves #notmember { float:left; position:relative; padding-left:1em; padding-right:1em; }
+#axTopLeaves #userarea .avatar { float:left; padding:0px 5px 0px 0px; position:relative; background-position:center center; height:30px; top:3px; width:30px; overflow:hidden; }
+#axTopLeaves #showQGLpanela { position:absolute; top:1px; left:790px; width:184px; height:36px; overflow:hidden; text-indent:-3000px; }
+
+#axTopLeaves #showQGLRandonPanela { position:absolute; top:1px; left:958px; width:31px; height:36px; overflow:hidden; text-indent:-3000px; }
+
+
+#axTopLeaves .uidels { }
+
+#origin { position:relative; height:auto; }
+#origin #label { position:relative; width:990px; height:116px; overflow:hidden; clear:both; }
+#origin #label #logo { float:left; width:223px; height:68px; padding:1px 20px 0px 6px; }
+#origin #label #logo img { position:relative; left:6px; top:10px; }
+#origin #label #stats { position:absolute; left:1px; top:72px; height:2.6em; padding:0px; font-size:0.9em; width:257px; text-align:center; overflow:hidden; }
+#origin #label #hepro { float:right; width:auto; height:90px; padding-top:10px; padding-right:0px; margin-right:6px; }
+#origin #topcustomad { padding-bottom:8px; }
+#origin #insidediv { width:728px; height:90px; display:block; overflow:hidden; }
+
+#origin #services { float:left; width:50px; height:105px; position:relative; top:9px; left:-14px; }
+#origin #services a { width:19px; height:19px; background:transparent url('service_icons_r1.gif') no-repeat top left; position:absolute; display:block; text-indent:-3000px; }
+#origin #services .sltwi { background-position:0px 0px; top:0px; left:0px; }
+#origin #services .slfac { background-position:0px -19px; top:22px; left:0px; }
+#origin #services .slrss { background-position:0px -38px; top:44px; left:0px; }
+#origin #services .slyou { background-position:0px -57px; top:0px; left:22px; }
+#origin #services .slttv { background-position:0px -76px; top:22px; left:22px; }
+#origin #services .sltwi:hover { background-position:-19px 0px; }
+#origin #services .slfac:hover { background-position:-19px -19px; }
+#origin #services .slrss:hover { background-position:-19px -38px; }
+#origin #services .slyou:hover { background-position:-19px -57px; }
+#origin #services .slttv:hover { background-position:-19px -76px; }
+
+#origin #nav { position:relative; width:990px; height:37px; padding:0px 0px 0px 0px; margin:0px; font-size:1em; overflow:hidden; }
+#origin #nav .iside { position:relative; width:2000px; height:37px; }
+#origin #nav a { float:left; display:block; width:auto; height:37px; padding:0px 11px 0px 5px; margin:0px; white-space:nowrap; line-height:35px; font-weight:bold; }
+#origin #nav a.home { padding-left:0px; }
+#origin #nav a.home span { display:block; padding-left:12px; }
+#origin #nav .navspacer { display:block; float:left; width:300px; height:37px; margin:0px; }
+#origin #nav #themeSwitcher { width:52px; position:absolute; top:9px; left:939px; height:20px; }
+#origin #nav #themeSwitcher b { float:left; display:block; width:24px; height:20px; border:0px; overflow:hidden; text-indent:-3000px; cursor:pointer; cursor:hand; }
+#origin #nav #themeSwitcher div.current { border:2px solid #70B9ED; display:block; width:16px; height:16px; }
+#origin #nav #themeSwitcher .default { background:transparent url('theme_default.gif') no-repeat top left; }
+#origin #nav #themeSwitcher .moonless { background:transparent url('theme_moonless.gif') no-repeat top left; }
+#origin #nav .navtopcorner { display:block; position:absolute; top:0px; left:979px; width:11px; height:11px; }
+#origin #nav .livestream { background-image: url('frame_r3_nav_tabs_live.gif') !important; }
+
+/* Game Quick Jump */
+
+#gqj { position:absolute; z-index:999999; overflow:hidden; top:-25px; left:742px; padding:0px 1px 0px 0px; width:230px; height:325px; }
+#gqj .tabs td { height:25px; }
+#gqj .tabs a { width:70px; height:25px; display:block; }
+#gqj .tabs a.close { width:20px; }
+#gqj .tabs a.dv:hover { background-position:-70px -25px; }
+#gqj .tabs a.re:hover { background-position:-140px -25px; }
+#gqj .tabs a.x:hover { background-position:-210px -25px; }
+#gqj .output { width:229px; height:275px; overflow:auto; position:relative; left:0px; }
+#gqj .output span { display:block; width:202px; padding:2px 3px 1px 3px; cursor:pointer; cursor:hand; overflow:hidden; white-space:nowrap; }
+#gqj .output a { width:170px; overflow:hidden; padding-right:6px; display:block; float:left; }
+#gqj .output p { padding:0px; margin:0px; display:block; float:left; width:24px; text-align:center; }
+#gqj .gqjfoot { width:230px; height:25px; overflow:hidden;}
+#gqj .gqjfoot span { padding:5px 0px 0px 6px; display:block; }
+
+/* Footer - Bottom of page, opened by footer.cfm */
+#footer { position:relative; clear:both; width:990px; padding:5px 0px 15px 0px; text-align:center; font-size:0.9em !important; }
+#footer .search input { width:90px; }
+#footer .search .submit { width:3em; }
+#footer .breadcrumbs { text-align:left; padding-bottom:10px; }
+#footer .breadcrumbs a { float:left; position:relative; display:block; padding:6px 6px 6px 6px; height:17px; line-height:16px; font-size:12px; border-left:1px solid #222222; }
+#footer .breadcrumbs .first { padding-left:8px; border-left:0px; }
+#footer .breadcrumbs .last { border-right:1px solid #222222; }
+
+/* Body - The actual page area, opened by page_open.cfm */
+#body { width:980px; clear:both; display:block; padding:0px 5px 0px 5px; min-height:276px; height:100%; }
+#body .prebody,#body .subbody,#body .outerbody,#body .innerbody,#body .actualbody { display:block; width:100%; _height:100%; }
+
+/* Columns - Site columns (common) */
+#colOne,#colTwo,#colThree,#colFour,#colFive,#colSix,#colSeven,#colEight,#colNine,
+#colTen,#colEleven,#colTwelve,#colThirteen,#colFourteen { position:relative; float:left; margin-top:0px; overflow:hidden; }
+#colOne { width:650px; }
+#colTwo { width:323px; padding-left:7px; }
+#colThree { width:616px; }
+#colFour,#colSeven { width:798px; }
+#colFive,#colSix,#colEleven { width:175px; padding-left:7px; }
+#colSix { padding-left:0px; }
+#colSeven,#colThree { padding-left:7px; float:right; }
+#colEight { width:202px; min-height:14px; }
+#colNine { padding-left:6px; width:759px; min-height:14px; }
+#colTen { width:100%; min-height:14px; }
+#colEleven { float:right; }
+#colTwelve { width:175px; padding-right:7px; }
+#colThirteen { width:200px; }
+#colFourteen { width:773px; padding-left:7px; }
+
+/* Section Headers - Introduction and common top to page sections, containing sub-section links (common) */
+#sectionHeader,.commonContent .header { width:100%; }
+#sectionHeader span { width:100%; display:block !important; }
+#sectionHeader span span,.commonContent span span { display:inline !important; background:transparent; width:auto; }
+#sectionHeader H1,.commonContent h1 { font-size:1.4em; font-weight:bold; position:relative; text-indent:7px; line-height:1.8em; } /* ,.gamelist thead .head */
+#sectionHeader H1 .small { font-size:0.8em; font-weight:normal; }
+#sectionHeader H1 .current,#sectionHeader H1 a.current { font-weight:bold; }
+#sectionHeader H3 { text-indent:7px; padding-bottom:3px; }
+#sectionHeader div.subheading,.commonContent h2,#sectionHeader h2 { font-size:1em; padding:0px 0px 7px 7px; }
+#sectionHeader ul { position:relative; float:left; left:7px; width:auto; padding:0px; margin:0px; list-style:none; top:1px; }
+#sectionHeader ul li { position:relative; float:left; padding:0em 0em 0em 0.5em; margin-right:0.1em; line-height:1.2em; }
+#sectionHeader ul li a { display:block; padding:0.35em 0.5em 0.35em 0em; }
+#sectionHeader ul li.current { font-weight:bold; }
+#sectionHeader .panes, #sectionHeader .filter { display:block; padding:0px 0px 7px 7px; }
+#sectionHeader .panes a { padding-left:17px; padding-right:6px; height:20px; }
+#sectionHeader .panes hr { width:98.5%; }
+#sectionHeader .panes a.current { font-weight:bold; }
+
+#sectionHeader.slinheader .slinks { float:left; display:block; padding-left:6px; }
+#sectionHeader.slinheader .sltitle { position:relative; padding-top:3px; float:left; width:auto !important; }
+
+/* Panel - A trusty workhorse, opened by section_open.cfm */
+.panel .panelTitleBar .title,.panel.panelPrimary .panel .panelTitleBar .title { padding:0px 7px 0px 7px; }
+.panel .panelTitleBar h3,.panel.panelPrimary .panel .panelTitleBar h3 { width:100%; text-align:center; font-size:0.94em; padding:3px 0px 3px 0px; font-weight:bold; }
+.panel .panelTight, .panel .panelTight .title,.panel .panelTight,.panel.panelPrimary  .panel .panelTight .title { height:7px; padding:0px; width:100%; }
+.panel .panelTight h3,.panel.panelPrimary .panel .panelTight h3 { display:none !important; }
+.panel .panelBody,.panel.panelPrimary .panel .panelBody { padding:0px 7px 7px 7px; }
+.panel .panelBody p,.panel.panelPrimary .panel .panelBody p { width:95%; margin:0 auto; }
+.panel.panelFullWidth { width:100%; }
+.panel.panelHalfWidth { width:50%; margin:0 auto; }
+.panel.panelTopSpacer { margin-top:8px; }
+.panel.panelLeftSpacer { margin-left:8px; }
+.panel.panelRightSpacer { margin-right:8px; }
+.panel.panelBottomSpacer { margin-bottom:8px; }
+.panel.panelDoubleBottomSpacer { margin-bottom:16px; }
+.panel.panelNoPad { margin:0; padding:0; }
+.panel.panelFittedAd { width:172px; overflow:hidden; }
+.panel.panelRSS { margin-top:32px; }
+.panel.panelForumSL { width:162px; }
+.panel.panelPromoWinners { width:80%; margin:10px 10% 10px 10%; }
+.panel.panelPrimary { padding:0px; margin:0px; }
+.panel.panelPrimary .panelBody { padding:0px; margin:0px; }
+.panel.panelPrimary .panelBody p { width:auto; padding:0px; margin:0px; }
+.panel.panelPrimary .panelTight, .panel .panelTight .title { display:none !important; }
+.panel.panelTight .panelTitleBar { display:none; }
+.panel.panelTight .panelBody { padding:0px !important;}
+
+/* Page Jumper - Common pagination links, tabled for browser compatibility (common) */
+.pageJumpList { width:auto; margin:0 auto; }
+.pageJumpList td { padding:6px; }
+
+/* Rank Stars - (common) */
+.rankstars8,.rankstars32 { width:74px; height:15px; overflow:hidden; display:block; }
+.rankstars8 .got,.rankstars32 .got { height:15px; display:block; }
+
+/* Social Links */
+.soci { position:relative; float:right; width:130px; }
+.soci.left { float:left; }
+.soci a { background-position:16px -64px; width:19px; height:16px; display:block; float:right; position:relative; overflow:hidden; }
+.soci.left a { float:left; }
+.soci a.reddi { background-position:-38px -16px; }
+.soci a.reddi:hover { background-position:-38px 0px; }
+.soci a.facei { background-position:0px -16px; }
+.soci a.facei:hover { background-position:0px 0px; }
+.soci a.slasi { background-position:-95px -16px; }
+.soci a.slasi:hover { background-position:-95px 0px; }
+.soci a.delii { background-position:-57px -16px; }
+.soci a.delii:hover { background-position:-57px 0px; }
+.soci a.stumi { background-position:-19px -16px; }
+.soci a.stumi:hover { background-position:-19px 0px; }
+.soci a.diggi { background-position:-76px -16px; }
+.soci a.diggi:hover { background-position:-76px 0px; }
+
+/* Simple Section - Common subpage section (common) */
+a.buddyAdd:link,a.buddyAdd:visited,a.isBuddy { position:relative; float:left; top:1px; display:block; padding:0px !important; margin:0px !important; width:14px !important; overflow:hidden; height:14px !important; text-indent:-3000px !important; }
+a.buddyAdd:hover { width:82px !important; background-position:0px -14px !important; }
+a.isBuddy { background-position:top left !important; }
+
+/* Button - Static button (common) */
+.bttn { position:relative; font-weight:bold; font-size:1em; width:auto; display:block; float:left; margin-right:7px; z-index:566; }
+.bttn span { padding:0.4em 1em 0.4em 0.7em !important; display:block !important; }
+.bttn.inside { padding-left:7px !important; }
+.bttn.inside span { padding-left:0px !important; padding-right:7px !important; }
+.bttn.right { float:right; margin-left:7px; margin-right:0px; }
+
+/* Comments - Common comment input (common) */
+.commenters { list-style:none !important; padding:0 !important; margin:0 !important; position:relative; float:left; }
+.commenters div.commententry { padding:0.75em !important; display:block; position:relative; float:left; }
+.commenters .com_avatar { width:55px !important; float:left !important; }
+.commenters .com_avatar img { padding-top:5px !important; }
+.commenters div.back { float:left !important; width:429px !important; overflow:hidden !important; margin-bottom:0.5em !important; padding-right:0px; }
+.commenters div.top { float:left !important; width:430px !important; }
+.commenters div.bottom { float:left !important; width:413px !important; padding:4px 12px 4px 4px !important; }
+.commenters .cspan { display:block !important; padding-bottom:0.3em !important; } */
+.commenters .com_who { padding-bottom:0.4em !important; }
+.commenters .com_who a { font-weight:bold !important; }
+.commenters .com_body p { width:auto !important; padding-bottom:0.8em !important; margin:0 !important; }
+.commenters .com_body ul { list-style:disc !important; padding:0em 0em 1em 3em !important; width:auto !important; }
+.commenters .com_body ol { padding:0em 0em 1em 3em !important; width:auto !important; }
+.commenters .com_body ol li,.commenters .body ul li { margin-bottom:0.3em !important; width:auto !important; }
+.commenters .com_body ul li ul { padding-left:0px !important; width:99% !important; }
+.commenters .com_when { font-style:italic; float:right; display:block; text-align:right; padding-bottom:0.4em; padding-top:0.4em; font-size:0.9em; }
+.commenters .com_admin { display:block !important; float:left; }
+.commenters.needlogin { padding-left:64px !important; }
+
+.commenters.add.extra { padding:0.75em !important; }
+.commenters.add { width:auto !important; background:transparent !important; }
+.commenters.add .sub { font-size:1.6em !important; font-weight:bold !important; margin:0.2em !important; }
+.commenters.add .nologin { font-size:1em !important; padding-bottom:0.3em !important; }
+.commenters.add .nologin span { font-size:1.2em !important; font-weight:bold !important; }
+.commenters.add .buttons { float:left !important; width:100% !important; display:block !important; padding-bottom:0.2em !important; }
+.commenters.add .buttons input { float:left; }
+.commenters.add .bbml { padding:3px 4px 0px 0px !important; }
+.commenters.add .bbml textarea { background-image:none !important; overflow:auto !important; }
+
+.commentsv2 { padding:5px; }
+.cmnt2 { display:block; margin-bottom:5px; }
+.cmnt2 .cout { display:block; padding:0px 0px 0px 45px; }
+.cmnt2 .cin { display:block; padding:0px 0px 3px 0px; position:relative; }
+.cmnt2 .unmae { display:block; padding:3px 3px 3px 3px; }
+.cmnt2 .constrain { padding:3px; }
+.cmnt2 .constrain blockquote { padding:6px; margin:4px; width:91%; overflow:hidden; }
+.cmnt2 p { padding:0px 0px 5px 0px; margin:0px; }
+.cmnt2 .uwhen { font-size:10px; text-align:right; padding:0px 0px 0px 0px; }
+.cmnt2 .uwhen a { font-weight:bold; }
+.cmnt2 .comiin { padding:4px; font-weight:bold; display:block; }
+.cmnt2 .comuin,.cmnt2 .compin { padding:0px 4px 4px 4px; font-style:italic; }
+.cmnt2 .cact { text-align:right; padding:0px 4px 4px 4px; }
+.cmnt2 .adcombutton { padding:3px 0px 5px 4px; }
+
+.cmnt2 .cfreply,.cmnt2 .cfquote,.cmnt2 .cfedit,.cmnt2 .cfdelete { padding-left:0px; height:22px; width:14px; text-indent:200px !important; font-size:0px; overflow:hidden; float:right; display:block; background-position:bottom left; background-repeat:no-repeat; }
+.cmnt2 a.cfreply:hover, .cmnt2 a.cfquote:hover, .cmnt2 a.cfedit:hover, .cmnt2 a.cfdelete:hover { background-position:top left; width:53px; }
+.cmnt2 .cfreply span,.cmnt2 .cfquote span,.cmnt2 .cfedit span { display:none; }
+.cmnt2 .uwhen { padding-top:7px; float:left; }
+
+.cmnt2 .reporterx { width:90%; position:relative; border:1px solid #8a0000; background-color:#380000; text-align:left; padding:6px; }
+.cmnt2 .reporterx h2 { color:red; margin:0px; padding:0px 0px 4px 0px; font-size:1.2em; font-weight:bold; }
+
+.newsroom .cmnt2 .reporterx { width:581px; left:-5px; }
+
+/*
+.cmnt2 .cact a { position:relative;  background:transparent url() no-repeat bottom right; }
+.cmnt2 .cfreply { background-image:url(fullmoon/item_forum_reply.gif); }
+.cmnt2 .cfquote { background-image:url(fullmoon/item_forum_quote.gif); }
+.cmnt2 .cfedit { background-image:url(fullmoon/item_forum_edit.gif); }
+.cmnt2 a.cfreply:hover, .cmnt2 a.cfquote:hover, .cmnt2 a.cfedit:hover, .cmnt2 a.cfdelete:hover { background-position:top right; }
+*/
+
+.ccfbox .ccfboxo { display:block; }
+.ccfbox .ccfboxi { padding:7px; display:block; font-size:1.1em; font-weight:bold; }
+.ccfboxcon { clear:both; }
+
+/* Tables - Common table look (common) */
+.tabicular { width:100%; }
+.tabicular td { padding:0.2em 0em 0.2em 0.1em; }
+.tabicular th { font-weight:bold; }
+.tabicular .head th { height:30px; padding:0px; margin:0; border:0; padding-left:7px; }
+.tabicular .head th span { display:block; width:100%; text-indent:0px; font-size:1.4em; }
+.tabicular .label th,.tabicular .simple th { padding:0.2em; }
+.tabicular td { position:relative; height:16px; vertical-align:middle; }
+.tabicular td.first, .tabicular th.first { padding-left:7px; }
+.tabicular td.last, .tabicular th.last { padding-right:7px; }
+.tabicular .feet { height:10px; border:0px; padding:0; }
+.tabicular .feet span { display:block; height:10px; }
+
+/* Home - Homepage, opened by inc_home.cfm */
+.home.one { width:800px; overflow:hidden; padding:0px; float:left; }
+.home.two { width:174px; overflow:hidden; float:left; padding-left:6px; }
+.home .three { width:486px; overflow:hidden; float:left; }
+.home .four { width:302px; overflow:hidden; float:left; padding:0px 6px 0px 6px; }
+
+.home ul { padding:0px; margin:0px; list-style:none; }
+.home li { padding:0px; margin:0px; }
+.home .small { font-size:0.9em; }
+.home .inframe { padding-top:10px; padding-bottom:0px; position:static; width:800px; height:auto; }
+.home .inbot { height:7px; display:block; width:800px; overflow:hidden; clear:both; }
+.home .hmemm { width:796px; height:300px; padding:2px; position:relative; overflow:hidden; }
+
+.featarea { width:490px; height:294px; overflow:hidden; }
+.featjump { width:488px; height:58px; overflow:hidden; padding-left:2px; z-index:7; clear:both; position:relative; }
+.featarea .slider { width:490px; height:294px; position:relative; float:left; padding:0px; overflow:hidden !important; }
+.featarea .slider .card { position:absolute; float:left; width:490px; height:294px; display:block; }
+.featarea .slider .card .data { position:relative; display:block; top:224px; line-height:15px; padding:5px 0px 0px 7px; width:473px; height:60px; text-align:left; overflow:hidden; }
+.featarea .slider .card .data .title { font-weight:bold; display:block; }
+.featjump a { display:block; float:left; width:47px; height:47px; background-position:6px 5px; padding:3px 7px 8px 6px; }
+
+.featarea.wide,.featjump.wide,.featarea.wide .slider,.featarea.wide .slider .card { width:800px; }
+.spotlightscroller { background:#000; }
+
+.home .hmemm .artiarea { width:290px; height:296px; overflow:hidden; position:absolute; left:492px; top:9px; padding:0px 7px 0px 9px; }
+.home .hmemm .artiarea h2.hmeSub,.home .hmemm .videarea h2.hmeSub { padding-bottom:5px; }
+.home .hmemm .artiarea div { height:3.5em; display:block; overflow:hidden; white-space:nowrap; }
+.home .hmemm .artiarea div span { display:block; height:1.4em; overflow:hidden; width:292px; padding:0px; margin:0px; font-size:1em; white-space:nowrap; font-weight:bold; overflow:hidden; }
+.home .hmemm .artiarea div span i { font-weight:normal; }
+.home .hmemm .artiarea div a { height:1.1em; overflow:hidden; display:block; width:392px; white-space:nowrap; padding:0px 0px 2px 17px !important; background-position:6px 0px; }
+
+.home .hmemm .morefeat { width:126px; height:16px; display:block; position:absolute; left:672px; top:282px; text-indent:-3000px; }
+ 
+.home .squaread { padding:5px 0px 6px 0px; margin:0px; width:302px; max-height:302px; text-align:center; display:block; overflow:hidden; }
+.home h2.hmeSub { font-size:1.2em; font-weight:bold; }
+.home .TabbedPanels { background-color:transparent; position:relative; float:left; }
+.home .TabbedPanelsTabGroup { background-image:none; background-color:transparent; height:auto; width:auto; padding:0px; margin:0px; }
+.home .TabbedPanelsContentGroup { padding:0px; border:0px; margin:0px; width:auto; height:auto; position:relative; float:left; }
+.home .TabbedPanelsTab { width:auto; font-family:Verdana,Arial,Helvetica,sans-serif; }
+.home .TabbedPanelsTab,.home .TabbedPanelsTabSelected { border:0px; padding:0px 4px 0px 1px; font-weight:bold; height:auto; overflow:hidden; }
+.home .TabbedPanelsTab span,.home .TabbedPanelsTabSelected span { line-height:21px; display:block; height:auto; padding:0px 9px 0px 4px; margin:0px; }
+.home .hbintro { padding:0px 0px 0px 7px; display:block; }
+.home .hbintro .ine { background-position:bottom right; padding:7px 7px 7px 0px; display:block; }
+.home .hbintro .title,.home .introhmr .title { font-size:1.2em; font-weight:bold; }
+.home .recentposts,.home .latestnews,.home .bloggers { padding-left:0px; }
+.home .latestnews,.home .bloggers { padding-top:6px; }
+.home .recentposts .con .ou { padding:3px 7px 4px 4px; }
+.home .recentposts table { position:static; }
+.home .recentposts td { padding:4px 6px 6px 6px; overflow:hidden; }
+.home .recentposts .first td { border-top:0px; }
+.home .recentposts .when { width:65px; overflow:hidden; font-weight:bold; }
+.home .contest { clear:both; width:480px; overflow:hidden; position:relative; padding-left:7px; }
+.home .contest img { padding:0px; }
+.home .contest.major .count { padding:4px; }
+.home .contest.major .count span { display:block; }
+.home .contest.major  img { padding-top:0px; }
+.home .contest.minor { padding:0px; position:relative; display:block; }
+.home .contest.minor a { display:block; overflow:hidden; width:480px; height:60px; }
+.home .pollTitle { padding:5px 5px 0px 5px; }
+.home .polls form { padding:0px 5px 0px 5px; }
+.home .ranhumor { padding-top:13px; }
+.home .ranhumor .ccfboxcon { position:relative; width:172px; padding:6px 0px 7px 0px; text-align:center; }
+
+.home .recentposts { padding:0px 4px 14px 0px; }
+/*.home .recentposts .moreforums { display:block; padding:4px 0px 4px 0px; font-size:1.2em; font-weight:bold; padding-left:2px; }*/
+
+.home .latestnews .con,.home .latestnews { position:relative; }
+.home .latestnews { padding:6px 4px 0px 0px; }
+.home .latestnews .ccfboxcon a { padding:0px 0px 0px 0.2em; display:block; }
+.home .latestnews .ccfboxcon a u { text-decoration:none; }
+.home .latestnews .ccfboxcon a:hover { text-decoration:none; }
+.home .latestnews .ccfboxcon a.flink { padding-left:0px; font-size:1.2em; }
+.home .latestnews .fitem { padding:5px 0px 5px 5px; position:relative; }
+.home .latestnews .fitem .icon { float:left; position:relative; }
+.home .latestnews .fitem .bod { float:left; position:relative; width:320px; overflow:hidden; padding-left:5px; }
+.home .latestnews .newsline { display:block; overflow:hidden; white-space:nowrap; width:470px; padding:1px 0px 1px 5px; position:relative; }
+.home .latestnews td { padding:1px 0px 1px 5px; position:relative; }
+.home .latestnews tr.second td { padding-top:5px; }
+.home .morenews,.home .moreposts { width:116px; height:16px; display:block; position:relative; left:365px; text-indent:-3000px; }
+
+.home .gomarea { position:relative; }
+.home .gomarea a.moregomnews:link,.home .gomarea a.moregomnews:visited,
+.home .gomarea a.morefpsnews:link,.home .gomarea a.morefpsnews:visited { display:block; position:relative; left:345px; width:137px; height:16px; text-indent:-3000px; }
+.home .gomarea a.moregomnews:hover,.home .gomarea a.morefpsnews:hover { background-position:top left; }
+
+.home .bloggers { width:301px; overflow:hidden; position:relative; }
+.home .bloggers .hbsecint { padding:6px; position:relative; width:295px; }
+.home .bloggers .hbsecint .title { font-size:1.2em; font-weight:bold; }
+.home .bloggers h2 { padding-bottom:6px; font-size:1.2em; font-weight:bold; float:left; position:relative; }
+.home .bloggers .author { font-size:0.9em; display:block; }
+.home .bloggers .btitle { font-size:1.1em; font-weight:bold; }
+.home .bloggers .bentry { position:relative; height:auto; padding:4px; margin:0px; width:291px; }
+.home .bloggers .bentry p { width:240px; display:block; float:left; position:relative; padding-left:5px; }
+.home .bloggers .bentry strong { font-weight:normal; }
+.home .bloggers .bentry .bavatar { width:30px !important; height:30px !important; display:block; float:left; position:relative; text-align:center; overflow:hidden; }
+.home .bloggers .bentry img { float:left; padding-right:5px; padding-bottom:0px; }
+.home .bloggers .large .bentry p { width:200px; }
+.home .bloggers .large .bentry .bavatar { width:80px !important; height:80px !important; }
+.home a.moreblogs:link,.home a.moreblogs:visited { display:block; width:116px; height:16px; text-indent:-3000px; position:relative; left:185px; }
+
+.home .ratehmebx { padding-left:7px; position:relative; left:-6px; float:left; }
+.home .ratings .TabbedPanelsTabGroup { padding:0px; margin:0px; overflow:hidden; position:relative; float:left; }
+.home .ratings .TabbedPanelsTabGroup li { padding:0px 0px 0px 0px; margin:0px; position:relative; }
+.home .ratings .TabbedPanelsTabGroup li span { display:block; padding:7px; margin:0px; width:auto; }
+.home .ratings .TabbedPanelsContent { padding:0px; margin:0px; width:490px; position:relative; float:left; background:#000 !important; }
+.home .ratings .rgbox { position:relative; float:left; }
+.home .ratings .buttons { padding:7px 4px 0px 1px; font-size:0.9em; position:relative; float:left; width:478px; overflow:hidden; height:25px; }
+.home .ratings .buttons a { overflow:hidden; margin:0px !important; padding:0px !important; position:relative; float:left; width:auto; }
+.home .ratings .buttons span { height:14px; display:block; padding:6px 11px 6px 7px; _width:70px; }
+.home .ratings .bar { position:relative; float:left; width:80px; height:14px; }
+.home .ratings .bar span.beta,.home .ratings .bar span.hype,.home .ratings .bar span.rating { display:block; height:14px; line-height:14px; overflow:hidden; font-size:10px; text-align:left; }
+.home .ratings .first { width:120px; text-align:center; position:relative; float:left; }
+.home .ratings .value { font-weight:bold; font-size:0.9em; }
+.home .ratings .value.rta { padding-left:2px; }
+.home .ratings .gvrest { width:361px; position:relative; float:left; }
+.home .ratings .gvtitle { font-weight:bold; font-size:1.1em; }
+.home .ratings .gvscore { font-size:24px; font-weight:bold; padding:3px 0px 7px 0px; }
+.home .ratings .gvi { height:14px; padding:7px 3px 7px 0px; }
+.home .ratings .gvititleother { float:left; display:block;  width:190px; overflow:hidden; height:16px; }
+.home .ratings .gvi.last { border-bottom:0px; }
+.home .ratings .gvi .gviplace { display:block; float:left; font-style:italic; font-weight:normal; padding:0px 5px 0px 4px; }
+.home .ratings .gvi i { font-style:normal; float:right; padding-right:4px; }
+.home .ratings .gvhitfirst { font-size:17px; font-weight:bold; padding:3px 0px 7px 0px; padding:7px 5px 0px 4px; }
+.home .ratings .discl { float:left; width:340px; padding:5px 0px 5px 0px; margin:0px; text-align:right; }
+.home .ratings .first .gvbadge { position:absolute; top:6px; left:5px; width:24px; height:24px; overflow:hidden; }
+
+.home a.moregames:link,.home a.moregames:visited { width:116px; height:16px; display:block; position:relative; left:365px; text-indent:-3000px; float:left; }
+
+.home .userphotos { padding-top:12px; padding-left:0px; padding-bottom:22px; position:relative; }
+.home .userphotos .browser { padding-top:5px; }
+.home .userphotos .browser td { padding-bottom:5px; padding-left:1px; }
+.home .userphotos .browser a { display:block; }
+.home a.moreimg:link,.home a.moreimg:visited { display:block; width:116px; height:16px; position:absolute; left:185px; text-indent:-3000px; }
+
+.home .upcomgame { padding:12px 0px 0px 0px; }
+.home .upcomgame ul { width:100%; margin:0px; padding:0px 0px 0px 0px; }
+.home .upcomgame li { width:145px; padding:9px 3px 1px 29px; margin:0px; border-top:1px solid #282828; line-height:1.3em; min-height:28px; _height:28px; }
+.home .upcomgame .date { font-size:0.9em; }
+.home .humor img { cursor:pointer; cursor:hand; }
+.home .humor a { text-align:center; padding:4px 0px 4px 0px; display:block; width:100%;  cursor:pointer; cursor:hand; }
+.home a.morecomics:link,.home a.morecomics:visited,
+.home a.moregames2:link,.home a.moregames2:visited,
+.home a.morepolls:link,.home a.morepolls:visited,
+.home a.moreoffers:link,.home a.moreoffers:visited 
+ { display:block; position:relative; left:57px; width:116px; height:16px; text-indent:-3000px; }
+.home a.morepolls:link,.home a.morepolls:visited { top:-8px; }
+.home .lowerMisc { width:100%; text-align:center; padding-top:7px; position:relative; left:-1px; }
+.home .spacer { padding-bottom:7px; }
+.home .giveaways { position:relative; padding:12px 4px 5px 0px; }
+
+.upcomgamebox { padding:12px 0px 0px 0px; }
+.upcomgamebox ul { width:100%; margin:0px; padding:0px 0px 0px 0px; list-style:none; }
+.upcomgamebox li { width:auto; padding:9px 3px 1px 35px; margin:0px; border-top:1px solid #282828; line-height:1.3em; min-height:28px; _height:28px; }
+.upcomgamebox li:hover { background-color:#1d2226 !important; }
+.upcomgamebox .date { font-size:0.9em; }
+
+.home .hmcolumns { padding:7px 0px 0px 1px; position:relative; }
+.home .hmcolumns .entry { width:284px; padding:5px; min-height:80px; _height:80px; overflow:hidden; position:relative; }
+.home .hmcolumns .entry .icon { width:85px; float:left; position:relative; }
+.home .hmcolumns .entry .data { width:200px; float:left; position:relative; }
+.home .hmcolumns .entry .title { font-size:1.1em; font-weight:bold; padding-bottom:2px; }
+.home .hmcolumns .entry .desc { display:Block; font-size:0.9em; }
+.home a.morecolumns:link,.home a.morecolumns:visited { display:block; width:116px; height:16px; position:relative; left:184px; text-indent:-3000px; }
+
+.home .exclusiveVideos { position:relative; padding:0px 4px 22px 0px; }
+.home .exclusiveVideos .introhmr { position:relative; }
+.home .exclusiveVideos .introhmr div { padding:7px; }
+.home .exclusiveVideos .viddata { background:transparent; position:relative; overflow:hidden; width:480px; }
+.home .exclusiveVideos .insidevr { width:552px; position:relative; }
+.home .exclusiveVideos .vrow { width:120px; float:left; overflow:hidden; padding:7px 0px 7px 0px; position:relative; cursor:pointer; cursor:hand; }
+.home .exclusiveVideos .vrow img { padding-left:8px;  cursor:pointer; cursor:hand;  }
+.home .exclusiveVideos .titl { width:104px; display:block; padding:4px 0px 4px 8px; font-weight:bold; cursor:pointer; cursor:hand; text-decoration:none !important; }
+.home .exclusiveVideos .over { width:104px; display:block; padding-left:8px;  cursor:pointer; cursor:hand; position:relative; }
+.home .exclusiveVideos .over span { font-size:0.9em; }
+.home .exclusiveVideos .over .views,.home .exclusiveVideos .over .comas { float:left; }
+.home .exclusiveVideos .over a { display:block; padding-top:4px; }
+.home .exclusiveVideos .vrow a:hover .play { position:absolute; top:10px; left:8px; width:112px; height:80px;  cursor:pointer; cursor:hand; }
+.home a.morevids:link,.home a.morevids:visited { display:block; position:absolute; left:365px; width:116px; height:16px; text-indent:-3000px; }
+.home a.morevids:hover { background-position:top left; }
+
+.home a.twl:link,.home a.twl:visited { display:block; overflow:hidden; width:162px; height:62px; background:transparent url(http://images.mmorpg.com/images/twitface_img4.gif) no-repeat 0px -137px; text-decoration:none; }
+.home a.twl:hover { background-position:0px 0px; text-decoration:none; }
+.home a.fbl:link,.home a.fbl:visited { display:block; overflow:hidden; width:162px; height:54px; background:transparent url(http://images.mmorpg.com/images/twitface_img4.gif) no-repeat 0px -199px; text-decoration:none; }
+.home a.fbl:hover { background-position:0px -62px; text-decoration:none; }
+.home a.mso:link,.home a.mso:visited { position:absolute; top:4px; left:162px; display:block; overflow:hidden; width:138px; height:162px; background:transparent url(http://images.mmorpg.com/images/twitface_img4.gif) no-repeat -162px -137px; text-decoration:none; }
+.home a.mso:hover { background-position:top right; text-decoration:none; }
+
+/* Newsroom - Opened by newsroom.cfm */
+.newsroom .primary { position:relative; float:left; width:720px; overflow:hidden; }
+.newsroom .secondary { position:relative; float:left; width:250px; padding-left:10px; overflow:hidden; }
+.newsroom .nrup { padding:7px; width:586px; min-height:175px; }
+.newsroom #sectionHeader span { _width:693px !important; }
+.newsroom #sectionHeader .newsfilter { width:100%; padding:0px 0px 7px 7px; }
+.newsroom table { position:relative; }
+.newsroom .slots { position:relative; padding:5px 0px 5px 0px; border:0px; width:248px; text-align:center; height:auto; }
+.newsroom .newsitem { height:auto; padding:7px 0px 0px 0px; clear:both; }
+.newsroom .newsitem .icon { float:left; }
+.newsroom .newsitem .icon .nrdn { padding:8px; width:104px; overflow:hidden; }
+.newsroom .newsitem .icon .admin { width:100px; text-align:center; background:transparent; border:0px; }
+.newsroom #sectionHeader .rss { position:absolute; width:19px; height:19px; top:0px; left:701px; overflow:hidden; display:block; text-indent:-3000px; }
+.newsbodyrow { padding:5px 0px 5px 160px; }
+
+.newsroom .newsitem .icon .newsaddgame { display:block; margin:0px; padding:0px; height:16px; top:4px; position:relative; }
+.newsroom .newsitem .icon .newsaddgame a { display:block; width:72px; height:16px; overflow:hidden; float:left; text-indent:-3000px; font-size:6px; left:15px; position:relative; top:0px; }
+.newsroom .newsitem .icon .newsaddgame .addvr:link,.newsroom .newsitem .icon .newsaddgame .addvr:vistied { background-position:bottom left; }
+.newsroom .newsitem .icon .newsaddgame .addvr:hover { background-position:0px -32px; }
+.newsroom .newsitem .icon .newsaddgame .remvr:link,.newsroom .newsitem .icon .newsaddgame .remvr:visited { background-position:0px -16px; }
+.newsroom .newsitem .icon .newsaddgame .remvr:hover { background-position:top left; }
+
+.newsroom .newsitem .icon .digg { top:4px; width:100px display:block; position:relative; margin:4px 0px 0px 0px; padding:6px; }
+.newsroom .newsitem .icon .digg a { position:relative; left:25px; }
+.newsroom .newsitem .body { top:0px; width:600px; min-height:150px; float:left; }
+.newsroom .newsitem .body .info H1 { font-size:1.4em; height:auto; font-weight:bold; }
+.newsroom .newsitem .body .info H3 { font-size:1em; padding-bottom:0.4em; height:auto; }
+.newsroom .newsitem .forum { padding-top:0.3em; width:586px; text-align:left; }
+.newsroom .newsitem.first { padding-top:0px; }
+.newsroom .newsitem .fimfo { position:relative; float:left; width:400px; padding-bottom:7px; }
+
+.newsroom .morenews { overflow:hidden; padding:7px 0px 0px 0px; }
+.newsroom .primary .morenews { padding-left:126px; }
+.newsroom .morenews h3,.newsroom .morenews .newdate { font-size:1.2em; font-weight:bold; padding-bottom:0.6em; height:auto; }
+.newsroom .moreitem { padding-bottom:0.7em; width:245px; overflow:hidden; line-height:1.4em; }
+.newsroom .moreitem h1 { font-size:1.1em; padding-bottom:0.2em; font-weight:bold; }
+.newsroom .moreitem h3 { font-size:0.9em; padding-bottom:0.2em; height:auto; }
+.newsroom .moreitem.single { width:550px; }
+.newsroom .subscribe { padding:0px 0px 0px 0px; margin:0px; text-align:center; }
+.newsroom .subscribe .insub { padding:4px; height:192px; overflow:hidden; font-size:0.9em; }
+.newsroom .subscribe .large { display:block; font-size:14px; font-weight:bold; }
+.newsroom .subscribe .opts { text-align:center; padding:9px 0px 9px 0px; }
+.newsroom .subscribe .chks { padding-bottom:5px; text-align:right; width:150px; margin:0 auto; }
+.newsroom .nonews .nrou { padding:10px 0px 10px 7px; text-align:left; }
+.newsroom .secondary .rssfeed { height:28px; line-height:28px; display:block; padding:0px 0px 7px 31px; margin:0px; background:transparent url(item_newsroom_rss.gif) no-repeat top left; font-weight:bold; font-size:1.1em; }
+
+.newsroom .action { padding:12px; }
+.newsroom .commentsv2 { padding-left:75px; padding-top:0px; }
+
+.newsroom .newsTips { padding:7px; }
+.newsroom .newsTips h2 { font-size:1.2em; font-weight:bold; margin:0px; padding:0px 0px 5px 0px; }
+.newsroom .newsTips i { display:block; padding-bottom:5px; }
+.newsroom .newsTips textarea { display:block; width:230px; height:100px; }
+
+/* News Posts, (common) */
+.news_newspost { height:auto; }
+.news_newspost p { width:auto; padding:0px 0px 0.6em 0px !important; }
+.news_newspost table td { border:0px; padding:2px; position:relative; vertical-align:top; }
+	.news_newspost div p { width:auto; }
+	.news_newspost div table { padding:5px; margin:5px 0px 5px 20px; }
+.news_newspost .quote, .news_newspost blockquote { position:static; width:95%; margin:0.8em 0px 0.7em 10px; padding:5px; }
+.news_newspost .quote p , .news_newspost blockquote p { width:auto; padding:0.5em 0.5em 0.8em 0.5em !important; }
+
+
+/* Features - Listing of all on-site features, opened on features.cfm */
+.feetures { position:relative; }
+.feetures .list { padding:7px; }
+.feetures .list.reviews,.feetures .list.polls { padding:0px 0px 7px 0px; }
+.feetures .list .value { font-weight:bold; }
+.feetures .list .bar { position:relative; width:80px; height:14px; }
+.feetures .list .bar span.rating { display:block; height:14px; }
+.feetures .list .action { padding:14px; }
+.feetures .collist { position:relative; }
+.feetures .collist .image { width:80px; padding-right:7px; float:left; position:relative; }
+.feetures .collist .cinfo { width:500px; float:left; height:80px; overflow:hidden; position:relative; }
+
+.feetures .vlist { position:relative; padding:5px 0px 0px 0px; margin:0px; float:left; }
+.feetures .vlist .entry { padding:6px; position:relative; clear:left; float:left; width:780px; }
+.feetures .vlist .thumbnail { position:relative; float:left; padding-right:7px; }
+.feetures .vlist .details { position:relative; list-style:none; width:600px; padding-left:112px; _padding-left:5px !important; float:left; position:relative; }
+.feetures .vlist .details { padding:0px; margin:0px; position:relative; }
+.feetures .vlist .details .title,.feetures .vlist .details .title a { font-size:1.1em; font-weight:bold; display:inline; }
+.feetures .vlist .details .info { font-size:0.9em; padding:2px 0px 2px 0px; }
+.feetures .vlist .details .tinfo { font-weight:bold; display:inline; }
+
+.feetures .collist .entry { padding:0px 0px 0px 0px; position:relative; width:800px; }
+.feetures .collist .entry.first {padding-top:0px; }
+.feetures .collist .listposts { display:block; z-index:99; text-indent:-3000px; width:139px; height:23px; position:relative; top:34px; left:620px; }
+.feetures .collist .entry .image, feetures .collist .entry .cinfo { position:relative; top:-12px; }
+.feetures #sectionHeader .colh1 { text-indent:0px; padding-left:7px !important; }
+.feetures #sectionHeader .colsub { display:block !important; padding:0px 7px 7px 7px !important; }
+.feetures #sectionHeader .colheadicon { float:left; padding:7px; }
+
+.feetures .ad { width:100%; padding:5px 0px 12px 0px; text-align:center; }
+.feetures .list .edit,.feetures .list span.active,.feetures .list span.inactive { display:inline; }
+.feetures .entry { padding-bottom:7px; display:block; position:relative; }
+.feetures .entry h1 { font-size:1.4em; font-weight:bold; }
+.feetures .entry h2 { font-size:1em; font-weight:normal; padding-bottom:0.3em; }
+.feetures .entry p { padding:0px; margin:0px; }
+.feetures .entry span { display:block; padding-top:0.2em; }
+.feetures .entry span a:link, .feetures .entry span a:visited { text-decoration:underline; }
+.feetures .content p { width:auto; padding:0px 7px 1em 7px; margin:0px; text-indent:0px; line-height:1.4em; }
+.feetures .content .disclaimer { text-indent:0px; }
+.feetures .content .header { display:block; width:638px; height:auto; margin-bottom:7px; } /* 100% */
+.feetures .content .header span { display:inline; width:auto; height:auto; }
+.feetures .content .header h1 { padding:8px !important; font-size:1.5em !important; font-weight:bold; width:95% !important; }
+.feetures .content .header h2 { padding:0px 0px 10px 8px !important; font-size:1em !important; line-height:1.3em !important; font-weight:bold; width:95% !important; }
+.feetures .polldata td { border:0px !important; }
+.feetures .polldata .bar { background:transparent; float:left; width:80px; height:14px; }
+.feetures .polldata .answer { font-weight:normal; }
+.feetures .navie { padding:0px; position:relative; }
+.feetures .navie .ftp { padding:4px 0px 4px 0px; }
+.feetures .navie a { display:block; padding:3px 7px 3px 22px; }
+.feetures .navie a.current { font-weight:bold; }
+.feetures .navie a.new,.feetures .navie a.fstlink { border-top:0px; }
+.feetures .navie a.new { font-weight:bold; }
+.feetures.featureleftAd { padding-top:7px !important; }
+
+.showfeat .featurepri { width:628px; padding:0px; float:left; position:relative; }
+.showfeat .gvpushcon { width:156px; position:relative; float:right; overflow:hidden; padding:7px; }
+.showfeat .commonContent { }
+.showfeat .featurepri .actions { padding:7px 7px 7px 7px; width:614px; }
+.showfeat .featurepri .more { padding:7px; }
+.showfeat .commentsv2 { width:605px; }
+
+/* Gamelist - Listing of all on-site games, opened by inc_gamelist_overview.cfm */
+.gamelist .topad,.gamelist .midad, .gamelist .lowad { text-align:center; padding:7px 0px 7px 0px; }
+.gamelist td.rate span.frame,.gamelist td.hype span.frame { display:block; height:100%; position:relative; top:1px; }
+.gamelist .bar { position:relative; float:left; width:80px; height:14px; }
+.gamelist .bar span.rating,.gamelist .bar span.hype,.gamelist .bar span.beta { display:block; height:14px; }
+.gamelist .value { position:relative; float:left; font-weight:bold; padding-left:5px; font-size:1em; font-weight:normal; line-height:13px; }
+.gamelist.filterPadding { height:7px; }
+.gamelist #gamelistFilters { padding-bottom:7px; }
+.gamelist #gamelistFilters table.filters { width:798px; }
+.gamelist #gamelistFilters table td,.gamelist .admin table td { padding-left:7px; padding-right:7px; border:0px; }
+.gamelist #gamelistFilters table table td,.gamelist .admin table table td { border:0px; padding:0.2em; }
+.gamelist #gamelistFilters td { overflow:hidden; }
+.gamelist #gamelistFilters select { width:160px; height:110px; padding:0px; }
+.gamelist #gamelistFilters select.pvp { width:auto; height:auto; }
+.gamelist #gamelistFilters table.filters span.note { width:auto; display:block; padding:0.2em 0px 7px 0px; white-space:normal; margin:0px; }
+.gamelist .customFeedback { padding-bottom:7px; }
+.gamelist .customFeedback .inside { padding:4px 7px 4px 7px; }
+.gamelist .customFeedback .notice { padding-left:20px; }
+.gamelist .customFeedback .action { padding-left:20px; }
+.gamelist .gameSubs { padding:7px; margin:0px; }
+.gamelist .gameSubs h2 { padding:0px; margin:0px; font-size:1.2em; font-weight:bold; padding-bottom:0.2em; }
+.gamelist .gameSubs i { padding:0px; font-style:normal; padding-bottom:0.2em; display:block; }
+.gamelist .gameSubs .mesg,.gamelist .gameSubs .send { width:200px; height:1.9em; padding:3px; }
+.gamelist .gameSubs .send { width:auto; position:relative; top:1px; }
+
+.gamelist .qsearchgl { display:block; width:282px; height:30px; overflow:hidden; padding-top:3px; padding-left:16px; position:relative; top:-1px; left:6px; }
+
+/* Gameview, detailed game pages, opened by inc_gametetails.cfm 132px */
+.gvew2 .hdrtwo { width:798px; height:132px !important; overflow:hidden; }
+.gvew2 .hdrtwo span,.gvew2 .hdrtwo { display:block; width:100%; height:126px; position:relative; }
+.gvew2 .hdrtwo div.inone div.intwo { background:transparent; display:inline; width:auto; height:auto; }
+.gvew2 .hdrtwo .iconarea { position:relative; float:left; padding:16px 0px 0px 9px; width:116px; height:126px; }
+.gvew2 .hdrtwo .iconarea a { width:110px; height:110px; display:block; position:relative; top:0px; left:0px; z-index:100; }
+.gvew2 .ninfo { display:block; position:absolute; top:0px; left:112px; width:660px; padding:10px; }
+.gvew2 .ninfo span { display:inline; height:auto; width:auto; padding:0px; margin:0px; }
+.gvew2 .ninfo .gvtitle { font-size:20px; font-weight:bold; height:23px; position:relative; float:left; display:block; width:900px; overflow:hidden; }
+.gvew2 .ninfo .gvtitle .smaller { font-size:14px !important; line-height:20px; }
+.gvew2 .ninfo .gvtitle a:link,.gvew2 .ninfo .gvtitle a:visited { color:#fff; }
+.gvew2 .ninfo .gvsubtitle { clear:left; position:relative; }
+.gvew2 .ninfo .gvstats { padding-top:10px; line-height:19px; }
+.gvew2 .ninfo .gvstats .statHigh { padding-left:0px; }
+.gvew2 .ninfo .gvstats img { position:relative; top:-2px; }
+.gvew2 .ninfo .buyIt { font-weight:bold; font-size:0.9em; padding:2px 4px 2px 2px; position:relative; left:6px; }
+.gvew2 .ninfo a:hover.buyIt { text-decoration:none; }
+
+.gvew2 .ninfo .gvtitle .titleblock { float:left; position:relative; display:block; }
+.gvew2 .ninfo .gvtitle .gvaddgame { float:left; position:relative; display:block; width:158px; height:22px; margin:0px; padding:0px; }
+.gvew2 .ninfo .gvtitle .gvaddgame a { display:block; width:158px; height:22px; overflow:hidden; float:left; background:transparent url(default/item_gameview_addgame.gif) no-repeat bottom left; text-indent:-3000px; font-size:6px; left:6px; position:relative; top:1px; }
+.gvew2 .ninfo .gvtitle .addv:hover { background-position:0px -44px; }
+.gvew2 .ninfo .gvtitle .remv:link,.gvew2 .ninfo .gvtitle .remv:visited { background-position:0px -22px; }
+.gvew2 .ninfo .gvtitle .remv:hover { background-position:top left; }
+
+.gvew2 .navgvtwo { display:block; padding:6px 0px 0px 0px; }
+.gvew2 .navgvtwo a { display:block; float:left; text-align:center; padding:0px; font-weight:bold; margin:0px; }
+.gvew2 .navgvtwo a span { display:block; padding:10px 7px 7px 7px; }
+.gvew2 .navgvtwo a:hover { background-position:top right; }
+
+.gvew2 .hymt { position:relative; width:150px; padding:7px 5px 12px 5px; overflow:hidden; }
+.gvew2 .hymt .largeh2 { display:block; font-size:4em; font-weight:bold; text-align:center; padding:0px; padding-top:20px; line-height:auto; }
+.gvew2 .hymt .largeh3 { display:block; font-size:1.1em; font-weight:bold; text-align:center; padding:3px 0px 3px 0px; line-height:auto; }
+.gvew2 .hymt .bar { position:relative; left:14px; width:120px; height:20px; }
+.gvew2 .hymt .bar span.hypex,.gvew2 .hymt .bar span.betax,.gvew2 .hymt .bar span.ratingx { display:block; height:20px; }
+.gvew2 .hymt .largebar { left:14px; width:120px; height:63px; position:relative; }
+.gvew2 .hymt .largebar span.ratingx,.gvew2 .hymt .largebar span.betax,.gvew2 .hymt .largebar span.hypex { display:block; height:63px; }
+.gvew2 .hymt .insideh2 { width:150px; margin:0px; padding:0px; position:absolute; top:41px; text-align:center; font-size:40px; font-weight:bold; height:64px; line-height:40px; overflow:hidden; }
+.gvew2 .hymt .insideh2.hypeer { top:56px; }
+.gvew2 .hymt .two { padding-top:3px; }
+.gvew2 .hymt .hype { padding-top:20px; }
+
+.gvew2 .gvpushcon { padding:0px 7px 7px 2px; }
+.gvew2 .rsidecon { width:156px; position:relative; float:right; overflow:hidden; padding:7px; }
+.gvew2 .gvconblock { width:798px !important; } /* 638px !important; */
+.gvew2 .gvpricon { width:628px; overflow:hidden; position:relative; float:left; }
+
+.gvew2 .contentg { clear:left; float:left; display:block; position:relative; }
+.gvew2 .contentg.narrow { /*width:581px;*/ float:left; }
+.gvew2 .contentg .body p { position:relative; width:auto; height:auto; padding-bottom:1em; line-height:1.4em; }
+.gvew2 .foot { height:0px !important; width:100%; display:block; }
+
+.gvew2 .extry { width:210px; padding-left:7px; float:left; line-height:1.5em; overflow:hidden; }
+.gvew2 .extry span.one { background-position:top right; display:block; padding-right:7px; }
+.gvew2 .extry .gameItems { padding-bottom:5px; }
+.gvew2 .extry .gameItems h1 { font-size:1.5em; font-weight:bold; padding-top:3px; }
+.gvew2 .extry .entry { padding-bottom:5px; padding-top:3px; }
+.gvew2 .extry .entry h1 { font-size:1.1em; }
+.gvew2 .extry .entry h2 { font-size:0.9em; }
+.gvew2 .extry a.link { display:block; clear:both; padding-top:4px; padding-bottom:2px; font-weight:bold; }
+.gvew2 .guildlu { float:left; clear:both; display:block; padding-top:7px; }
+.gvew2 .guildlu img { position:relative; left:-7px; }
+.gvew2 .gamegravitylink,.ccforums .signupandplayb,.gvew2 .buyplaya,.ccforums .buyplaya { display:block; height:48px; width:154px; }
+
+/* Gameview - Common section styles + showFeatures */
+.gvew2 .news .listing ul,.gvew2 .resourcesf .listing ul,.gvew2 .links ul,.gvew2 .reviews ul,.gvew2 .features .list ul,.gvew2 .ratings .values ul,.gvew2 .screens ul { padding:0px; margin:0px; list-style:none; }
+.gvew2 .news .listing li,.gvew2 .resourcesf .listing li,.gvew2 .links li,.gvew2 .reviews li,.gvew2 .features .list li{ padding:0px 0px 1em 0px; margin:0px; }
+.gvew2 .news .listing .title,.gvew2 .resourcesf .listing .title,.gvew2 .reviews .listing .title { font-size:1.1em; font-weight:bold; }
+
+.gvew2 .overview .features .title h3,.gvew2 .features .list h2,
+.gvew2 .links h2,.gvew2 .news h2,.gvew2 .resourcesf h2,.gvew2 .reviews h2,
+.gvew2 .ratings h2,.gvew2 .screens h2,.gvew2 .videos .listing h2,.gvew2 .videos .player h3,
+.gvew2 .hype h2,.gvew2 .lore h2,.gvew2 .features h2 { text-align:left; font-size:1.4em; font-weight:bold; padding-bottom:6px; width:auto; }
+
+
+/*
+.gvew2 .overview,.gvew2 .news,.gvew2 .resourcesf,.gvew2 .links,.gvew2 .reviews .listing,
+.gvew2 .resources .listing,.gvew2 .ratings,.gvew2 .thumbs,
+.gvew2 .videos .listing,.gvew2 .videos .player,.gvew2 .hype,.gvew2 .features .list,.gvew2 .lore { padding:0px; }
+*/
+
+.gvew2 .screens .footer,.gvew2 .resourcesf .footer,.gvew2 .reviews .footer,.gvew2 .features .footer,.showfeat .footer { position:relative; }
+.gvew2 .screens .footer span,.gvew2 .resourcesf .footer span,.gvew2 .reviews .footer span,.gvew2 .features .footer span,.showfeat .footer span { display:block; padding:12px 7px 7px 0px; }
+.gvew2 .screens .footer span span,.gvew2 .resourcesf .footer span span,.gvew2 .reviews .footer span span,.gvew2 .features .footer span span,.showfeat .footer span span { display:inline; padding:0px; background:transparent; }
+.gvew2 .reviews .footer .credits,.showfeat .footer .credits { padding:3px 0px 0px 7px; }
+.gvew2 .features .footer span,.showfeat .footer span { padding:3px 0px 5px 7px; }
+.gvew2 .features .morepages,.showfeat .morepages,.gvew2 .reviews .morepages { position:relative; }
+.gvew2 .features .morepages span,.showfeat .morepages span,.gvew2 .reviews .morepages span { display:block !important; padding:14px 0px 14px 0px !important; font-size:1.2em !important; font-weight:bold !important; }
+
+.gvew2 .screens .footer span,.gvew2 .resourcesf .footer span,.gvew2 .reviews .footer span,.gvew2 .features .footer span,.showfeat .footer span { padding-top:5px; }
+
+.gvew2 .features .grapher,.gvew2 .features .actions,.gvew2 .features .more,.showfeat .grapher,.showfeat .actions,.showfeat .more,.gvew2 .reviews .more { padding:6px 0px 6px 0px; float:left; width:100%; }
+.gvew2 .features .grapher,.showfeat .grapher { text-align:center; float:none; height:200px; }
+.gvew2 .features .more,.showfeat .more,.gvew2 .reviews .more { clear:both; }
+.gvew2 .features .more .section,.showfeat .more .section,.gvew2 .reviews .more .section { width:30%; float:left; padding-right:3%; }
+.gvew2 .features .more .section.two,.showfeat .more .section.two,.gvew2 .reviews .more .section.two { width:49%; float:left; }
+.gvew2 .features .more h4,.showfeat .more h4,.gvew2 .reviews .more h4 { padding:0.2em 0em 0.4em 0em; margin:0px; }
+.gvew2 .features .more .item,.showfeat .more .item,.gvew2 .reviews .more .item { padding-bottom:0.55em; }
+.gvew2 .features .more .title,.showfeat .more .title,.gvew2 .reviews .more .title { font-weight:bold; display:block; }
+.gvew2 .features .more .stuff,.gvew2 .reviews .more .stuff { font-size:0.9em; }
+
+/* Gameview - Overview */
+.gvew2 .overview .gvpricon { padding:7px; width:614px; }
+.gvew2 .overview .body { padding-bottom:12px; }
+.gvew2 .overview .body p { line-height:1.5em; }
+.gvew2 .overview .features { padding:12px 0px 6px 0px; }
+.gvew2 .overview .features h2 { font-size:1.3em; font-weight:bold; padding:3px 0px 8px 0px; margin:0px; }
+.gvew2 .overview .features .title h3 { padding-top:5px; }
+.gvew2 .overview .features a:link { font-weight:bold; }
+.gvew2 .overview .features a:visited { font-weight:bold; }
+.gvew2 .overview .features a:hover { font-weight:bold; text-decoration:none; }
+.gvew2 .overview .features ul { position:relative; list-style:none; margin:0px; padding:0em 0em 1em 0em; min-height:40px; }
+.gvew2 .overview .features ul.resources { padding-bottom:0em; }
+.gvew2 .overview .features li { margin:0px; padding:2px 1px 6px 0px; border:0px; }
+.gvew2 .overview .features img { position:relative; float:left; top:2px; left:5px; width:40px; height:40px; padding:0px; }
+.gvew2 .overview .features h1 { font-size:1.3em; font-weight:bold; padding:0px; margin:0px; }
+.gvew2 .overview .features .title { font-size:1.1em; padding:0; }
+.gvew2 .overview .features .overview { padding:0; line-height:1.5em; }
+.gvew2 .overview .features .date { font-size:0.9em; padding:0px; padding-bottom:3px; display:block; }
+.gvew2 .overview .features a.link { display:block; clear:both; padding-top:4px; padding-bottom:2px; }
+.gvew2 .overview .screenshots.panelClear { padding-top:6px; padding-bottom:6px; margin:0px; }
+.gvew2 .overview .screenshots .title h3 { text-align:left; font-size:1.5em; font-weight:bold; padding-bottom:6px; margin:0px; }
+.gvew2 .overview .screenshots ul { position:relative; padding:0px; margin:0px; list-style:none; width:100%; }
+.gvew2 .overview .screenshots li { position:relative; float:left; padding:5px 0px 5px 0px; margin:0px; width:33%; text-align:center; white-space:nowrap; }
+.gvew2 .overview .screenshots .link { display:block; clear:both; padding:5px; font-weight:bold; }
+.gvew2 .overview .screenshots ul,.gvew2 .overview .screenshots li { margin:0px; }
+.gvew2 .overview .posts { padding:0px; }
+.gvew2 .overview .posts .postrow { padding:3px; }
+.gvew2 .overview .posts .avatar { width:40px; height:40px; float:left; display:block; overflow:hidden; padding:0px; margin:0px; }
+.gvew2 .overview .posts .avatar img { left:0px; }
+.gvew2 .overview .posts .post { width:561px; padding-left:5px; float:left; display:block; overflow:hidden; padding-top:2px; }
+
+/* Gameview - Features */
+.gvew2 .features .gvpricon { padding:7px; width:614px; }
+.gvew2 .features .featurepri { padding:7px 0px 0px 0px !important; width:628px; }
+.gvew2 .features .list h3 { font-size:1.1em; font-weight:bold; }
+.gvew2 .features .list .mostrecent { padding-left:0px; }
+.gvew2 .features .list .TabbedPanels { height:auto; padding:0; margin:0; background-color:transparent; }
+.gvew2 .features .list .TabbedPanelsTabGroup { font-weight:bold; position:relative; float:left; width:100%; padding-bottom:7px; }
+.gvew2 .features .list .TabbedPanelsTabGroup li { margin:0px; border:0; top:0px; padding:0px; font-weight:bold; float:left; background-position:top center; }
+.gvew2 .features .list .TabbedPanelsTabGroup li span { display:block; padding:5px 7px 0.4em 5px; }
+.gvew2 .features .list .TabbedPanelsTabGroup li.first { padding-left:3px; background-position:top left; }
+.gvew2 .features .list .TabbedPanelsContentGroup { clear:left; border:0px; padding:0px; margin:0px; height:auto; position:relative; background-color:transparent; }
+.gvew2 .features .list .TabbedPanelsContent { border:0px; padding:0px; margin:0px; }
+.gvew2 .features .list .TabbedPanelsContent p { padding:0px; margin:0px; }
+.gvew2 .features .list .TabbedPanelsContent h2 { padding-top:7px; }
+.gvew2 .features .pages { padding:7px; }
+.gvew2 .features .more { padding:0px 7px 7px 7px; }
+.gvew2 .features .actions { padding:12px 0px 12px 7px !important; }
+.gvew2 .features .commentsv2 { width:605px; }
+
+.gvew2 .features .footer.urrv span { padding:6px; display:block; }
+.gvew2 .features .footer.urrv span .bumpburybox2 { float:left; position:relative; }
+.gvew2 .features .footer.urrv span .info { position:relative; float:left; width:400px; display:block; padding-left:6px; }
+
+/* Gameview - News */
+.gvew2 .news h2 { padding-top:4px; }
+.gvew2 .news .top { display:block; }
+
+/* Gameview - Screenshots */
+.gvew2 .screens .thumbs { padding:7px; }
+.gvew2 .screens .thumbs h3 { font-size:1.1em; font-weight:bold; }
+.gvew2 .screens .tablist { position:relative; left:9px; }
+.gvew2 .screens .tablist td { width:25%; overflow:hidden; vertical-align:middle; text-align:center; padding:4px 4px 4px 5px; }
+.gvew2 .screens .tablist td .imgl { overflow:hidden; display:block; z-index:450; }
+.gvew2 .screens .tablist td .label { font-size:0.9em; width:121px; left:4px; position:relative; text-align:center; overflow:hidden; padding-top:0.2em; }
+.gvew2 .screens .member { padding-top:7px; }
+.gvew2 .screens .list .button.add { margin-top:5px; }
+.gvew2 .screens .list .rules { line-height:1.4em; padding-bottom:1.3em; padding-top:1em; }
+.gvew2 .screens .list .addlabel { font-weight:bold; width:100px; }
+.gvew2 .screens .list .addtitle { padding-top:0.5em; }
+.gvew2 .screens .list .subs { padding-top:1.2em; }
+.gvew2 .screens .action { padding-top:7px; }
+.gvew2 .screens .addScreenshot { padding:7px 0px 4px 0px; }
+.gvew2 .screens .ssInside { padding:7px; }
+.gvew2 .screens .rules li { padding:0.2em 0px 0.2em 13px; }
+.gvew2 .screens .addlabel { padding-top:4px; }
+.gvew2 .screens .addSuccess { padding-bottom:7px; }
+
+/* Gameview - Screenshot View */
+.gvew2 .screens .gvpricon { padding:0px; width:628px; }
+.gvew2 .screens .viewer #ssv_div { text-align:center; width:628px; overflow:hidden; }
+.gvew2 .screens .viewer .details { position:relative; display:block; padding:2px 7px 4px 7px; margin:0px; list-style:none; overflow:hidden; background:transparent; }
+.gvew2 .screens .viewer .details li { padding:2px 0px 2px 0px; float:left; background:transparent; font-weight:normal !important; }
+.gvew2 .screens .viewer .details .uploaded { float:right; padding-right:5px; font-weight:normal !important; }
+.gvew2 .screens .viewer .details .uploaded a { font-weight:bold; }
+.gvew2 .screens .viewer .details .date { float:right; }
+.gvew2 .screens .viewer .details .rateit { font-weight:bold; padding-left:5px; }
+.gvew2 .screens .viewer .details .rateit .normal { font-weight:normal !important; }
+.gvew2 .screens .viewer .rateit { padding:4px 0px 9px 7px; }
+.gvew2 .screens .viewer .rateit .label { float:left; padding-right:4px; }
+.gvew2 .screens .viewer .rateit .bar { position:relative; float:left; width:80px; top:1px; height:14px; }
+.gvew2 .screens .viewer .rateit .value { font-size:1em; padding-left:4px; font-weight:bold; float:left; }
+.gvew2 .screens .viewer .rateit .bar span.rating { display:block; height:14px; }
+.gvew2 .screens .viewer .rateit .bar span.func { display:block; width:80px !important; height:14px !important; position:absolute; float:left; top:0px; left:0px; padding:0px !important; }
+.gvew2 .screens .viewer .rateit .moreinfo { float:left; padding-left:4px; }
+.gvew2 .screens .viewer .thumbnails { position:relative; height:94px; width:620px; display:block; padding:0px 4px 0px 6px; }
+.gvew2 .screens .viewer .thumbnails ul { margin:0 auto; }
+.gvew2 .screens .viewer .thumbnails li { padding:2px 9px 2px 7px; height:94px; width:121px; position:relative; float:left; overflow:hidden; text-align:center; }
+.gvew2 .screens .viewer .thumbnails li.pass_1,.gvew2 .screens .viewer .thumbnails li.pass_7 { width:20px; }
+.gvew2 .screens .viewer .thumbnails li a { position:relative; height:90px; width:106px; display:block; text-align:center; }
+.gvew2 .screens .viewer .ecap { padding:3px 7px 3px 7px; }
+.gvew2 .screens .viewer .controls ul { position:relative; height:31px; width:100%; padding:0px 0px 0px 7px; margin:0px; }
+.gvew2 .screens .viewer .controls li { padding:0px; margin:2px; width:32px; height:24px; float:left; overflow:hidden; }
+.gvew2 .screens .viewer .controls a { width:32px; height:24px; display:block; }
+.gvew2 .screens .viewer .controls .label { font-weight:bold; display:none; }
+.gvew2 .screens .viewer .controls .first,.gvew2 .screens .viewer .controls .last { width:32px; display:block; }
+.gvew2 .screens .viewer .controls .email { width:545px; text-align:center; }
+.gvew2 .screens .viewer .comments { position:relative; padding:7px 7px 7px 0px; font-weight:normal; }
+.gvew2 .screens .viewer .comments .button { margin-top:7px; }
+.gvew2 .screens .viewer .notLogged { font-weight:bold; padding:7px; }
+.gvew2 .screens .viewer #ssv_comments { position:relative; }
+
+/* Gameview - Links */
+.gvew2 .links .gvpricon { padding:7px; width:614px; }
+.gvew2 .links ul li { padding-bottom:0.5em; }
+.gvew2 .links h3 { font-size:1.1em; font-weight:bold; }
+.gvew2 .links form row { display:block; }
+.gvew2 .links form label { display:block; font-weight:bold; padding:0.3em 0em 0.3em 0em; }
+
+/* Gameview - News */
+.gvew2 .news .gvpricon { padding:7px; width:614px; }
+.gvew2 .news .subscribe { padding:7px 0px 7px 0px; margin:0 auto; text-align:center; width:400px; height:185px; overflow:hidden; }
+.gvew2 .news .subscribe .insub { padding:4px; height:192px; overflow:hidden; }
+.gvew2 .news .subscribe .large { display:block; font-size:14px; font-weight:bold; }
+.gvew2 .news .subscribe .opts { text-align:center; padding:9px 0px 9px 0px; }
+.gvew2 .news .subscribe .chks { padding-bottom:5px; text-align:right; width:150px; margin:0 auto; }
+
+/* Gameview - Ratings+Hype */
+.gvew2 .ratings .gvpricon { padding:7px; width:614px; }
+.gvew2 .ratings .ssInside .ssFake,.gvew2 .hype .ssInside .ssFake { padding:7px; }
+.gvew2 .ratings h3,.gvew2 .hype h3 { font-size:1.1em; font-weight:bold; padding-bottom:0.4em; }
+.gvew2 .ratings .values li { width:138px; float:left; position:relative; text-align:center; padding:1em 0px 0px 0px; }
+.gvew2 .ratings .values .bar { position:relative; left:30px; width:80px; height:14px; float:left; text-align:left; margin:0px; }
+.gvew2 .ratings .values li .value { font-size:2em; font-weight:bold; }
+.gvew2 .ratings .values .bar span.rating { display:block; height:14px; }
+.gvew2 .ratings .values p,.gvew2 .hype .values p { clear:left; padding-top:1em; text-align:center; }
+.gvew2 .ratings .action,.gvew2 .hype .action,.gvew2 .hype .values { padding-top:7px; }
+.gvew2 .ratings .wannavote,.gvew2 .hype .wannavote { font-size:1.1em; }
+.gvew2 .ratings .comments,.gvew2 .hype .comments { padding-top:7px; clear:both; }
+.gvew2 .ratings .comments.detailed,.gvew2 .hype .comments.detailed { width:574px; position:relative; left:-7px; padding-left:7px; }
+.gvew2 .ratings .enterReview .bar { position:relative; top:0px; width:120px; height:20px; }
+.gvew2 .ratings .enterReview .bar span.rating { display:block; height:20px; }
+.gvew2 .ratings .enterReview .bar span.func { width:120px; height:20px; position:absolute; float:left; top:0px; left:0px; }
+.gvew2 .ratings .enterReview table { margin:0 auto; }
+.gvew2 .ratings .enterReview td { vertical-align:middle; font-weight:bold; padding-bottom:6px; text-align:left; }
+.gvew2 .ratings .enterReview td.label { padding:0px 1em 0px 1em; }
+.gvew2 .ratings .enterReview .tablecenter { text-align:center; }
+.gvew2 .ratings .morecomments,.gvew2 .hype .morecomments { position:relative; left:63px; float:left; }
+.gvew2 .hype .values { text-align:center; padding-top:14px; padding-bottom:7px; }
+.gvew2 .hype .values .hypeLabel { font-size:4em; font-weight:bold; }
+.gvew2 .hype .values .bar { position:relative; width:120px; height:63px; padding:0px; }
+.gvew2 .hype .values .bar span.hype,.gvew2 .hype .entry .bar span.hype { display:block; height:63px; padding:0px !important; }
+.gvew2 .hype .values .bar { float:left; text-align:left; margin:0px; }
+.gvew2 .hype .entry .bar { position:relative; width:120px; height:63px; padding:0px; left:30px; }
+.gvew2 .hype .entry .bar span.func { display:block; width:120px !important; height:63px !important; position:absolute; float:left; top:0px; left:0px; padding:0px !important; }
+.gvew2 .hype .entry .hypeLabel { display:block; font-size:4em; }
+.gvew2 .hype .entry { width:300px; margin:0 auto; }
+.gvew2 .hype .entry .form { padding-top:7px; }
+.gvew2 .hype .entry .submit { float:left; margin-bottom:5px; position:relative; left:2px; }
+.gvew2 .hype .entry .sm,.gvew2 .hype .entry .lg { margin:0 auto; width:190px !important; position:relative; text-align:center; }
+.gvew2 .hype .hypeoverviewbar { left:254px; position:relative; }
+.gvew2 .hype .hypeoverviewbar .bvalue { position:absolute; width:120px; height:60px; top:0px; left:0px; text-align:center; font-size:3.4em; line-height:60px; font-weight:bold; }
+.gvew2 .hype .hypover { padding:7px; width:614px; }
+
+/* Gameview - Resouces */
+.gvew2 .gvresourcelisting { padding:7px !important; }
+.gvew2 .resourcesf { padding:0px; margin:0px; width:798px; }
+.gvew2 .resourcesf .rateit { padding:6px 7px 7px 7px; }
+.gvew2 .resourcesf .rateit .label { position:relative; padding-right:6px; float:left; }
+.gvew2 .resourcesf .rateit .bar { position:relative; float:left; width:80px; height:14px; top:1px; }
+.gvew2 .resourcesf .rateit .bar span.rating { display:block; height:14px; }
+.gvew2 .resourcesf .rateit .bar span.func { width:80px; height:14px; position:absolute; float:left; top:0px; left:0px; }
+.gvew2 .resourcesf .rateit #barValueLabel { padding-left:4px; display:block; float:left; font-weight:bold; }
+.gvew2 .resourcesf .rateit .desc { padding-left:4px; }
+.gvew2 .resourcesf .item .content.res { padding:5px 7px 7px 7px; width:100%; }
+.gvew2 .resourcesf .item .buffer { width:98%; overflow:auto; }
+.gvew2 .resourcesf .actions { clear:both; float:left; padding-top:7px; padding-bottom:7px; }
+.gvew2 .resourcesf .footer .actions { float:none; padding:0px; background-color:transparent; }
+.gvew2 .resourcesf .comments { clear:both; position:relative; padding-top:7px; font-weight:normal; }
+
+/* Gameview - Reviews */
+.gvew2 .reviews .gvpricon .listing { padding:7px; }
+.gvew2 .reviews .data { position:relative; text-align:left; margin:0px 3px 3px 0px; padding:3px 0px 9px 7px; width:430px; margin:0 auto; margin-bottom:20px; min-height:200px; margin-top:10px; overflow:hidden;  z-index:700; background:#292929; }
+.gvew2 .reviews .data .glrVirScor { padding:3px 0px 9px 0px; text-align:center; position:absolute !important; top:0px; left:0px !important; width:200px; height:200px; border-right:1px solid #424242 !important; }
+.gvew2 .reviews .data .glrVirScor h2 { font-size:2em; margin-top:0px; padding-top:0px; font-weight:bold; }
+.gvew2 .reviews .data .glrVirScor h3 { font-size:90px; font-weight:bold; }
+.gvew2 .reviews .data .breakdown { padding:20px 0px 0px 7px; margin-left:200px; }
+.gvew2 .reviews .data .breakdown table { /*width:212px !important;*/ }
+.gvew2 .reviews .data .breakdown table td { padding:3px; }
+.gvew2 .reviews .data .breakdown .barRend { width:80px; }
+.gvew2 .reviews .data .breakdown .barVal { font-weight:bold; }
+.gvew2 .reviews .data .breakdown .bar { position:relative; top:2px; width:80px; height:14px; }
+.gvew2 .reviews .data .breakdown .bar span.rating { display:block; height:14px; }
+.gvew2 .reviews .data .glrsylnp .glrc1 { padding:3px 0px 3px 11px; }
+.gvew2 .reviews .data .glrExNo { font-style:italic; }
+.gvew2 .reviews .data .glrPro,.gvew2 .reviews .data .glrVir,.gvew2 .reviews .data .glrCon { font-size:1.5em; font-weight:bold; }
+.gvew2 .reviews .data .glrVirScor { padding-top:10px; }
+.gvew2 .reviews .data .glrVirScor h2 { font-size:1.7em; font-weight:bold; }
+.gvew2 .reviews .data .glrVirScor span { font-size:95px; line-height:55px; padding:0px; margin:0px; }
+.gvew2 .reviews .data .glrVir { display:block; text-align:center; font-size:1.5em !important; padding:30px 0px 0px 0px !important; }
+.gvew2 .reviews .data .glrVirTab { margin-left:200px; margin-top:6px; }
+.gvew2 .reviews .data .rbul { position:relative; top:0px; }
+.gvew2 .reviews .actions { clear:both; position:relative; padding:10px 0px 10px 0px; font-weight:normal; }
+.gvew2 .reviews .bttn.footy { display:block; position:relative; top:2px; }
+.gvew2 .reviews .commonContent .header { display:none; }
+
+.gvew2 .reviews .footer.urrv span { padding:6px; display:block; }
+.gvew2 .reviews .footer.urrv span .bumpburybox2 { float:left; position:relative; }
+.gvew2 .reviews .footer.urrv span .credits { position:relative; float:left; width:400px; display:block; }
+
+/* Gameview - Videos */
+.gvew2 .videos .listing { padding:7px; }
+.gvew2 .videos .listing .video { padding-bottom:7px; }
+.gvew2 .videos .listing .thumbnail { width:102px; height:73px; position:relative; float:left; }
+.gvew2 .videos .listing .details { list-style:none; padding:0px 0px 0px 5px; margin:0px; position:relative; float:left; width:450px; }
+.gvew2 .videos .listing .details li { padding:0px; margin:0px; }
+.gvew2 .videos .listing .details .title { font-weight:bold; }
+.gvew2 .videos .listing .details .info { padding-bottom:5px; }
+.gvew2 .videos .player h3 { padding-bottom:12px; }
+.gvew2 .videos .player h3 .duration { padding-left:0.4em; }
+.gvew2 .videos .player .panel { width:445px; margin:0 auto; }
+.gvew2 .videos .player .frame { margin:0 auto; text-align:center; padding:7px 0px 14px 0px; }
+.gvew2 .videos .player .frame .player { height:296px; overflow:hidden; }
+.gvew2 .videos .player .frame .info { width:450px; margin:0 auto; overflow:hidden; padding-top:7px; text-align:left; }
+.gvew2 .videos .player .frame .info .qt,.gvew2 .videos .player .frame .info .mp { width:20px; height:20px; float:right; display:block; }
+.gvew2 .videos .player .frame .info .details { font-size:0.9em; padding-top:5px; display:block; text-align:center; }
+.gvew2 .videos .player .button { margin-top:7px; left:61px; position:relative; }
+.gvew2 .videos .commenters { padding-top:0px; }
+.gvew2 .videos .comments { padding-left:4px; padding-top:0px; }
+.gvew2 .videos .vidplay { padding:0px 60px 7px 60px; }
+.gvew2 .videos .morebutton { left:60px; }
+.gvew2 .videos .gvpixsy { padding-left:65px; min-height:59px; }
+.gvew2 .videos .gvpixsy a { font-size:1.4em; font-weight:bold; padding-top:15px; display:block; }
+.gvew2 .videos .gvpixsy i { font-size:0.9em; font-weight:normal; display:block; }
+.gvew2 .videos .newinsideframe { padding:14px; }
+.gvew2 .videos .pwrdbygt { width:73px; height:29px; display:block; position:relative; float:right; text-indent:-3000px; }
+.gvew2 .videos .soci { float:none; text-align:center; margin:0 auto; padding:8px 0px 8px 5px; left:7px; }
+.gvew2 .videos .soci a { float:left; }
+
+.gvew2 .ccforums #sectionHeader { width:798px; }
+
+/* Frequently Asked Questions, opened by faq.cfm */
+.faq p { margin:0; padding:6px !important; }
+.faq h2,h4 { font-size:1.2em; font-weight:bold; padding:6px; }
+.faq ul { margin:0px; padding:0px; padding-bottom:6px; list-style-type:circle; }
+.faq li { margin-left:28px; padding-bottom:0.2em; }
+.faq.actions { padding-top:7px; padding-bottom:7px; }
+
+/* Forums, opened by discussion2.cfm */
+.ccforums .forum_foot_ad { height:100px; display:block; }
+.ccforums .fheading { padding:7px 0px 0px 0px; }
+.ccforums .fheading .cfhin { padding:0px 7px 7px 7px; }
+.ccforums .fheading .favgameh { min-height:130px; }
+.ccforums .fheading .icon { display:block; float:left; }
+.ccforums .fheading span.text { display:block; width:610px; float:left; padding-top:16px; padding-left:5px; }
+.ccforums .fheading .cfhrss { padding:0px !important; width:14px !important; height:14px !important; overflow:hidden; }
+.ccforums .fheading H1 { font-size:2em; margin:0px; padding:0px; font-weight:bold; }
+.ccforums .fheading H1 a:link,.ccforums .fheading H1 a:visited { text-decoration:none; }
+.ccforums .fheading H1 a:hover { text-decoration:none; }
+.ccforums .fheading H2 { font-size:1em; margin:0px; padding:0px; }
+.ccforums .fheading H2 a:link,.ccforums .fheading H2 a:visited { text-decoration:none; }
+.ccforums .fheading H2 a:hover { text-decoration:none; }
+.ccforums .fheading H1.nobuttons { padding-top:20px; }
+.ccforums .fheading H1 span.junk { display:block; float:left; }
+
+.ccforums .fheading .forumaddgamer { display:inline; margin:0px; padding:0px; height:16px; position:relative; top:9px; left:-7px; display:block; float:left; }
+.ccforums .fheading .forumaddgamer a { display:block; width:72px; height:16px; overflow:hidden; float:left; text-indent:-3000px; font-size:6px; left:15px; position:relative; top:0px; }
+.ccforums .fheading .forumaddgamer .addvr:link,.ccforums .fheading .forumaddgamer .addvr:vistied { background-position:bottom left; }
+.ccforums .fheading .forumaddgamer .addvr:hover { background-position:0px -32px; }
+.ccforums .fheading .forumaddgamer .remvr:link,.ccforums .fheading .forumaddgamer .remvr:visited { background-position:0px -16px; }
+.ccforums .fheading .forumaddgamer .remvr:hover { background-position:top left; }
+
+.ccforums .soci { padding:8px 0px 0px 4px; }
+.ccforums .socialnbox { display:block; padding:6px 0px 0px 6px !important; float:left; }
+
+.ccforums .cfpagequick,.ccmail .cfmpgf { float:left; display:block; padding:8px 0px 0px 4px; }
+.ccforums .cfpagequick td a,.ccmail .cfmpgf td a { padding:5px 6px 5px 6px; display:block; }
+.ccforums .cfpagequick td.sep { width:5px; }
+.ccforums .cfpagequick td.label,.ccmail .cfmpgf td.label { padding:4px; }
+.ccforums .cfpagequick td.comp a, .ccmail .cfmpgf td.comp a { padding:4px; }
+.ccforums .cfpagequick td.comp.close a,.ccmail .cfmpgf td.comp.close a { padding-right:8px; }
+.ccforums .cfpagequick td.comp.close a { position:relative; top:1px; padding-top:3px; padding-bottom:4px; }
+
+.ccforums .footjumps { text-align:center; }
+.ccforums .footjumps table { margin:0 auto; }
+.ccforums .footjumps td { text-align:left; }
+.ccforums .footjumps td.sep { width:5px; padding:0px; }
+.ccforums .footjumps td a { padding:6px; display:block; }
+.ccforums .footjumps td.label { padding-left:6px; }
+.ccforums .footjumps td.comp a { padding:6px; }
+
+.ccforums #quickForumSearch { clear:both; padding:0px 0px 12px 109px; }
+.ccforums #quickForumSearch .label { font-weight:bold; padding-right:4px; }
+.ccforums .bottomquicksearch { text-align:center; padding:7px 7px 0px 7px; }
+.ccforums .tabicular .cfheading th,.ccforums .tabicular .cfheading td { padding-top:2px; padding-bottom:2px; }
+.ccforums .forumFootPadding { padding:3px 0px 4px 0px; clear:both; } 
+.ccforums .last { padding-left:4px; font-size:0.85em; }
+.ccforums .author { font-size:0.85em; }
+.ccforums .lastjump { padding-right:4px; }
+.ccforums .lastjump a { display:block; width:10px; height:10px; }
+.ccforums .lastjump a:hover { display:block; width:10px; height:10px; }
+.ccforums .extr,.ccforums .hopen { font-size:0.9em; font-style:italic; padding-left:0.6em; font-weight:normal; }
+.ccforums .hopen { padding-left:2px; }
+.ccforums .footjumps { padding:7px !important; }
+.ccforums .footbutto { padding:7px !important; }
+.ccforums .cloud td.cfcrow { padding:7px; text-align:center; }
+.ccforums .cloud .cfcin { width:750px; }
+.ccforums .cloud h2,.ccforums .allforums h2 { font-size:1.2em; font-weight:bold; padding:7px 0px 7px 0px; text-align:center; }
+.ccforums .cloud a { padding:3px 5px 3px 0px; display:inline; white-space:nowrap; _white-space:wrap; }
+.ccforums .cloud a.t_1 { font-size:1em; }
+.ccforums .cloud a.t_2 { font-size:1.1em; }
+.ccforums .cloud a.t_3 { font-size:1.2em; }
+.ccforums .cloud a.t_4 { font-size:1.3em; }
+.ccforums .cloud a.t_5 { font-size:1.6em; }
+.ccforums .allforums h2 { text-align:left; padding-left:7px; }
+.ccforums .allforums a { display:block; padding-left:7px; }
+.ccforums .watchlistSubtitle a:link, .ccforums .watchlistSubtitle a:visited { font-size:0.9em; }
+.ccforums .watchlist .remove { padding:7px; }
+.ccforums a.rsstopr:link, .ccforums a.rsstopr:visited { height:19px; width:19px; position:relative; float:right; overflow:hidden; display:block; z-index:6; }
+.ccforums i.currentpage { display:block !important; padding:0px 6px 0px 6px; }
+
+.ccforums .cflist { width:200px; overflow:hidden; }
+.ccforums .cflist .cfl1,.ccforums .cflist .cfl2,.ccforums .cflist .cfl3 { display:block; }
+.ccforums .cflist .actions { padding:0px; margin:0px; }
+.ccforums .cflist .actions div { padding:3px 7px 3px 7px; }
+.ccforums .cflist .actions a { font-weight:bold; background-position:left center; padding-left:17px; }
+.ccforums .cflist .ad { padding:0px; }
+.ccforums .cflist .mail .new { font-weight:bold; }
+.ccforums .cflist .section { padding:4px 0px 5px 7px; }
+.ccforums .cflist .section .title { padding:1px 7px 2px 0px; display:block; font-weight:bold; }
+.ccforums .cflist .section .title.gftitle { padding-top:5px; padding-bottom:0px; }
+.ccforums .cflist .section a { display:block; padding:1px 7px 1px 17px; background-position:top left !important; }
+.ccforums .cflist .realtime { position:relative; }
+.ccforums .cflist .cfrss { padding:0px !important; display:block !important; width:14px !important; height:14px !important; position:absolute; top:4px; left:180px; text-indent:-3000px !important; overflow:hidden; }
+.ccforums .cflist .extra { font-size:0.8em; margin:0px; padding:4px 0px 4px 0px; }
+.ccforums .cflist .extra.gftitle { padding-top:0px; }
+.ccforums .cflist .Accordion { border:0px; }
+.ccforums .cflist .AccordionPanelTab { border:0px; padding:0px 0px 0px 17px; border-top:0px; font-weight:bold; }
+.ccforums .cflist .AccordionPanelOpen { border-top:0px; }
+.ccforums .cflist .AccordionPanelContent { padding:0px 7px 0px 17px; }
+
+.ccforums .forumPosts,.ccforums .forumPosts td { border-collapse:separate !important; }
+.ccforums .forumPosts .avata,.ccforums .forumPosts .edis { vertical-align:top; padding:0px; margin:0px; }
+.ccforums .forumPosts .postTitle,.ccforums .forumPosts .avata,.ccforums .cfbody,.ccforums .signature { padding:4px; }
+.ccforums .forumPosts .postTitle { height:1.4em; overflow:hidden; }
+.ccforums .forumPosts .signature { padding-bottom:1em; overflow:hidden; }
+
+.ccforums .forumPosts .op { width:21px; height:17px; float:left; display:block; overflow:hidden; }
+.ccforums .forumPosts .avtname { font-size:1.2em; font-weight:bold; text-align:center; display:block !important; padding-bottom:5px !important; }
+.ccforums .forumPosts .einfo { float:right; padding-top:0.1em; }
+.ccforums .forumPosts .einfo a { padding-left:0.8em; font-weight:bold; }
+.ccforums .forumPosts .adminx { float:left; padding-top:0.1em; padding-left:0.1em; }
+.ccforums .forumPosts .adminx a:link,.ccforums .forumPosts .adminx a:visited { text-decoration:underline;  }
+.ccforums .forumPosts .avata .image { padding-bottom:4px; }
+.ccforums .forumPosts .details { font-size:0.9em; }
+.ccforums .forumPosts .quote { font-size:0.9em; }
+.ccforums .forumPosts .cfbody { padding-right:7px; clear:both; padding-bottom:8px; }
+.ccforums .forumPosts .cfbody p { padding-bottom:0.5em; }
+.ccforums .forumPosts .constrain { overflow-x:auto; width:620px; }
+.ccforums .forumPosts .cfbody blockquote { padding:6px; margin:4px; width:96%; }
+.ccforums .forumPosts .cfbody blockquote blockquote { width:96%; margin:4px; }
+.ccforums .forumPosts .cfbody blockquote blockquote blockquote { width:96%; margin:4px; }
+.ccforums .forumPosts .cfbody blockquote blockquote blockquote blockquote { width:96%; margin:4px; }
+.ccforums .forumPosts .cfbody blockquote blockquote blockquote blockquote blockquote { width:96%; }
+.ccforums .forumPosts .cfbody blockquote blockquote blockquote blockquote blockquote blockquote { width:96%; }
+.ccforums .forumPosts .cfbody blockquote blockquote blockquote blockquote blockquote blockquote blockquote { width:96%; }
+.ccforums .forumPosts .cfbody blockquote .constrain { width:96%; }
+.ccforums .forumPosts .cfbody blockquote hr { display:none; }
+.ccforums .forumPosts .poll { padding:4px 7px 7px 4px; text-align:left; }
+.ccforums .forumPosts .poll .simpleSec { width:50%; }
+.ccforums .forumPosts .cfpostactions { padding:7px 7px 7px 0px; }
+.ccforums .forumPosts .cfpostactions .emessage { display:block; float:right; font-style:italic; padding:5px 0px 5px 0px; width:100%; text-align:right; }
+.ccforums .forumPosts .cfpostactions a { display:block; padding-left:0px; height:22px; width:53px; text-indent:-1000px; overflow:hidden; float:right; }
+.ccforums .forumPosts .cfpostactions a.cfmquote { width:92px; }
+.ccforums .forumPosts .cfpostactions a:hover { background-position:top right; }
+.ccforums #forumInsetTbl td { border:0px; padding:2px; }
+.ccforums #forumInsetTbl .pollTitle,.ccforums .forumPosts .reporterx h2 { font-size:1.2em; font-weight:bold; padding:4px 4px 4px 2px; }
+.ccforums .forumPosts .reporterx { overflow:hidden; height:11em !important; padding-left:3px; }
+.ccforums .forumPosts .reporterx textarea { height:3em !important; }
+.ccforums .forumPosts .blockedpost { padding:5px !important; }
+.ccforums .forumPosts .blockedpost .cfunme { font-weight:bold; }
+.ccforums .forumPosts .sigbd { padding:5px; font-size:0.9em; }
+.ccforums .forumPosts .leftsidecons { width:120px; overflow:hidden; }
+
+.ccforums .forumPosts .forumpollbox td { padding:3px !important; }
+.ccforums .forumPosts .forumpollbox .bar { position:relative; top:0px; width:120px; height:20px; left:3px; }
+.ccforums .forumPosts .forumpollbox .bar span.rating { display:block; height:20px; }
+.ccforums .forumPosts .forumpollbox .forumSmallTxt { padding:6px !important; font-style:italic; }
+
+.ccforums .editor { padding:10px 30px 10px 30px; position:relative; }
+.ccforums .editor .row { padding:0px 0px 6px 0px; }
+.ccforums .editor .row .more { display:block; padding-top:2px; font-size:0.9em; font-style:italic; }
+.ccforums .editor .row label { display:block; padding-bottom:2px; font-size:1.1em; font-weight:bold; }
+.ccforums .editor .bbml,.ccforums .editor .fcke { padding-top:4px; }
+.ccforums .editor .pollx { padding-top:4px; }
+.ccforums .editor .pollx span { padding-bottom:4px; display:block; font-style:italic; }
+.ccforums .editor #forumHeaderTbl table { border:0px !important; }
+.ccforums .editor #forumHeaderTbl td { padding:1px 6px 2px 6px; font-size:1.1em; }
+.ccforums .editor #btnPostMessage { font-weight:bold; font-size:17px; position:relative; top:2px; }
+.ccforumemotewindow h1 { font-size:14px; font-weight:bold; }
+.ccforumemotewindow div.info { padding-bottom:4px; font-style:italic; }
+.ccforumemotewindow td { padding:3px !important; vertical-align:middle; text-align:center; width:40px; border-style:collapse; }
+.ccforums .editor .fmbutton { padding:2px 5px 2px 5px; }
+.ccforums .editor .previous { padding-top:10px; }
+
+#RTE_iframe blockquote, .RTE_iframe blockquote { padding:6px; margin:4px; width:96%; }
+#RTE_iframe blockquote blockquote { width:96%; margin:4px; }
+#RTE_iframe blockquote blockquote blockquote { width:96%; margin:4px; }
+#RTE_iframe blockquote blockquote blockquote blockquote { width:96%; margin:4px; }
+#RTE_iframe blockquote blockquote blockquote blockquote blockquote { width:96%; }
+#RTE_iframe blockquote blockquote blockquote blockquote blockquote blockquote { width:96%; }
+#RTE_iframe blockquote blockquote blockquote blockquote blockquote blockquote blockquote { width:96%; }
+#RTE_iframe blockquote hr { display:none; }
+
+.ccforums .forumPosts .notuserforumblock { z-index:995; }
+.notuserforumblock { position:relative; background-color:#222222; padding:5px; overflow:hidden; clear:both; width:762px }
+.notuserforumblock .apante { position:relative; float:left; top:0px; left:0px; width:300px; margin-right:-300px; height:250px; color:red; border:1px solid #c10000; }
+.notuserforumblock .infopante { position:relative; top:0px; left: 310px; width:455px; height:250px; overflow:hidden; font-size:1.1em; padding-top:7px; padding-left:4px; }
+.notuserforumblock .infopante .apiteme { display:block; position:relative; line-height:40px; height:40px; overflow:hidden; }
+.notuserforumblock .infopante .apiteme img { padding-right:4px; position:relative; float:left; }
+.notuserforumblock .infopante .apiteme a { display:block; line-height:39px; float:left; position:relative; width:400px; height:40px; }
+.notuserforumblock h2 { font-size:16px; margin:0px; padding:0px 5px 5px 0px; text-align:center; display:block; clear:both; }
+.notuserforumblock .trendpante { }
+
+/*
+.ccforums .editor .userphotosWidget { width:100% !important; }
+.ccforums .editor .userphotosWidget .menu { width:175px !important; _width:150px !important; border-right:1px solid #393939 !important; overflow:hidden; }
+.ccforums .editor .userphotosWidget .images { width:603px !important; }
+.ccforums .editor .userphotosWidget .images .item { width:85px !important; }
+*/
+
+
+.gvew2 .ccforums .gvfomhead { width:638px !important; padding:0px !important; }
+.gvew2 .ccforums #sectionHeader span { width:638px !important; }
+.gvew2 .ccforums .gvfomhead .cfgvffrm { width:308px !important; padding:7px 7px 7px 4px; }
+.gvew2 .ccforums #quickForumSearch { padding-top:15px !important; }
+.gvew2 .forumPosts .constrain { width:490px !important; }
+
+/* Mail - Private messages, opened by inc_mail.cfm */
+.ccmail h1 { font-size:2em; margin:0px; padding:0px; font-weight:bold; }
+.ccmail h2 { font-size:1em; margin:0px; padding:0px; }
+.ccmail .header { height:auto; width:100%; overflow:hidden; position:relative; }
+.ccmail .header .imheader { width:100%; }
+.ccmail .header .labels { padding:9px 9px 15px 13px; width:416px; float:left; position:relative; overflow:hidden; }
+.ccmail .header .labels.display { width:100%; }
+.ccmail .header .labels.display h1 { font-size:1.5em; }
+.ccmail .header .sections { padding:4px 0px 5px 12px; }
+.ccmail .header .quota { width:300px; padding:24px 9px 9px 9px; float:left; position:relative;}
+.ccmail .header .quotabar { width:300px; height:30px; position:relative; }
+.ccmail .header .quotabar .value { height:30px; }
+.ccmail .header .quota .label { position:absolute; top:0px; left:0px; line-height:30px; padding-left:8px; width:80%; }
+.ccmail .header .cfmpgf { position:relative; left:-4px; }
+.ccmail .download { padding:13px 0px 0px 47px; margin:0px; height:50px; }
+.ccmail .download p { padding:8px; margin:0px; }
+.ccmail .download .title { font-size:16px; font-weight:bold; padding-bottom:4px;  }
+.ccmail .new { font-weight:bold; }
+.ccmail .newicon { width:17px; height:17px; }
+.ccmail .mfoot { padding:7px; }
+.ccmail .mfoot .button { margin-right:3px; }
+.ccmail label { font-weight:bold; display:block; padding-bottom:3px; }
+.ccmail .wblist label { font-size:1.2em; font-weight:bold; padding:7px 0px 7px 0px; }
+.ccmail .wblist table,.ccmail .wblist td,.ccmail .wblist tr { border:0px; }
+.ccmail .message { padding:7px; border-bottom:0px; width:755px; border:0px; overflow-x:auto; }
+.ccmail .message p { width:auto; margin:0px; padding:0.2em; }
+.ccmail .attachmentlist { padding:7px; }
+.ccmail .message table tr, .ccmail .message table td, .ccmail .message table { border:0px; padding:0px; }
+.ccmail textarea.nohover:hover, .ccmail textarea.nohover { background-image:none; }
+.ccmailer { padding-top:7px; }
+.ccmail .content { padding:7px; }
+
+/* Search - Site search, opened by serach.cfm */
+#search .searchform { width:100%; display:block; float:left; padding:7px; position:relative; }
+#search .searchform div { float:left; position:relative; }
+#search .searchform label { display:block; padding-bottom:3px; }
+#search .sreslt { padding:3px 7px 7px 7px; }
+#search .sreslt div { padding-bottom:0.5em; }
+#search .sreslt h2 { font-size:1.3em; padding-bottom:0.2em; padding-top:0.2em; font-weight:bold; }
+#search .sreslt h3 { font-size:1.1em; padding-bottom:0.2em; }
+#search .sreslt .title { font-size:1.1em; font-weight:bold; }
+#search .sreslt .date, #search .sreslt .small { font-size:0.9em; }
+
+/* Comics - Tabbed comics page, opened by humor.cfm */
+.comics p { text-align:center;  }
+.comics img { padding:15px; }
+.comics .pane { padding:14px 7px 7px 7px; }
+.comics .humor_ad { text-align:center; }
+
+/* Chat - Chatroom, opened by chat2.cfm */
+.chatroom .chatbod, .chatroom #authpane { padding:7px; }
+.chatroom #authpane { display:block; }
+.chatroom .info { padding-bottom:7px; }
+.chatroom .client { padding-bottom:4px; }
+.chatroom .info h3 { padding-bottom:0.3em; font-size:1.2em; font-weight:bold; }
+.chatroom .info ul { list-style:none; margin:0px; padding:0.3em 0px 0.3em 0px; }
+.chatroom .info li { padding:0.2em 0em 0.2em 16px; margin:0px; }
+.chatroom form { padding:14px 0px 5px 0px; }
+.chatroom form label { display:block; font-size:1.1em; font-weight:bold; }
+.chatroom form .handle { width:165px; font-size:1.2em; font-weight:bold; }
+.chatroom form .submit { font-size:1.2em; }
+.chatroom .partner { padding-top:4px; }
+
+/* About Us,Opportunites,Disclaimers */
+#about h1,#about h2,#about h3,
+#opportunities h1,#opportunities h2,#opportunities h3,
+#disclaimers h1,#disclaimers h2,#disclaimers h3,
+#disclaimers h1,#disclaimers h2,#disclaimers h3 {
+	font-weight:bold; padding-left:7px; padding-right:7px; padding-bottom:0.2em;
+}
+#about #sectionHeader h1,#opportunities #sectionHeader h1,#disclaimers #sectionHeader h1 { padding:0; }
+#about #sectionHeader,#opportunities #sectionHeader,#disclaimers #sectionHeader { margin-bottom:7px; }
+#about h1,#opportunities h1,#disclaimers h1 { font-size:1.4em; }
+#about h2,#opportunities h2,#disclaimers h2 { font-size:1.2em; }
+#about h3,#opportunities h3,#disclaimers h3 { font-size:1.1em; }
+#about p,#opportunities p,#opportunities .item,#disclaimers p { padding-left:7px; padding-right:7px; margin-bottom:1.2em; }
+#about ul { padding:0px; padding-bottom:1.2em; margin:0px; font-style:italic; font-weight:bold; list-style:none; padding-left:25px; }
+#about ul li { font-size:1.2em; }
+#about ul li ul { padding:0px; margin:0px; list-style:none; font-style:normal; font-weight:normal; }
+#about ul li ul li { padding-bottom:8px; font-size:0.875em; }
+#about .e,#opportunities .e,#disclaimers .e { font-weight:bold; }
+#about .normal,#disclaimers .normal { font-weight:normal; font-size:1em; }
+#about .note,#disclaimers .note { font-style:italic; }
+#opportunities ul,#disclaimers ul { margin:0; padding:0px; padding-bottom:6px; list-style-type:circle; }
+#opportunities li,#disclaimers li { margin-left:28px; padding-bottom:0.2em; }
+#opportunities .item { font-weight:bold; display:block; }
+#disclaimers ul { padding-left:25px; }
+#disclaimers ul li { font-weight:bold; }
+#disclaimers ul li ul { padding:0; margin:0; list-style:none; font-style:normal; font-weight:normal; }
+#disclaimers ul li ul li { margin:0; padding-bottom:0.5em; padding-top:0.5em; font-weight:normal; }
+#disclaimers,#about,#opportunities { padding-bottom:1px; }
+
+/* Podcast - Gameon page, opened by gameon.cfm */
+.gameon { position:relative; width:798px; background:#000 url('http://images.mmorpg.com/images/gameon/gameon_bg_aud_r0.jpg') no-repeat top left; min-height:600px; }
+.gameon a:link,.gameon a:visited { color:#24b2ff !important; }
+.gameon a:hover { color:#fff !important; }
+.gameon .audioContainer,.gameon .videoContainer { width:500px; padding-top:285px; padding-left:161px; padding-bottom:20px; display:block; position:relative; }
+.gameon .audioContainer .libsynPlayer { width:470px; height:194px; display:block; margin-bottom:20px; }
+.gameon h2 { font-size:16px; font-weight:bold; text-indent:-3000px; display:block; position:relative; left:-3px; }
+.gameon h2.thisweek { background:transparent url('http://images.mmorpg.com/images/gameon/gameon_tw_header_r0.jpg') no-repeat top left; height:23px; margin-bottom:8px; margin-top:3px; }
+.gameon h2.previousepisode { background:transparent url('http://images.mmorpg.com/images/gameon/gameon_pe_header_r0.jpg') no-repeat top left; height:23px; margin-bottom:8px; margin-top:10px; }
+.gameon p { line-height:1.55em; display:block !important; position:relative; }
+.gameon p.feedback,.gameon p.overview { padding-top:10px !important; width:476px !important; }
+.gameon p.overview { padding-bottom:10px !important; }
+.gameon .links { position:relative; display:block; height:32px; padding-bottom:10px; }
+.gameon .links a { background:#000 url('http://images.mmorpg.com/images/gameon/gameon_links_r0.jpg') no-repeat top left; display:block; float:left; width:32px; height:32px; text-indent:-3000px; margin-right:6px; }
+.gameon .links .directDownload { background-position:-32px 0px; }
+.gameon .links .itunes { background-position:-64px 0px; }
+.gameon .links .permalink { background-position:-96px 0px; }
+.gameon .links .gorss { background-position:0px 0px; }
+.gameon .comments { position:relative; left:-18px; }
+.gameon .golist { position:relative; left:-9px; top:-2px; width:480px; background-color:#000; padding:5px; border:1px solid #5e5e5e; min-height:200px; }
+.gameon .golist a { display:block; padding-bottom:5px; }
+
+/* Login - Opened from login.cfm */
+#login form { position:relative; margin:0 auto; width:430px; padding-top:3em; padding-bottom:3em; }
+#login form div { position:relative; float:left; font-weight:bold; padding:4px; width:170px; overflow:hidden; }
+#login form div input { width:170px; }
+#login label { display:block; font-weight:bold; font-size:1.3em; padding-bottom:0.2em; }
+#login .sub,#login .sub input  { width:60px; }
+#login .sub label { visibility:hidden; }
+#login .sub input { width:60px; font-size:1.1em; height:24px; }
+#login p { padding-top:0.4em; text-align:center; clear:left; }
+#login p.reg { padding-top:1em; }
+#login .failed form,#login .failed form { padding-bottom:8px; }
+#login .failed p { padding:4px 0px 7px 0px; width:650px; text-align:center; display:block; margin:0 auto; }
+#lostpass .lost { padding:7px 0px 7px 0px; }
+#lostpass .lost h1 { text-align:left; font-size:1.4em; font-weight:bold; padding-bottom:6px; width:auto; }
+#lostpass .notice { padding:0px 7px 7px 7px; }
+
+/* Profile - User profile area, opened by profile.cfm */
+.profile h2 { text-align:left; font-size:1.4em; font-weight:bold; padding-bottom:6px; width:auto; }
+.profile a.more { display:block; clear:both; padding-top:4px; padding-bottom:2px; font-weight:bold; }
+.profile .entry { padding-bottom:5px; padding-top:3px; }
+.profile .entry h1,.profile .pguilds .title { font-size:1.1em; font-weight:bold; }
+.profile .source { font-size:0.9em; font-weight:normal; display:block; }
+.profile .side { width:200px; float:right; overflow:hidden; padding:7px; }
+.profile .pmain { float:left; width:568px; overflow:hidden; padding:7px; }
+.profile .pgallery .ssInside,.profile .pblogs,.profile .pguilds,.profile .pgames .ssInside,.profile .linkage .ssInside { padding:7px; }
+.profile .pgallery .blk { vertical-align:top; padding:4px 3px 4px 4px; }
+.profile .poverview { padding-bottom:7px; }
+.profile .poverview .icon { padding-right:7px; width:200px; height:200px; float:left; }
+.profile .poverview .data { float:left; overflow:hidden; width:350px; }
+.profile .poverview .data span { display:block; padding-bottom:0.2em; }
+.profile .poverview .username { font-size:1.4em; font-weight:bold; }
+.profile .poverview .stars,.profile .poverview .bio,.profile .poverview .extra { padding-top:0.6em; }
+.profile .poverview .friends .title { font-size:1.2em; font-weight:bold; display:block; padding-bottom:0.4em; }
+.profile .pblogs { padding-top:7px; }
+.profile .pguilds span { display:block; padding-bottom:0.2em; }
+.profile .pguilds .icon,.profile .pguilds .data { padding-bottom:0.4em; }
+.profile .pguilds .data { padding-left:7px; }
+.profile .pgames span.sepblock { display:block; overflow:hidden; height:8px; }
+.profile .pgames .havgames td { padding:2px 15px 2px 0px; }
+
+.profile .pgames .stitle { font-weight:bold; }
+
+/* Contests/Promos, (common) */
+.promotions .header { padding-bottom:7px; }
+.promotions h1.title { font-size:1.6em; font-weight:bold; display:block; padding:0px 7px 7px 7px; text-align:center; margin:0 auto; }
+.promotions .copy { margin:0 auto; padding-bottom:7px; }
+.promotions #errorPanel { padding:7px; }
+.promotions #errorPanel h1 { font-size:1.4em; font-weight:bold; padding:0em 0px 0.3em 0px; margin:0px; }
+.promotions #errorPanel ul { padding:0px; margin:0px; list-style:none; }
+.promotions #errorPanel li { padding:0px 0px 0.3em 14px; margin:0px; }
+.promotions .rules { width:500px; margin:0 auto; }
+
+#promo h1 { font-size:1.8em; margin:0px; padding:0px; text-align:center; }
+#promo #sectionHeader h1 { font-size:1.4em !important; font-weight:bold; position:relative; text-indent:7px; line-height:1.8em !important; text-align:left; }
+#promo h2 { font-size:1.8em; margin:0px; padding:0px; }
+#promo p { margin:0px; padding:3px 3px 3px 3px; }
+#promo .header { padding:0px; margin:0px; text-align:center; }
+#promo .rules { width:500px; margin:0 auto; }
+#promo .return { width:100%; text-align:center; margin:6px 0px 6px 0px; }
+#promo .enter { margin:0 auto; width:100%; padding:20px; }
+#promo .winners { width:80%; margin:10px 10% 10px 10%; }
+
+.giveawaycontent p { padding:0px !important; margin:0px !important; }
+.giveawaycontent .gcontent { padding:10px 7px 10px 7px !important; }
+.giveawaycontent .gcontent p { padding:0px 0px 1em 0px !important; width:auto; }
+
+/* Registration + Settings - Create new user + Manage user, opened by register.cfm + settings.cfm */ 
+#register form { padding:7px 0px 7px 0px; }
+#register .moreinfo h1 { font-size:1.2em; padding-bottom:0.2em; font-weight:bold; }
+#register .moreinfo p { padding:0.2em 0em 0.35em 0em; margin:0; }
+#register .gamelist,.settings .ealerts ul { list-style:none; padding:0px; margin:0px; }
+#register .gamelist li,.settings .ealerts ul li { text-align:left; overflow:hidden; }
+#register .human input { width:177px; text-align:center; font-weight:bold; }
+#register .finish,.settings .finish { text-align:center; }
+#register .finish input,.settings .finish input { padding:7px; font-size:1.2em; font-weight:bold; }
+#register .agreement { width:450px;height:250px;overflow:auto;}
+#register .agreement p { float:none; display:block; padding-bottom:0.6em !important; }
+#register .checkagree { padding:7px 0px 0px 160px; }
+
+.settings .form { padding:7px 0px 7px 0px; float:left; width:570px; overflow:hidden; }
+.settings .updatePanel{ padding:7px 0px 14px 7px; margin-bottom:6px; }
+.settings .updatePanel h1,.settings .activate h1 { width:100%; font-size:1.4em; font-weight:bold; padding:0.3em 0px 0.3em 0px; margin:0px; }
+.settings .stats { width:200px; float:right; overflow:hidden; padding:7px; }
+.settings .stats h1 { text-align:left; font-size:1.4em; font-weight:bold; padding-bottom:6px; width:auto; }
+.settings .stats span { padding-bottom:3px; padding-top:3px; display:block; }
+.settings .stats span.first,.settings .avatarTopForm { padding-top:7px; }
+
+.settings .stats .delaccount { color:#dd0000; display:block; padding-top:12px; padding-left:20px; background:transparent url(fullmoon/item_favgame_remove.gif) no-repeat left center; }
+
+.settings .avatarBotForm { padding-bottom:7px; }
+.settings .alerts { padding:7px 0px 7px 0px; }
+.settings .activate { padding:7px; }
+.settings .activate p { padding-bottom:0.3em !important; padding-top:0.1em;  }
+.settings .successreg { text-align:center; }
+.settings .successreg h1 { font-size:24px; font-weight:bold; }
+.settings .successreg h2 { font-size:17px; font-weight:bold; padding-bottom:1px; }
+
+.settings .gameplaydata h2,.settings .buddy h2 { text-align:left; font-size:1.3em; font-weight:bold; padding:6px 0px 6px 0px; }
+
+.settings .gameplaydata .remo { width:12px; height:12px; position:relative; top:2px; left:4px; }
+
+.settings .buddy .add { padding:4px 0px 12px 7px; display:block; }
+.settings .buddy h2.extra { padding-left:7px; }
+.settings .buddy .nrewrevsg { padding-top:12px; }
+.settings .buddy .noreviews { padding:6px 0px 6px 6px; display:block;}
+.settings .buddy a.creategr:link,.settings .buddy a.creategr:visited { width:154px; height:48px; display:block; text-indent:-3000px; }
+.settings .buddy .amnara { padding:6px; }
+.settings .buddy .formck { display:block; padding-left:0px; }
+.settings .buddy a.creategr:link,.settings .buddy a.creategr:visited,
+.gvew2 .usrcratr a.creategr:link,.gvew2 .usrcratr a.creategr:visited,
+.settings .buddy a.creategf:link,.settings .buddy a.creategf:visited,
+.gvew2 .usrcratr a.creategf:link,.gvew2 .usrcratr a.creategf:visited,
+.settings .buddy a.createyf:link,.settings .buddy a.createyf:visited,
+.settings .buddy a.createyfdis:link,.settings .buddy a.createyfdis:visited { width:154px; height:48px; display:block; text-indent:-3000px; }
+
+.usrcratr { padding:5px 0px 10px 0px; }
+
+
+.settings .disciple { min-height:150px; padding-top:150px; padding-bottom:30px; }
+.settings .disciple .becomeplayer,.settings .disciple .isplayer { width:500px; margin:0 auto; text-align:center; }
+.settings .disciple .becomeplayer p,.settings .disciple .isplayer p { padding-bottom:12px; font-size:0.9em; font-style:italic; }
+.settings .disciple .sharebutton,.settings .disciple .playbutton,.settings .disciple .gobutton,.settings .disciple .loginbutton { width:384px; height:42px; display:block; text-indent:-3000px; margin:0 auto; }
+.settings .disciple .contest { padding-left:110px; width:390px; margin:0 auto; padding-bottom:10px; }
+
+.settings .udausre { padding:12px; text-align:center; }
+.settings .udausre p { display:block; font-size:1.1em; }
+.settings .udausre .duspacer { height:20px; }
+.settings .udausre .bigredbutton { font-size:1.2em; font-weight:bold; margin:0 auto; background:#f00; color:#fff; padding:12px; outline:0px; border:4px solid #ff4646; border-bottom:4px solid #800000; border-right:4px solid #800000; }
+
+
+/* Videos - Three paned video page, video player, opened by videos.cfm */
+.videoplayer h3 { padding-bottom:12px; }
+.videoplayer h3 .duration { padding-left:0.4em; }
+.videoplayer .panel { width:445px; margin:0 auto; }
+.videoplayer .frame { margin:0 auto; text-align:center; padding-top:7px; position:relative; }
+.videoplayer .frame .player { height:296px; overflow:hidden; position:relative; }
+.videoplayer .info { width:450px; overflow:hidden; padding:7px 0px 7px 0px; text-align:left; margin:0 auto; text-align:center !important; position:relative; }
+.videoplayer .info .qt { width:20px; height:20px; float:right; display:block; }
+.videoplayer .info .mp { width:20px; height:20px; float:right; display:block; }
+.videoplayer .info .details { font-size:0.9em; padding-top:5px; display:block; }
+.videoplayer .soci { float:none; text-align:center; margin:0 auto; padding:8px 0px 8px 5px; left:7px; }
+.videoplayer .soci a { float:left; }
+.videoplayer .extrasmp { padding-left:100px; }
+
+.videoplayer .button { margin-top:7px; left:61px; position:relative; }
+.videoplayer .pwrdbygt { width:73px; height:29px; display:block; position:relative; float:right; text-indent:-3000px; }
+.videolist a.rss:link, #videolist a.rss:visited { height:19px; width:19px; position:relative; float:right; overflow:hidden; display:block; z-index:6; }
+.videolist .content { padding:7px; position:relative; }
+.videolist .content.basic { padding:11px 4px 0px 10px; }
+.videolist .extContent { padding-bottom:7px; }
+.videolist .tabicular th { padding-top:7px; }
+
+.videolist .list .entry { padding:6px; }
+.videolist .list { position:relative; padding:5px 0px 0px 0px; margin:0px; }
+.videolist .list .thumbnail { position:relative; float:left; padding-right:7px; }
+.videolist .list .details { position:relative; list-style:none; width:500px; padding-left:112px; _padding-left:5px !important; float:left; position:relative; }
+.videolist .list .details { padding:0px; margin:0px; position:relative; }
+.videolist .list .details .title,.videolist .list .details .title a { font-size:1.1em; font-weight:bold; }
+.videolist .list .details .info { font-size:0.9em; padding:2px 0px 2px 0px; }
+
+.videolist .basopen { width:189px; float:left; text-align:center; padding:0px 7px 7px 0px; }
+.videolist .basopen .thumb { padding:7px 0px 7px 0px; }
+.videolist .basopen .info { padding:0px 4px 7px 4px; }
+.videolist .basopen .data { font-size:0.9em; }
+.videolist .basopen .title { display:block; height:2.4em; overflow:hidden; }
+.videolist .action { padding:7px 7px 0px 7px; width:auto; clear:both; }
+.videolist .standalone h3 { width:100%; text-align:center; margin:0 auto; font-weight:bold; font-size:1.2em; padding-top:9px; }
+.videolist .standalone .commenters { padding-left:55px !important; }
+.videolist .standalone .commenters.add { padding-left:62px !important; padding-bottom:10px !important; }
+.videolist .gvpricon { float:left; width:628px; overflow:hidden; }
+.videolist .gvpushcon { width:156px; position:relative; float:right; overflow:hidden; padding:7px; }
+.videolist .newinsideframe { padding:7px; }
+
+/* Galleries - User photos, opened by galleries.cfm,photos.cfm */
+.userphotos .gallery { padding:7px; }
+.userphotos .gallery .section h1,.userphotos .view h2 { text-align:left; font-size:1.4em; font-weight:bold; padding-bottom:6px; width:auto; }
+.userphotos .gallery .section { clear:both; }
+.userphotos .gallery .action { padding-top:7px; }
+.userphotos .gallery .none { display:block; padding:7px 0px 7px 0px; font-style:italic; }
+.userphotos .barad { padding:7px; text-align:center; width:auto; margin:0 auto; }
+.userphotos .gallery .edit,.userphotos .gallery .delete { float:none !important; position:static !important; }
+.userphotos .gallery.user { padding-left:7px; float:left; position:relative; }
+.userphotos .group td { padding:3px; width:90px; overflow:hidden; }
+.userphotos .gallery.large .group td { padding:3px 8px 3px 9px; }
+.userphotos .gallery.user .group td { width:180px; padding:6px 14px 6px 14px !important; }
+.userphotos .upside { width:100px; overflow:hidden; float:left; padding:7px; }
+.userphotos .upside .name { display:block; font-weight:bold; }
+.userphotos .upside a.root { padding-bottom:0.5em; }
+.userphotos .upside .folder { padding-bottom:0.5em; width:100px; }
+.userphotos .search form { padding:7px; }
+.userphotos .search form label { font-weight:bold; display:block; font-size:1.2em; }
+.userphotos .returnactions { padding-left:0px; padding-top:7px; clear:both; }
+.userphotos .view { overflow:hidden; width:798px; }
+.userphotos .view .image { text-align:center !important; }
+.userphotos .view .image .imlk { width:100%; display:block; text-align:center; }
+.userphotos .view .image img, .userphotos .view #snk { cursor:pointer; cursor:hand; display:block; margin:0 auto; }
+.userphotos .view .barad { padding:0px 0px 0px 0px !important; margin:0px; }
+.userphotos .view .barad span.upin { padding:7px 7px 7px 7px !important; margin:0px; display:block; }
+.userphotos .view .info { width:798px; padding:10px 0px 0px 0px; }
+.userphotos .view .info div { display:block; text-align:center; padding:0px 0px 3px 0px; }
+.userphotos .view .browser { padding:7px; clear:both; }
+.userphotos .view .info .caption { font-size:15px; font-weight:bold; }
+.userphotos .view .rate { height:50px; position:relative; }
+.userphotos .view .rate.login { height:auto; position:relative; }
+.userphotos .view .bump, .userphotos .view .bury { padding:26px 5px 5px 5px; width:60px; margin:0 auto; position:relative; top:30px; }
+.userphotos .view .yours { width:300px; display:block; padding-top:26px !important; top:5px; }
+.userphotos .view .share { text-align:center; padding:5px; }
+.userphotos .view .share b { padding-bottom:4px; display:block; }
+.userphotos .view .share span { display:block; width:90%; font-size:0.9em; padding:2px; position:relative; margin:0 auto; }
+.userphotos .view .none { font-style:italic; font-size:1em; font-weight:normal; }
+.userphotos .view .random { background:transparent !important; width:798px; height:29px; padding:4px 0px 4px 0px; position:relative; }
+.userphotos .view .random a { display:block; width:230px; height:29px; float:left; position:relative; left:282px; }
+.userphotos .view .socialnbox { left:277px; }
+.userphotos .edit { padding:0px; position:relative; float:left; }
+.userphotos .edit .panelBody {position:relative; }
+.userphotos .edit .reducepad .panelBody { padding:0px !important; }
+.userphotos .edit label { display:block; padding:3px 0px 3px 0px; font-weight:bold; }
+.userphotos .edit label small { padding-left:4px; font-weight:normal; }
+.userphotos .edit .item { width:100%; position:relative; float:left; clear:both; padding:6px; }
+.userphotos .edit .reducepad .item { padding-top:0px; }
+.userphotos .edit .image { float:left; padding:0px; width:180px; text-align:center; }
+.userphotos .edit .image img { cursor:pointer; margin:0 auto; }
+.userphotos .edit .image .caplabel { width:175px; font-size:13px; text-align:center; display:block; height:15px; display:none; }
+.userphotos .edit .image .caption { width:175px; display:block; margin-top:3px; position:relative; left:1px; }
+.userphotos .edit .form { float:left; width:445px; padding-left:12px; }
+.userphotos .edit .sub { float:left; width:130px; }
+.userphotos .edit .sub input { width:130px; height:30px; margin-top:20px; }
+.userphotos .edit .return { padding:20px; text-align:center; }
+.userphotos .edit #newGallery { padding-bottom:7px; }
+.userphotos .edit #newGallery div { /*padding:7px;*/ }
+.userphotos .edit #newGallery h4 { font-size:1.2em; font-weight:bold; margin:0px; padding:0px 0px 0.2em 0px; }
+.userphotos .edit .extra { font-size:0.9em; }
+.userphotos .upload { padding:15px 5px 15px 5px; text-align:center; }
+.userphotos .upload .uploader { padding-top:15px; padding-bottom:5px; }
+.userphotos .upload .jumpToGallery { width:400px; display:block; margin:0 auto; height:22px; text-indent:-3000px; }
+.userphotos .upload .note { padding-top:15px; }
+
+#image .image { width:775px; padding:10px; text-align:center; }
+#image .caption { width:775px;padding:0px 10px 5px 10px;text-align:center; }
+#image .featureData { width:774px;padding:5px 10px 5px 10px; text-align:center; }
+#image .featureData .intro { padding-bottom:2px; margin-bottom:0px; }
+#image .featureData h1 { font-size:16px; font-weight:bold; }
+#image .actions { width:100%; text-align:center; font-size:14px; padding:10px 0px 10px 0px; }
+#image .actions a { font-weight:bold; }
+
+/* Blogs - User blogs and all associated pages, opened by blogs.cfm */
+.blogs .home h2 { padding:3px 0px 3px 7px; font-size:1.4em; font-weight:bold; }
+.blogs .home .intro { display:none; }
+.blogs .home .tabintro { padding:14px 7px 14px 7px; width:100%; position:relative; margin-bottom:0px; }
+.blogs .home .tabintro .tabby { font-size:1.4em; font-weight:bold; padding-top:4px; float:left; width:49%; }
+.blogs .home .tabintro .gotBlog { position:relative; float:right; text-align:right; padding-right:14px; padding-top:6px; width:40%; }
+.blogs .home .highlights { padding:7px 0px 0px 0px; }
+.blogs .home .bhhright strong { font-size:1.1em; font-weight:bold; }
+.blogs .home .bhhright .author { font-size:0.9em; display:block; }
+.blogs .home .bentry { width:315px; height:auto; padding:5px; margin:0px; border-top:1px solid #282828; position:relative; }
+.blogs .home .bentry .image { display:block; float:left; padding-right:5px; padding-bottom:0px; width:30px; }
+.blogs .home .bentry p { float:left; display:block; padding:0px; width:258px; margin:0px; height:auto; position:relative; }
+.blogs .home .bentry p span { display:block; }
+
+.blogs .home .bentryde { display:block; width:613px; height:auto; overflow:hidden; padding:5px; margin:0px; }
+.blogs .home .bentryde.first { border:0px; }
+.blogs .home .bentryde .image { display:block; float:left; padding-right:5px; padding-bottom:0px; width:30px; overflow:hidden; }
+.blogs .home .bentryde.dev .image { width:105px; }
+.blogs .home .bentryde p { float:left; display:block; padding:0px; width:577px; margin:0px; height:auto; position:relative; }
+.blogs .home .bentryde.dev p { width:500px; overflow:hidden; }
+.blogs .home .bentryde p span { display:block; }
+.blogs .home .bentryde .btitle { display:block; font-size:1.2em; font-weight:bold; }
+.blogs .home .bentryde .bover { display:block; padding-bottom:5px; }
+.blogs .home .bentryde .blate a { font-weight:bold; }
+
+.blogs .home .bhomebgv { position:relative; }
+.blogs .home .bhomebgv h2 { display:block; padding:12px 0px 12px 7px; margin:0px; font-size:1.4em; font-weight:bold; }
+.blogs .home .bhomebgv h2 .tf { display:block; font-size:0.7em; font-weight:normal; }
+.blogs .home .bhomebgv h2 .tf a { padding-right:0.4em; font-weight:normal; }
+.blogs .home .bhomebgv h2 .tf a.current { font-weight:bold; }
+
+
+.blogs .home .bphomedetail { width:623px; overflow:hidden; float:left; position:relative; display:block; }
+.blogs .home .pushcon { width:160px; float:left; position:relative; padding:0px 7px; }
+.blogs .home .banner { padding:7px 0px 7px 0px; margin:0px; border:0px !important; text-align:center; }
+
+.blogs .rated .fsec { padding-top:5px; }
+
+.blogs .head #sectionHeader .image { position:relative; display:block; float:left; text-align:center; padding-bottom:2px; }
+.blogs .head #sectionHeader .avatar { position:relative; float:left; margin:3px 3px 0px 3px; }
+.blogs .head #sectionHeader H1 { position:relative; float:left; width:80%; text-indent:0px; line-height:normal; padding-top:4px; }
+.blogs .head #sectionHeader H1 .small { display:block; }
+.blogs .head #sectionHeader .contrib,.blogs .head #sectionHeader .author { font-weight:bold; }
+.blogs .head #sectionHeader .clear { height:7px; display:block; }
+.blogs .head a.rss { float:right; width:19px; height:19px; text-indent:-3000px; }
+
+.blogs .newpostbutton { padding:12px 0px 12px 7px; }
+.blogs .newpostbutton a:link,.blogs .newpostbutton a:visited { display:block; height:26px; width:221px; overflow:hidden; text-indent:-3000px; }
+.blogs .display { padding-bottom:7px; }
+.blogs .display .board { clear:both; padding:14px 7px 12px 7px; text-align:center; width:100%; }
+.blogs .navigation { float:right; width:198px; padding:7px 7px 9px 9px; position:relative; }
+.blogs .navigation div { padding-bottom:0.4em; }
+.blogs .navigation .actions .new { font-weight:bold; }
+.blogs .navigation .title,.blogs .navigation .rti { font-weight:bold; padding:0em 0em 0.6em 0em; display:block; }
+.blogs .navigation .recent .entry,.blogs .navigation .previous a,
+.blogs .navigation .archives a, .blogs .navigation .resources a { display:block; padding-bottom:4px; padding-left:17px; }
+.blogs .navigation .resources .manage { display:inline; padding:0px; background:transparent; }
+.blogs .navigation .archives .count { font-style:italic; }
+.blogs .navigation .recent a { padding:0px; background:transparent; display:inline; }
+.blogs .navigation .recent .title { display:inline; }
+.blogs .navigation .recent .date { font-size:0.9em; }
+.blogs .navigation .recent .rti { padding-bottom:0.6em; display:block; }
+.blogs .navigation .feed { padding-top:4px; line-height:14px; }
+.blogs .navigation .feed .icon { float:left; padding:0px 5px 0px 0px; border:0px; width:14px; height:14px; }
+.blogs .others { display:block; width:198px; height:113px; overflow:hidden; padding-top:7px; }
+.blogs .others span,.blogs .navRss span { display:none; }
+.blogs .detailed { float:left; width:580px; padding:2px 0px 0px 0px; }
+.blogs .detailed .date { font-weight:bold; padding:0px 0px 6px 0px; }
+.blogs .detailed .entry { position:relative; float:left; width:572px; padding:1px 0px 8px 7px; overflow:hidden; }
+.blogs .detailed .entry .avatar { float:left; width:30px; height:30px; padding:5px 0px 0px 0px; }
+.blogs .detailed .entry .header { float:left; width:540px; overflow:hidden; }
+.blogs .detailed .entry .header h4 { width:auto; padding:3px 0px 1px 5px; margin:0px; font-size:1.2em; font-weight:bold;}
+.blogs .detailed .entry .header .admin { font-size:1em; position:relative; padding:0px 0px 1px 5px; }
+.blogs .detailed .entry .header .author { padding:0px 0px 6px 5px; width:auto;  }
+.blogs .detailed .entry .body { padding:5px 0px 5px 35px; clear:left; }
+.blogs .detailed .entry .body p { width:auto; padding-bottom:1em; }
+.blogs .detailed .entry .body ul,.blogs .display .detailed .entry .body ol { padding:1em 1em 0.7em 2em; }
+.blogs .detailed .entry .body li { padding-bottom:0.3em; }
+.blogs .detailed .entry .footer { padding:5px 0px 5px 35px; width:auto; }
+.blogs .detailed .entry .footer .comment,.blogs .detailed .entry .footer .views,.blogs .detailed .entry .footer .email { display:inline; padding-right:6px; }
+.blogs .detailed .entry .footer .tags .title { padding-right:4px; }
+
+.blogs .detailed .entry .quote, .blogs .detailed .entry blockquote { position:static; width:95%; margin:0.8em 0px 0.7em 10px; padding:5px; }
+.blogs .detailed .entry .quote p , .blogs .detailed .entry blockquote p { width:auto; padding:0.5em 0.5em 0.8em 0.5em !important; }
+
+.blogs .detailed .commenters li,.blogs .detailed  .commenters.add.extra { padding-left:0px !important; }
+.blogs .detailed .commenters .com_avatar { width:55px !important; }
+.blogs .create .setup,.blogs .create .update { width:100%; display:block; height:100px;  }
+.blogs .create .intro { display:block; font-weight:bold; padding:5px; }
+.blogs .create .overview { display:block; padding:5px; }
+.blogs .create form { margin:0 auto; width:510px; display:block; padding:5px 5px 20px 5px;}
+.blogs .create form div { width:500px; padding-bottom:6px; }
+.blogs .create form div .label { display:block; font-size:1.1em; padding-bottom:3px; font-weight:bold; width:100%; }
+.blogs .create form div .block { display:block; width:100%; }
+.blogs .create form div .more { display:block; }
+.blogs .create form div textarea.block { height:100px; }
+.blogs .create form div.sub { text-align:center; padding:10px 0px 10px 0px; }
+.blogs .create form div.sub .block { margin:0 auto; width:150px; height:1.8em; font-size:14px; font-weight:bold; }
+.blogs .create form div.sub .label { display:none; }
+
+.blogs .editor form { margin:0 auto; width:610px; display:block; padding:15px 5px 20px 5px;}
+.blogs .editor form div.row { width:600px; padding-bottom:6px; }
+.blogs .editor form div .label { display:block; font-size:1.1em; padding-bottom:3px; font-weight:bold; width:100%; }
+.blogs .editor form div .block { display:block; display:inline; width:100%; }
+.blogs .editor form div .more { display:block; }
+.blogs .editor form div.entry .block { display:block; }
+.blogs .editor form div.sub { text-align:center; padding-top:15px;  }
+.blogs .editor form div.sub .block .submit,.blogs .editor form div.sub .block .button { width:150px; height:1.8em; font-size:14px; font-weight:bold; }
+.blogs .editor form div.sub .label { display:none; }
+.blogs .editor form div.entry .bbml textarea { background-image:none; overflow: auto; }
+.blogs .editor form .upho { padding-top:5px; }
+.blogs .editor form .bogckbar { padding:5px 0px 5px 0px; }
+
+.blogs .links { position:relative; }
+.blogs .links .heading { font-size:1.4em; font-weight:bold; }
+.blogs .links form { margin:0 auto; width:310px; display:block; padding:5px 4px 20px 5px; position:relative; float:left; overflow:hidden; }
+.blogs .links form div { width:300px; padding-bottom:6px; }
+.blogs .links form div .label { display:block; font-size:1.1em; padding-bottom:3px; font-weight:bold; width:100%; }
+.blogs .links form div .block { display:block; display:inline; width:100%; }
+.blogs .links form div .more { display:block; }
+.blogs .links form .sub .label { display:none; }
+.blogs .links .existing { width:430px; position:relative; float:left; margin-left:1px; padding:5px; overflow:hidden; }
+.blogs .links .existing ul { list-style:none; padding:0; }
+.blogs .links .existing ul li { margin:0; }
+.blogs .links .existing .name { font-weight:bold; padding-right:5px; }
+.blogs .links .existing .edit { font-weight:bold; }
+.blogs .links .existing .delete { font-weight:bold; }
+.blogs .contrib .intro, .blogs .contrib .overview { display:block; padding:5px; }
+.blogs .contrib .intro { font-weight:bold; }
+.blogs .contrib table { border-collapse:collapse; margin-left:5px; }
+.blogs .contrib table td,.blogs .contrib table th { padding:2px; }
+.blogs .contrib table th { font-weight:bold; }
+.blogs .contrib form { padding:15px 0px 15px 5px; }
+.blogs .contrib form h2 { font-size:1.3em; font-weight:bold; }
+.blogs .contrib form div { float:left; padding:5px 5px 5px 0px; }
+.blogs .contrib form label { display:block; font-weight:bold; }
+.blogs .contrib form .sub label { text-indent:-2000px; visibility:hidden; }
+.blogs .search { position:relative; overflow:hidden; }
+.blogs .search form { width:100%; padding:5px; margin-bottom:0px; }
+.blogs .search form div { width:150px; padding-bottom:6px; float:left; }
+.blogs .search form div .label { display:block; font-size:1.1em; padding-bottom:3px; font-weight:bold; width:100%; }
+.blogs .search form div .block { display:block; width:100%; }
+.blogs .search form div.sub { padding-left:4px; }
+.blogs .search form div.sub .block { position:relative; top:0px; width:100px; }
+.blogs .search .home { clear:left; width:782px; height:auto; font-size:18px; font-weight:bold; padding:5px; }
+.blogs .search .results { clear:left; height:auto; float:left; padding:5px; position:relative; }
+.blogs .search .results .item { clear:left; padding-bottom:5px; }
+.blogs .search .results .item .avatar { float:left; width:80px; padding-bottom:5px; }
+.blogs .search .results .item div { float:left; padding:0px 0px 5px 5px; }
+.blogs .search .results .item div .title a { font-size:16px; font-weight:bold; display:block; width:620px; }
+.blogs .search .results .item div .author { display:block; }
+
+#blogs .blogPostRatingArea { padding-left:6px; padding-bottom:5px; position:relative; z-index:999999; border-right:1px solid #101010; width:900px; }
+#blogs .blogPostRatingArea .act { padding-top:3px; }
+#blogs .blogPostRatingArea .act a { padding:0px; margin:0px; display:block; float:left; }
+#blogs .blogPostRatingArea .act a.bump { width:56px; height:17px; overflow:hidden; text-indent:-3000px; }
+#blogs .blogPostRatingArea .act a.bury { width:55px; height:17px; overflow:hidden; text-indent:-3000px; }
+#blogs .blogPostRatingArea .act a.bury:hover { background-position: bottom right; }
+#blogs .blogPostRatingArea .act a.bump:hover { background-position: bottom left; }
+#blogs .blogPostRatingArea .bbresult { width:111px; height:17px; overflow:hidden; }
+
+.blogs .posttimestamp { font-style:italic; font-weight:bold; color:#66c8ff; display:inline !important; padding:0px; margin:0px; margin-right:10px; width:auto; float:left; }
+
+/* Guilds - Guilds, opened by guilds.cfm */
+.guilds h2,.guilds h1 { padding:0.2em 0px 0.3em 0px; font-size:1.4em; font-weight:bold; }
+.guilds h2.extra,.guilds h1.extra { padding:4px 0px 6px 7px; }
+.guilds .intro,.guilds .introadd { height:70px; overflow:hidden; }
+.guilds .introadd { padding:7px; height:56px; }
+.guilds .adddsc { display:block; padding:0px 0px 4px 7px; }
+.guilds .glist { padding-top:4px; }
+.guilds .glist td img { padding-right:2px; }
+.guilds .gdofl { padding-right:2px; }
+.guilds .gsearch { padding:0px 0px 7px 0px; }
+.guilds .gsearch .gfill { padding:7px 7px 0px 7px; display:block; }
+.guilds .gsearch label,.guilds .gsearchsa label { display:block; font-weight:bold; padding:3px 0px 3px 0px; }
+.guilds .gsearch td,.guilds .gsearchsa td{ padding:1px !important; }
+.guilds .gsearch .flicn,.guilds .gsearchsa .flicn { padding-bottom:2px; }
+.guilds .glistin td { vertical-align:middle; }
+.guilds .pagelinks { padding-top:7px; }
+.guilds .gnewmessg,.guilds .gnewmessg .ssInside { padding:7px; }
+.guilds .barad { padding:7px; text-align:center; }
+.guilds .gamess,.guilds .gsearchsa { padding:7px; }
+.guilds .gamess .ssFake  { padding:7px 0px 7px 0px; }
+.guilds .gover .overview { padding:0px 7px 0px 7px; }
+.guilds .ggent { position:relative; padding:4px 7px 4px 7px; }
+.guilds .addgamebar { padding-top:7px; }
+.guilds .ingambf { height:1.4em; }
+.guilds .ggent { position:relative; height:auto; }
+.guilds .ggent .gicon { width:110px; position:relative; float:left; text-align:center; }
+.guilds .ggent .gicon img { margin:0 auto; }
+.guilds .ggent .gdata { width:365px; position:relative; float:left; overflow:hidden; }
+.guilds .ggent .gdata span { display:block; padding-bottom:3px; }
+.guilds .ggent .gdata .title,.guilds .grdtitle { font-size:1.4em; font-weight:bold; padding-bottom:4px; }
+.guilds .grdtitle { padding-top:0px !important; }
+.guilds .ggent .gdays { width:290px; position:relative; float:left; overflow:hidden; }
+.guilds .ggent .iconlist img { padding-right:3px; }
+.guilds .gamess { position:relative; }
+.guilds .gamess .nogames { padding:14px 7px 14px 7px; }
+.guilds .gamess .inactive { padding:5px 0px 5px 4px; font-weight:bold; }
+.guilds .gamess .add, .guilds .guroster .add { font-weight:bold; padding-left:4px; }
+.guilds .cfguildtb td { position:relative; }
+
+/* Subscribe - Non registered user subscription to daily digest and newsletter, opened by subscribe.cfm */
+.subscribe { padding-bottom:5px; }
+.subscribe .dd, .subscribe .nl { padding:5px 5px 5px 220px;  min-height:180px; height:auto !important; height:180px; }
+.subscribe h2 { font-size:1.4em; font-weight:bold; padding:0px 0px 5px 0px; margin:0px; }
+.subscribe p { padding:0px 0px 3px 0px; margin:0px; }
+.subscribe .feedback_g, .subscribe .feedback_e { font-weight:bold; font-size:1.2em; display:block; padding-bottom:3px; }
+.subscribe .dis { font-size:0.9em; font-style:italic; }
+.subscribe form { padding:0px 5px 5px 0px; }
+.unsubscribe { padding:7px; }
+.unsubscribe h1 { font-size:1.4em; font-weight:bold; padding:0px 0px 5px 0px; margin:0px; }
+
+/* Streams */
+.streamsarea { }
+
+.streamsarea .childItem { width:150px; border:1px solid #444; margin:0px 0px 10px 0px; padding:0px; background:#222; overflow:hidden; }
+.streamsarea .childItem h2 { display:block; font-size:14px; font-weight:bold; text-align:center; padding:6px 3px 3px 3px; }
+.streamsarea .childItem .desc { padding:5px; color:#cecece; text-align:center; }
+.streamsarea .childItem .view { text-align:center; padding:4px 0px 10px 0px; }
+
+.streamsarea .scol1 { float:left; width:305px; overflow:hidden; }
+.streamsarea .scol1 h1 { font-size:16px; padding:0px 0px 3px 0px; margin:0px; font-weight:bold; }
+.streamsarea .scol2 { float:left; width:150px; padding-right:10px; }
+
+.streamsarea .calendar b { display:block; font-size:14px; color:#fff; padding-bottom:2px; }
+.streamsarea .calendar i,.streamsarea .calendar span { display:block; font-size:12px; }
+.streamsarea .calendar i { padding-bottom:3px; }
+.streamsarea .calendar span { padding-bottom:8px; color:#cecece; }
+
+/* Admin - Admin, opened by admin.cfm */
+.ccadmin { padding:0px 0px 7px 0px; }
+.ccadmin h2,.ccadmin h1 { padding:0.2em 0px 0.3em 0px; font-size:1.4em; font-weight:bold; }
+.ccadmin .landing { padding:0px 7px 7px 7px; }
+.ccadmin .sidenav { width:146px; float:left; padding:7px; overflow:hidden;  }
+.ccadmin .sidenav .section { font-weight:bold; font-size:1.2em; font-weight:bold; padding-bottom:0.3em; }
+.ccadmin .sidenav .item { padding:0px 0px 3px 17px; display:block; }
+.ccadmin .main { padding-top:7px; width:820px; float:left; overflow:hidden; }
+.ccadmin .main .extra { padding-left:7px; }
+.ccadmin .main .supli { font-size:0.9em; }
+.ccadmin .faqlist,.ccadmin .reviewphotos,.ccadmin .cavid.add,.ccadmin .cavid.list,.ccadmin .smpad  { padding:7px; }
+.ccadmin .faqlist h2 { padding:1em 0px 1em 0px; font-size:1.2em; }
+.ccadmin .reviewphotos .item { width:200px; float:left; display:block; overflow:hidden; text-align:center; }
+.ccadmin .apols .action, .ccadmin .capt { padding-top:7px; }
+.ccadmin .apols .bar { position:relative; left:23px; width:80px; height:14px; float:left; }
+.ccadmin .apols .value { font-size:1em; font-weight:bold; float:left; left:25px; position:relative; }
+.ccadmin .apols span.rating { display:block; height:14px;  }
+.ccadmin .vtb td { padding:0px 3px 3px 0px; }
+.ccadmin .adsr,.ccadmin .ussr { padding-top:7px; padding-bottom:7px; }
+.ccadmin .camptab td { padding:2px; }
+.ccadmin .camptab td.first { padding-left:7px; }
+.ccadmin .camptab td.last { padding-right:7px; }
+.ccadmin .newcamp { padding-top:6px;  }
+.ccadmin .skrow { line-height:17px; }
+.ccadmin .none { padding-left:7px; }
+.ccadmin .coltab { width:auto !important; }
+.ccadmin .coltab th { font-weight:bold; font-style:italic; padding-right:1em; }
+.ccadmin .coltab td { padding-right:1em; }
+
+/* Pixsy - Pixsy video serach, opened by pixsy.cfm */
+.ppixsy { padding:0px; margin:0px; width:800px; overflow:hidden; }
+.ppixsy h1 { padding:0px; margin:0px; font-size:18px; }
+.ppixsy hr { border:0px; height:1px; clear:both; width:99%; }
+.ppixsy .clear { clear:both; }
+.ppixsy .psearch, .ppixsy .ppages, .ppixsy .plisting { position:relative; padding:7px; }
+.ppixsy .psearch { height:53px; min-height:53px; padding-top:42px; width:666px; padding-left:125px; }
+.ppixsy .psearch div { position:relative; float:left; padding:5px 0px 5px 0px; white-space:nowrap; vertical-align:middle;}
+.ppixsy .psearch label { padding-right:3px; font-weight:bold; }
+.ppixsy .psearch .ptitle { font-size:15px; font-weight:bold; }
+.ppixsy .plisting { float:left; }
+.ppixsy .plisting .item { position:relative; float:left; width:190px; padding-bottom:6px; overflow:hidden; text-align:center; }
+.ppixsy .plisting .item a { font-size:1.1em; }
+.ppixsy .plisting .prov { padding-bottom:2px; display:block; }
+.ppixsy .novid { padding:20px 0px 20px 0px; text-align:center; font-weight:bold; }
+.ppixsy .pshtit { float:left; position:relative; padding:7px; font-weight:bold; }
+.ppixsy .pjmp { float:right; position:relative; padding:3px 7px 7px 7px; vertical-align:middle; }
+.ppixsy .pbpler { width:500px; margin:0 auto; padding:5px; text-align:center; }
+.ppixsy .pbpler span { display:block; padding-bottom:5px; }
+
+/* Dyyno - Video sharing engine, opened by dyyno.cfm */
+.ydyyno p, .ydyyno h1, .ydyyno h2, .ydyyno div { padding:0px; margin:0px; }
+.ydyyno .yintro { width:100%; height:110px; }
+.ydyyno .ystreams { padding:2px 0px 7px 22px;position:relative; }
+.ydyyno .ystreams span { display:block; }
+.ydyyno .ystreams .ytitle { font-style:italic; }
+.ydyyno .ystreams .flow { width:174px; height:154px; position:relative; float:left; cursor:pointer; cursor:hand; overflow:hidden; padding-right:17px; padding-bottom:8px; }
+.ydyyno .ystreams .image { background-position:7px 7px; background-repeat:no-repeat; width:174px; height:127px; }
+.ydyyno .ystreams .ynone { width:100%; padding:7px; text-align:center; font-weight:bold; }
+.ydyyno .ystreams .ysum { height:27px; width:167px; line-height:27px; overflow:hidden; padding-left:7px; }
+.ydyyno .ystreams .ynone span { font-weight:normal; }
+.ydyyno .ystreams .barad { position:relative; left:-11px; padding-top:14px !important; padding-bottom:14px !important; }
+.ydyyno .yrefresh { padding:7px 0px 0px 0px; text-align:center; }
+.ydyyno .yrefresh a { font-size:16px !important; font-weight:bold; }
+.ydyyno .yhelp,.ydyyno .yirc { padding:0px 13px 0px 13px; }
+.ydyyno .yhelp h2,.ydyyno .yirc h2 { padding-bottom:3px; }
+.ydyyno .ist { padding-top:6px; }
+.ydyyno .ybottom { clear:both; height:16px !important; width:100% !important; display:block !important; overflow:hidden; }
+.ydyyno .ytop { height:9px !important; width:100% !important; overflow:hidden; }
+.ydyyno .yplayer { width:100%; overflow:hidden; position:relative; float:left; text-align:left; }
+.ydyyno .yplayer .yclose { display:block; text-align:center; padding:7px; font-weight:bold; font-size:1.2em; }
+
+/* One Big Planet, opened by inc_settings_onebigplanet.cfm */
+.oneBigPlanet { width:798px; overflow:hidden; text-align:center; padding-bottom:10px; }
+.oneBigPlanet h1,.oneBigPlanet h2 { margin:0px;font-size:14px;font-weight:bold;padding:3px 0px 3px 3px; text-align:center; }
+.oneBigPlanet h1 { font-size:18px; padding-bottom:5px; }
+.oneBigPlanet p,.oneBigPlanet ul,.oneBigPlanet li { padding:0px; margin:0px; text-align:center; }
+.oneBigPlanet ul { list-style:none; padding-bottom:7px; }
+.oneBigPlanet li { padding-bottom:3px; }
+.oneBigPlanet p { padding-bottom:7px; line-height:1.3em; }
+.oneBigPlanet .info { width:750px; padding:5px; overflow:hidden; text-align:center; margin:0 auto; }
+.oneBigPlanet .info p { width:630px; margin:0 auto; }
+.oneBigPlanet .offer { padding:5px; overflow:hidden; text-align:center; }
+.oneBigPlanet .offer .offimg { margin:0 auto;  width:788px; padding:20px 0px 20px 0px;  overflow:hidden; display:block; }
+.oneBigPlanet .notewar { width:500px;  margin:0 auto; padding:5px; }
+.oneBigPlanet .free { display:block; padding:15px 0px 10px 0px; }
+.oneBigPlanet .bigbutton { padding:10px; }
+.oneBigPlanet .termform { padding:7px; }
+.oneBigPlanet .termform h1 { text-align:left; }
+.oneBigPlanet .termform p { text-align:left; padding:0px 0px 5px 0px; }
+
+/* Ads - (common) */
+.ad_centerFloat { width:100%; text-align:center; margin-left:auto; margin-right:auto; }
+.ad_padMed { padding:8px; }
+.ad_disclaimer { font-size:11px; width:100%; height:10px !important; text-align:center; display:block; }
+.ad_body { text-align:center; }
+.gamelist_ad { width:100%; }
+#contentinlineAd { margin:3px; z-index:95; }
+#contentinlineAd .head { font-size:1em; height:1.3em !important; }
+#contentinlineAd .head img { vertical-align:baseline; }
+#contentinlineAd .body { background:transparent; }
+.forum_foot_ad { position:relative; float:left; width:100%; padding-top:10px; text-align:center; }
+#topcustomad { text-align:center; width:100% !important; display:block; }
+#topcustomad .custombar,#topcustomad .custombar a { margin:0 auto; display:block; text-align:center; background-position:top center; background-repeat:no-repeat; }
+
+/* Favorite Games */
+#favgamepanel { position:absolute; z-index:999999; overflow:hidden; top:0px; padding:0px 1px 0px 0px; width:250px; }
+#favgamepanel .nofavs,#favgamepanel .tifavs { padding:5px; }
+#favgamepanel .rem { position:absolute; top:14px; left:228px; width:12px; height:12px; text-indent:-3000px; display:block; overflow:hidden; }
+#favgamepanel .tifavs .titl { font-weight:bold; }
+#favgamepanel .tifavs div { clear:left; float:left; position:relative; width:240px; padding:2px 0px 2px 0px; }
+#favgamepanel .tifavs div.clear { clear:both; float:none; border:0px; }
+#favgamepanel .tifavs .icon { float:left; width:28px; }
+#favgamepanel .tifavs span { float:left; width:205px; }
+#favgamepanel .nofavs span { display:block; font-size:1.1em; font-weight:bold; padding-bottom:4px; }
+#favgamepanel .favgameaddf { padding:8px 5px 6px 5px; display:block; }
+#favgamepanel .favgameaddf span { font-weight:bold; font-size:1.1em; padding-bottom:4px; display:block; }
+#favgamepanel .favgameaddf .button { padding-left:5px; font-weight:bold; text-decoration:underline; }
+
+/* Misc, usually need to be at bottom */
+#JSMX_loading{ position:absolute; top:20%; right:50%; margin:0px; padding:0px; width:112px; height:30px; background-repeat: no-repeat;	background-position:center center;	z-index:200;	}
+.ytab { border:0px !important; }
+.sdepoll.centeredContent { padding:5px 5px 0px 5px; text-align:center; }
+.sidePollArea .rint { padding:2px 2px 2px 6px; }
+.sidePollArea .qint { padding:2px 6px 2px 2px; }
+.sidePollArea .spresultsq { padding-top:5px; }
+.sidePollArea .spresultsa { height:20px; }
+.sidePollArea .spresultsa .value { font-weight:bold; padding-left:3px; float:left; }
+.sidePollArea .spresultsa .bar { position:relative; width:80px; height:14px; float:left; }
+.sidePollArea .spresultsa .bar span.rating { display:block; height:14px; }
+.ccresources .content { padding:7px; }
+.ccresources .entry { padding:7px 0px 7px 0px; }
+.disabedfeature { width:100%; padding:7px; height:24px; overflow:hidden; color:#fff; font-weight:bold; }
+
+.pushc .pctitle { font-size:1.3em; font-weight:bold; display:block; padding:4px 4px 4px 0px; }
+.pushc .item { padding:4px 0px 10px 0px; }
+.pushc .item .title { font-size:1em; font-weight:bold; display:block; }
+.pushc .item .stuff { font-size:0.9em; display:block; padding:0px 0px 4px 0px !important; }
+.pushc .item .blurb { display:block; }
+.pushc .mrcollink { display:block; text-align:left !important; }
+.pushc a.pcmorefeatures,.pushc a.pcmorenews { display:block; position:relative; left:23px; width:89px; height:16px; overflow:hidden; font-size:0px; text-indent:-3000px; background-repeat: no-repeat; background-position:bottom left; }
+.pushc a.pcmorefeatures:hover,.pushc a.pcmorenews:hover { background-position:top left; }
+
+/* Common Content - Features,Reviews,Articles (common) */
+.commonContent { padding:0px; }
+.commonContent p { padding:0em 7px 1.05em 7px !important; margin:0em !important; line-height:1.45em !important; text-indent:0px !important; }
+.commonContent .admarker,.commonContent .left,.commonContent .right { position:relative !important; }
+.commonContent .header { width:638px; padding-right:7px; margin-bottom:7px; }
+.commonContent .header h2 p { padding:0px 0px 1em 0px !important; }
+.commonContent table { margin-bottom:1.05em; }
+.commonContent table td { padding-left:7px; }
+.commonContent ol,.commonContent ul { padding-top:0px; margin-top:0px; }
+.commonContent.noheader { padding-top:7px; }
+.commonContent.noheader .header h1,.commonContent.noheader .header h2 { font-weight:bold; font-size:1em; }
+.commonContent.notitle h1 { display:none; }
+.commonContent ul { margin-left:18px; list-style:circle inside; }
+
+/* Common Form - (common) */
+.commonform { padding:0px; }
+.commonform .row { clear:both; position:static; display:block; padding:0px 7px 5px 7px; }
+.commonform.noleft .row { padding-left:0px; }
+.commonform .row label { width:150px; display:block; float:left; height:auto; font-weight:bold; padding:0.3em 1em 0em 0em; }
+.commonform .row label .ext{ font-size:0.9em; font-weight:normal; }
+.commonform .row p { float:left; width:470px; padding:0px; margin:0px; overflow:hidden; }
+.commonform .row p table { position:relative; }
+.commonform .row p div { display:block; }
+.commonform .row p span,.commonform .sup { font-style:italic !important; font-size:0.9em !important; padding:0px; margin:0px; }
+.commonform .row span.clear { clear:both; display:block; height:1px; overflow:hidden; }
+.commonform .row.break { padding-top:5px; }
+.commonform .row .req { font-weight:bold; padding-left:0.2em; }
+.commonform .row.first,.commonform.commonformtoppad { padding-top:7px; }
+.commonform .row.finish { text-align:center; }
+.commonform .row.finish input,.commonform .row.lfinish input { padding:2px; font-size:1.1em; font-weight:bold; }
+.commonform .table td { padding:2px; }
+
+.errorbar { padding:7px; }
+.errorbar h1 { font-size:1.4em !important; font-weight:bold !important; padding:0em 0px 0.3em 0px; margin:0px; text-align:left !important; }
+.errorbar ul { padding:0px; margin:0px; list-style:none; }
+.errorbar li { padding:0px 0px 0.3em 14px; margin:0px; text-align:left !important; }
+
+.greportlink { color:#f00 !important; background:transparent url('http://images.mmorpg.com/images/report_icon.gif') no-repeat top left; height:16px; line-height:16px; padding:0px 0px 5px 18px; }
+
+#ccbox .top,#ugbox .top { width:100%; display:none; height:17px; text-indent:5px; font-size:11px; line-height:17px; font-weight:bold; }
+#ccbox .top .inner,#ugbox .top .inner { width:100%; height:17px; }
+#ccbox .ad { position:relative; padding:11px 0px 0px 0px; border-bottom:0px; text-align:center; height:auto; }
+#ccbox .ad div { margin:0 auto; padding:0px; }
+#ccbox .ad iframe { border:0px; margin:0px; padding:0px; width:100%; height:108px; overflow:hidden; }
+#ccbox .image { position:relative; padding:10px; text-align:center; }
+#ccbox .image #ccBoxImage { margin:0 auto; }
+#ccbox .image #ccBoxWaiting { position:absolute; top:10px; left:10px }
+#ccbox .info { padding:0px 10px 6px 10px; height:auto; overflow:hidden; }
+#ccbox .info .clear { clear:both; height:1px; }
+#ccbox .framer.alpha { border:0px; }
+#ccbox .t3x3 td { height:auto; overflow:hidden; }
+#ccbox .t3x3 .r1c1,#ccbox .t3x3 .r3c1,#ccbox .t3x3 .r1c3,#ccbox .t3x3 .r3c3 { width:20px; height:20px; }
+#ccbox .t3x3 .r2c1,#ccbox .t3x3 .r2c3 { width:20px; height:auto; }
+
+.cctooltip { padding:5px; }
+.cctooltip.panel { border:0px; }
+.cctooltip.panel .hleft { padding:4px 0px 4px 0px; }
+.cctooltip.panel .hright { padding:4px 0px 4px 0px; }
+.cctooltip.panel .content { padding:6px; }
+.cctooltip .title { display:block; font-size:1.2em; font-weight:bold; padding-bottom:0.3em; text-indent:4px; }
+
+.socialnbox { position:relative; padding:9px 0px 7px 0px; }
+.socialnbox .tweetboxb { position:relative; float:left; width:100px; height:20px; overflow:hidden; }
+.socialnbox .subox { text-align:left; float:left; height:20px; overflow:hidden; padding:0px 6px 0px 0px; margin:0px; }
+.socialnbox .facebookboxb { position:relative; float:left; width:90px; height:20px; overflow:hidden; padding-right:4px; }
+.socialnbox .googleb { position:relative; float:left; height:20px; padding-left:3px; padding-right:5px; }
+
+.socialnbox .tweetboxbv { position:relative; padding:5px 0px 0px 18px; overflow:hidden; float:left; width:60px; }
+.socialnbox .facebookboxbv { position:relative; overflow:hidden; padding:6px 0px 0px 8px; float:left; width:60px; }
+
+.cchomecarrot { padding:18px 18px 0px 40px; position:relative; }
+.cchomecarrotClose { height:18px; display:block; overflow:hidden; }
+.cchomecarrot .lefticon { float:left; }
+.cchomecarrot .leftbody { float:left; width:335px; padding-left:7px; }
+.cchomecarrot .leftbody h1 { font-size:1.2em; font-weight:bold; padding-bottom:0.3em; }
+
+.cchomecarrotx { background:transparent; }
+.cchomecarrotx td { padding:0px; border:0px solid red !important; }
+.cchomecarrotx td.t2c1 div, .cchomecarrotx td.t1c1 div,.cchomecarrotx td.t1c3 div,.cchomecarrotx td.t2c3 div { width:40px; display:block; }
+.cchomecarrotx td.t2c1 div,.cchomecarrotx td.t2c2 div,.cchomecarrotx td.t2c3 div { height:24px; display:block; }
+.cchomecarrotx td.t1c2 { padding-top:20px; position:relative; }
+.cchomecarrotx h1 { font-size:1.2em; font-weight:bold; padding-bottom:0.3em; }
+.cchomecarrotx .lefticon { float:left; }
+.cchomecarrotx .leftbody { float:left; width:310px; padding-left:7px; }
+.cchomecarrotx .viewed { display:block; padding-top:0.4em; }
+
+.bumpburybox2 { position:relative; float:left; padding:6px; }
+.bumpburybox2 #featureRatingArea { display:block; width:65px; height:81px; position:relative; overflow:hidden; padding:0px; margin:0px; float:left; }
+.bumpburybox2 .bump,.bumpburybox2 .bury { display:block; height:24px; width:65px; line-height:24px; font-weight:bold; text-indent:27px; overflow:hidden; text-decoration:none; }
+.bumpburybox2 .totalb { height:33px; width:65px; line-height:33px; text-align:center; font-size:1.1em; font-weight:bold; overflow:hidden; display:block; }
+
+.homepagestreambox { width:300px; padding:5px 0px 5px 0px; background:transparent url('home_twitch_Bg_r1.jpg') no-repeat top left; min-height:153px; }
+.homepagestreambox h2 { display:block; margin:0px; padding:5px 0px 10px 5px; font-size:14px; }
+.homepagestreambox h2 a { text-decoration:none; color:#fff !important; }
+.homepagestreambox img { float:left; width:130px; height:100px; display:block; padding-left:5px; }
+.homepagestreambox .strtitlx { float:right; text-align:left; width:155px; padding-left:10px; }
+.homepagestreambox .strtitlx a.cstitle { font-size:14px; font-weight:bold; text-decoration:none; color:#fff; }
+.homepagestreambox .watchnowbut { display:block; padding:5px 10px 5px 10px; width:100px; text-align:center; font-weight:bold; color:#fff; background-color:#49adda; border-top:1px solid #87dbff; border-left:1px solid #87dbff; margin-top:10px; margin-bottom:5px; }
+
+#facebox {position: absolute;top: 0;left: 0;z-index: 9999;text-align: left; }
+#facebox .popup {position: relative;}
+#facebox table {border-collapse: collapse;}
+#facebox td {border-bottom: 0;padding: 0; }
+#facebox .body { padding:10px; width:370px;  }
+#facebox .body .subbody { display:block; }
+#facebox .loading {text-align: center;}
+#facebox .image {text-align: center;}
+#facebox img {border: 0;margin: 0;}
+#facebox .footer { padding-top: 5px;margin-top: 10px;text-align: right; position:relative; }
+#facebox .clear { clear:both; }
+#facebox .footer a.close { left:-7px; }
+#facebox .footer a.close:link,#facebox .footer a.close:visited { float:right; text-decoration:none; width:66px; height:22px; display:block; }
+#facebox .footer a.close:hover { background-position:top left; text-decoration:none; }
+.facebox_overlayBG { z-index: 99; }
+* html #facebox_overlay { position: absolute; height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');}
+
+#galleryUploadPane { padding:0px; width:675px; height:200px; overflow:hidden; position:relative; }
+#galleryUploadPane #gallUpPaneOne { padding:8px 8px 8px 3px; float:left; width:436px; position:relative; top:6px; left:7px; height:170px; overflow-y:scroll; }
+#galleryUploadPane #gallUpPaneTwo { padding:0px 0px 8px 15px; float:left; width:180px; }
+#galleryUploadPane .galleryButtonWidget { padding-top:8px; padding-bottom:8px; display:block; }
+#galleryUploadPane .galleryNotice { padding-top:8px; padding-bottom:8px; display:block; font-style:italic; width:160px; }
+#galleryUploadPane .galleryNotice span { display:block; padding-top:6px; }
+#galleryUploadPane .refreshblock { padding-top:8px; padding-bottom:8px; display:block; }
+#galleryUploadPane .galleryWidgetTable td { padding:2px 8px 9px 8px; }
+#galleryUploadPane .refreshicon { height:14px; padding:0px 0px 0px 17px; margin:0px; display:block !important; text-indent:0px !important; }
+#galleryUploadPane #upload_button_widget { position:relative; width:202px; left:0px; height:42px; line-height:40px; display:block; text-align:center; cursor:pointer !important; cursor:hand !important; } 
+
+.gwpopupwidget { padding:10px; }
+.gwpopupwidget h1 { font-size:16px; font-weight:bold; padding:0px 0px 6px 0px; margin:0px; }
+.giveawaydetails { display:block; padding:4px; border-bottom: #aaaaaa 2px outset; border-left: #aaaaaa 2px outset; width: 600px; background: #383838; border-top: #aaaaaa 2px outset; border-right: #aaaaaa 2px outset; }
+
+.yesnolist { list-style:none !important; padding:14px 0px 9px 0px !important; margin:0px !important; background:transparent; font-style:normal !important;  text-indent:0px; }
+.yesnolist li { list-style:none !important; padding:4px 0px 8px 35px !important; background:transparent url('') no-repeat top left; min-height:36px; margin:0px 0px 0px 6px !important; font-style:normal !important; font-weight:normal !important; }
+.yesnolist li.yes {background:transparent url('yesnolist_yes.gif') no-repeat top left; }
+.yesnolist li.no { background:transparent url('yesnolist_no.gif') no-repeat top left; }
+.yesnolist b { display:block; padding-bottom:4px; font-size:1.3em; font-weight:bold !important; }
+.yesnolist li.yes b { color:#4fe006; }
+.yesnolist li.no b { color:#ff0000; }
+
+.irbutton { display:inline-block; padding:0px 7px 0px 7px; margin-right:5px; margin-bottom:8px; height:25px; font-size:13px; 
+			overflow:hidden; line-height:25px; color:#fff !important; border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px; 
+			border-top:1px solid #54ffff; background:#2190c2 url('../img/frame_sprites_r0.png') no-repeat 517px 93px; }
+.irbutton.inactive { background:#696a6d url('../img/frame_sprites_r0.png') no-repeat 5px 204px; border-top:1px solid #bbbdc2; color:#fff !important; }
+.irbutton.red { background:#c2300e; border-top:1px solid #ff0000; }
+.irbutton.mod { background:#d55f00; border-top:1px solid #ff9c00; }
+.irbutton.green { background:#59ad28; border-top:1px solid #90ff29; }
+.irbutton.big { padding:4px 12px 4px 12px; height:35px; line-height:35px; font-size:22px; margin-right:6px; }
+.irbutton:hover { color:#fff; background:#20bffa; border-top:1px solid #54ffff; text-decoration:none; }
+.irbutton.full { width:100% !important; padding-left:0px; padding-right:0px; text-align:center; margin-left:0px; margin-right:0px; }
+input.irbutton { border-left:0px; border-right:0px; border-bottom:0px; }
+.irbutton.solo { margin-right:0px; margin-bottom:0px; }
+.reverseLink { color:#35c1fd; }
+a.reverseLink:hover { color:#fff; }
+
+.abiabnotice { background:#890000; text-align:center; margin:0 auto; text-align:center; border-bottom:1px solid #e20000; }
+.abiabnotice .inside { margin:0 auto; width:980px; text-align:left; padding:4px 0px 4px 5px; position:relative; }
+.abiabnotice .icon { width:100px; font-size:55px; float:left; position:relative; }
+.abiabnotice .iabbody { float:left; width:880px; position:relative; }
+.abiabnotice h1 { font-size:22px; font-weight:bold; margin:0px; padding:6px 0px 2px 0px; color:#ffd581; }
+.abiabnotice ul { list-style:none; margin:0px; padding:0px; position:relative; display:block; position:relative; left:-2px; height:60px; overflow:hidden; }
+.abiabnotice li { float:left; padding:15px 10px 5px 5px; margin:0px; font-weight:normal; color:#fff; width:122px; height:45px; background:transparent url('adBlocker_list_r1.gif') no-repeat center right; }
+.abiabnotice li.last { background:transparent; width:200px; font-weight:bold; margin-top:9px; text-decoration:underline; }
+.abiabnotice .readup { padding:2px 0px 2px 0px; color:#ffd581; }
+.abiabnotice .readup a { display:inline-block; padding:6px; font-weight:bold; background-color:#003762; border:1px solid #00c4ff; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; color:#fff;  }
+
+/* EOF */

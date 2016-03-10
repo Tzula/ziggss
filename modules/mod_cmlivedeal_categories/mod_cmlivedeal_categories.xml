@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>mod_cmlivedeal_categories</name>
+	<version>1.8.1</version>
+	<copyright>(C) 2014-2015 CMExtension team</copyright>
+	<author>CMExtension team</author>
+	<authorEmail>cmext.vn@gmail.com</authorEmail>
+	<authorUrl>www.cmext.vn</authorUrl>
+	<license>GNU General Public License version 2 or later</license>
+	<creationDate>September 4, 2015</creationDate>
+	<description>MOD_CMLIVEDEAL_CATEGORIES_XML_DESCRIPTION</description>
+
+	<files>
+		<folder>language</folder>
+		<folder>tmpl</folder>
+		<filename module="mod_cmlivedeal_categories">mod_cmlivedeal_categories.php</filename>
+		<filename>index.html</filename>
+	</files>
+
+	<config>
+		<fields name="params">
+			<fieldset name="options" label="COM_MODULES_BASIC_FIELDSET_LABEL">
+				<field name="show_deal_quantity" type="radio" default="0"
+					label="MOD_CMLIVEDEAL_CATEGORIES_FIELD_SHOW_DEAL_QUANTITY_LABEL"
+					description="MOD_CMLIVEDEAL_CATEGORIES_FIELD_SHOW_DEAL_QUANTITY_DESC">
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+				</field>
+
+				<field name="ul_class" type="text"
+					label="MOD_CMLIVEDEAL_CATEGORIES_FIELD_UL_CLASS_LABEL"
+					description="MOD_CMLIVEDEAL_CATEGORIES_FIELD_UL_CLASS_DESC"/>
+
+				<field name="li_class" type="text"
+					label="MOD_CMLIVEDEAL_CATEGORIES_FIELD_LI_CLASS_LABEL"
+					description="MOD_CMLIVEDEAL_CATEGORIES_FIELD_LI_CLASS_DESC"/>
+
+				<field name="deal_quantity_class" type="text"
+					label="MOD_CMLIVEDEAL_CATEGORIES_FIELD_DEAL_QUANTITY_CLASS_LABEL"
+					description="MOD_CMLIVEDEAL_CATEGORIES_FIELD_DEAL_QUANTITY_CLASS_DESC"/>
+
+				<field name="ul_style" type="text"
+					label="MOD_CMLIVEDEAL_CATEGORIES_FIELD_UL_STYLE_LABEL"
+					description="MOD_CMLIVEDEAL_CATEGORIES_FIELD_UL_STYLE_DESC"/>
+
+				<field name="li_style" type="text"
+					label="MOD_CMLIVEDEAL_CATEGORIES_FIELD_LI_STYLE_LABEL"
+					description="MOD_CMLIVEDEAL_CATEGORIES_FIELD_LI_STYLE_DESC"/>
+
+				<field name="deal_quantity_style" type="text"
+					label="MOD_CMLIVEDEAL_CATEGORIES_FIELD_DEAL_QUANTITY_STYLE_LABEL"
+					description="MOD_CMLIVEDEAL_CATEGORIES_FIELD_DEAL_QUANTITY_STYLE_DESC"/>
+			</fieldset>
+
+			<fieldset name="advanced">
+				<field name="layout" type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field name="moduleclass_sfx" type="textarea" rows="3"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field name="cache" type="list" default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+						<option value="1">JGLOBAL_USE_GLOBAL</option>
+						<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field name="cache_time" type="text" default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+
+				<field name="cachemode" type="hidden" default="static">
+					<option value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,203 @@
+#body #Kunena{
+	margin-top:15px;
+}
+#ktop{
+	display:none;
+}
+#body #Kunena div.kwhoisonline{
+	display:none;
+}
+#body #Kunena div.kfrontstats{
+	display:none;
+}
+
+#body #Kunena div.kpbox{
+	display:none;
+}
+#body #Kunena .kpathway{
+	/*display:none;*/
+}
+
+#Kunena .klist-markallcatsread{
+	display:none;
+}
+
+.H{
+	font-size: 24px;
+    font-weight: normal;
+	font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+    padding: 5px 0;
+	padding-top:10px;
+}
+.P{
+	padding:5px 0;
+}
+
+#body #Kunena div.kblock{
+	border-color:#32363A;
+}
+#body #Kunena .kblock div.kheader{
+	padding:0;
+	background:#1B1044 !important;
+	border:0px;
+}
+#body #Kunena div.kblock span.ktoggler{
+	right:0px;
+}
+
+#Kunena .kheader h1{
+	padding: 10px 0px;
+    margin: 0px 0px 0px 0px;
+    border: 1px solid #32363A;
+    background: #1b1044 url('http://images.mmorpg.com/images/vanilla/radiance/vanilla_header_bg_r0.jpg?cb=2') no-repeat top left;
+    border-bottom: 0px;
+    font-weight: normal;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+	font-size:24px;
+}
+#Kunena .kheader h1 span{
+	padding-left:10px;
+}
+#body #Kunena tr.krow1 td{
+	background:#171717;
+	padding:15px 8px;
+}
+#body #Kunena tr.krow2 td{
+	background:#171717;
+	padding:25px 8px;
+}
+#body #Kunena div.kblock div.kbody{
+	border-color: #32363A;
+}
+#body #Kunena td.kcol-mid{
+	border-left:0px;
+    border-bottom-color: #32363A;
+}
+#body #Kunena td.kcol-first{
+	border-bottom-color: #32363A;
+}
+#body #Kunena .kl{
+    font-size: 20px;
+    font-weight: 200;
+}
+#body #Kunena div.kthead-desc, #body #Kunena div.kthead-moderators{
+	color: #999999;
+    line-height: 1.56em;
+    font-size: 14px;
+	padding-top:5px;
+}
+
+#body #Kunena div.kthead-child{
+	border: 1px solid #32434D;
+    margin: 10px 0px;
+    padding: 7px 7px 5px 7px;
+    border-radius: 3px;
+    display: inline-block;
+    width: auto;
+    background: #1D2A32;
+    font-size: 12px;
+	float:left;
+}
+#body #Kunena a:link,#body #Kunena a:visited,#body #Kunena a:active,#body #Kunena a:focus{
+	/*color: #00a7ff!important;*/
+}
+
+#body #Kunena div.kblock div.khelprulescontent,#body #Kunena div.kblock div.kfheadercontent{
+	background-color: #000;
+    color: #fff;
+}
+#body #Kunena .klist-actions{
+	background-color: #000;
+    color: #fff;
+    border-color: #32363A;
+}
+#body #Kunena .kforum-pathway{
+	border-left-color: #32363A;
+    border-right-color: #32363A;
+    color: #fff;
+    background-color: #000;
+	border-top: 1px solid #32363A;
+}
+#body #Kunena .kheader h2{
+	padding:8px 10px;
+}
+#body #Kunena .kheader h3{
+	padding:8px 10px;
+	font-size:16px;
+}
+#body #Kunena .klist-actions-forum, #body #Kunena .klist-pages-all{
+	border-left-color: #32363A;
+	color:#fff;
+}
+#body #Kunena div.kblock span.select-toggle{
+	right:16px;
+	top:8px;
+}
+#body #Kunena .klist-actions-bottom{
+	background-color: #000;
+    color: #fff;
+    border-color: #32363A;
+}
+#body #Kunena .klist-bottom{
+	background-color: #000;
+    border-color: #32363A;
+}
+#body #Kunena a.ktopic-title{
+	font-size: 20px;
+    font-weight: 200;
+}
+#body #Kunena .kbuttonuser span.subscribe{
+	height:15px;
+}
+#body #Kunena div#kforum-head{
+	border-left-color: #32363A;
+    border-right-color: #32363A;
+    border-bottom-color: #32363A;
+	background-color: #000;
+	color:#fff;
+	border-top:1px solid #32363A;
+}
+#body #Kunena td.kprofile-left{
+	background-color: #151515;
+    border-bottom-color: #32363A;
+    border-right-color: #32363A;
+}
+#body #Kunena td.kmessage-left{
+	background: #222;
+}
+#body #Kunena td.kbuttonbar-left{
+	background: #222;
+}
+#body #Kunena div.kmsg-header h2{
+	background-color: #171717;
+}
+#body #Kunena div.kmsg-header{
+	border-bottom:1px solid #32363A;
+}
+#body #Kunena td.kbuttonbar-left{
+	border-bottom:1px solid #32363A;
+}
+#body #Kunena td.kcol-last{
+	border-left-color: #32363A;
+    border-bottom-color: #32363A;
+}
+#body #Kunena .kpostbuttonset{
+	border-color: #32363A;	
+}
+#body #Kunena #kpostmessage tr.krow1 .kpostbuttonset td,#body #Kunena #kpostmessage tr.krow2 .kpostbuttonset td{
+	border-bottom-color: #32363A;
+}
+#body #Kunena fieldset legend{
+	padding-top:15px;
+}
+#body #Kunena fieldset{
+	background: #171717;
+	border:0px;
+}
+#body #Kunena div.kblock div.kcontainer{
+	background: #171717;
+}
+#body #Kunena .krow2-stickymsg{
+	background-color:#999;
+}

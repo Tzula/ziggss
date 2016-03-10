@@ -1,0 +1,26 @@
+/*
+//////////
+// File: radiance_ie6.css
+// Description: Layout css fixes for radiance theme in IE7
+//////////
+*/
+
+.gvew .hype .entry .bar { left:0px !important; }
+
+.home .latestnews .fitem { float:left; left:0px; overflow:hidden; width:475px; }
+.home .latestnews table { position:relative; }
+.home .ratings .TabbedPanelsContent { width:483px; }
+.home .hmcolumns .entry { width:289px; }
+.home .userphotos .browser { overflow:hidden; width:300px; }
+.home .bloggers .hbsecint { width:287px; }
+
+#axTopLeaves { line-height:auto; min-height:35px; }
+#axTopLeaves #userarea { padding-bottom:5px; padding-top:0px; height:31px; }
+#axTopLeaves #notmember { padding-top:1px; }
+#axTopLeaves #userarea .avatar { top:3px; }
+#axTopLeaves #userarea .lab2,#axTopLeaves #userarea .logincheckbox { position:relative; top:-2px; }
+#axTopLeaves #showQGLpanela { top:1px; }
+#axTopLeaves #userarea .loginbarbutton { position:relative; top:1px; }
+#axTopLeaves .uidels { padding-top:0px; position:relative; top:0px; }
+
+/* EOF */

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset addfieldpath="/administrator/components/com_cmlivedeal/models/fields">
+		<field name="id" type="hidden" readonly="true" required="true" size="10" default="0"/>
+
+		<field name="title" type="text" required="true" class="span8 form-control"
+			label="JGLOBAL_TITLE"
+			description="COM_CMLIVEDEAL_DEAL_FIELD_TITLE_DESC"/>
+
+		<field name="category_id" type="categoryedit" required="true" 
+			extension="com_cmlivedeal" class="input-medium"
+			label="JCATEGORY" description="COM_CMLIVEDEAL_DEAL_FIELD_CATEGORY_ID_DESC"
+			addfieldpath="/administrator/components/com_categories/models/fields">
+				<option value="">COM_CMLIVEDEAL_SELECT_CATEGORY</option>
+		</field>
+
+		<field name="image_id" type="cmldmedia" required="true"
+			label="COM_CMLIVEDEAL_DEAL_FIELD_IMAGE_ID_LABEL"
+			description="COM_CMLIVEDEAL_DEAL_FIELD_IMAGE_ID_DESC"/>
+
+		<field name="discount_info" type="cmldradio" default="none" filter="options"
+			label="COM_CMLIVEDEAL_DEAL_FIELD_DISCOUNT_INFO_LABEL"
+			description="COM_CMLIVEDEAL_DEAL_FIELD_DISCOUNT_INFO_DESC">
+				<option value="none">COM_CMLIVEDEAL_DEAL_DISCOUNT_INFO_NONE</option>
+				<option value="prices">COM_CMLIVEDEAL_DEAL_DISCOUNT_INFO_PRICES</option>
+				<option value="fixed">COM_CMLIVEDEAL_DEAL_DISCOUNT_INFO_FIXED_VALUE</option>
+				<option value="percent">COM_CMLIVEDEAL_DEAL_DISCOUNT_INFO_FIXED_PERCENT</option>
+		</field>
+
+		<field name="original_price" type="cmldprice" class="input-medium form-control"
+			label="COM_CMLIVEDEAL_DEAL_FIELD_ORIGINAL_PRICE_LABEL"
+			description="COM_CMLIVEDEAL_DEAL_FIELD_ORIGINAL_PRICE_DESC"/>
+
+		<field name="discounted_price" type="cmldprice" class="input-medium form-control"
+			label="COM_CMLIVEDEAL_DEAL_FIELD_DISCOUNTED_PRICE_LABEL"
+			description="COM_CMLIVEDEAL_DEAL_FIELD_DISCOUNTED_PRICE_DESC"/>
+
+		<field name="fixed_value" type="cmldprice" class="input-medium form-control"
+			label="COM_CMLIVEDEAL_DEAL_FIELD_FIXED_VALUE_LABEL"
+			description="COM_CMLIVEDEAL_DEAL_FIELD_FIXED_VALUE_DESC"/>
+
+		<field name="fixed_percent" type="cmldpercent" class="input-small"
+			label="COM_CMLIVEDEAL_DEAL_FIELD_FIXED_PERCENT_LABEL"
+			description="COM_CMLIVEDEAL_DEAL_FIELD_FIXED_PERCENT_DESC"/>
+
+		<field name="description" type="textarea" class="span8 form-control"
+			rows="5" filter="string"
+			label="COM_CMLIVEDEAL_DEAL_FIELD_DESCRIPTION_LABEL"
+			description="COM_CMLIVEDEAL_DEAL_FIELD_DESCRIPTION_DESC"/>
+
+		<field name="fine_print" type="textarea" class="span8 form-control"
+			rows="5" filter="string"
+			label="COM_CMLIVEDEAL_DEAL_FIELD_FINE_PRINT_LABEL"
+			description="COM_CMLIVEDEAL_DEAL_FIELD_FINE_PRINT_DESC"/>
+
+		<field name="coupon_quantity" type="text" required="true" filter="uint" class="input-small"
+			label="COM_CMLIVEDEAL_DEAL_FIELD_COUPON_QUANTITY_LABEL"
+			description="COM_CMLIVEDEAL_DEAL_FIELD_COUPON_QUANTITY_DESC"/>
+
+		<field name="starting_time" type="cmldcalendar" format="%Y-%m-%d %H:%M:%S"
+			filter="user_utc" required="true" class="form-control"
+			label="COM_CMLIVEDEAL_DEAL_FIELD_STARTING_TIME_LABEL"
+			description="COM_CMLIVEDEAL_DEAL_FIELD_STARTING_TIME_DESC"/>
+
+		<field name="ending_time" type="cmldcalendar" format="%Y-%m-%d %H:%M:%S"
+			filter="user_utc" required="true" class="form-control"
+			label="COM_CMLIVEDEAL_DEAL_FIELD_ENDING_TIME_LABEL"
+			description="COM_CMLIVEDEAL_DEAL_FIELD_ENDING_TIME_DESC"/>
+
+		<field name="published" type="list" default="1" filter="options" class="input-medium"
+			label="COM_CMLIVEDEAL_DEAL_FIELD_PUBLISHED_LABEL"
+			description="COM_CMLIVEDEAL_DEAL_FIELD_PUBLISHED_DESC">
+				<option value="1">JPUBLISHED</option>
+				<option value="0">JUNPUBLISHED</option>
+		</field>
+	</fieldset>
+</form>
